@@ -12,7 +12,7 @@
 /* ==================================== */
 
 #entete { 
-	background-color: #fff; }
+	xbackground-color: #fff; }
 	#entete #logo #titre { 
 		font-size: 38px; line-height: 1em;
 		/* pour Firefox http://log.edds.me.uk/post/436921532/firefox-3-6s-css-font-stretch-support */
@@ -28,6 +28,6 @@
 /* ==================================== */
 
 #nav { 
-	background-color: #fff;
-	border-bottom: 1px solid #999;
-	padding: 1.5em 0; }
+	xbackground-color: #fff;
+	border-bottom: 1px solid #000;
+	padding: 1.5em 0 0; }

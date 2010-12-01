@@ -10,7 +10,17 @@
 html { font-size:100.01%; }
 html { xbackground: url('../img/line-height.png'); }
 	body {
-		font-size: 12px; 
-		font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold","Helvetica Neue", Helvetica, Arial, sans-serif; 
+		font-size: 12px;
+		font-family: Georgia, "Times New Roman", Times, serif;
 		color: #444;
 		-webkit-text-size-adjust: none; /* Forbid mobile webkit to adjust text size */ }
+
+
+/* ==================================== */
+/* =Headings=							*/
+/* ==================================== */
+
+h1,h2,h3,h4,h5,h6 { 
+	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold","Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	color: #000; }
