@@ -8,5 +8,6 @@ $(document).ready(function(){
 		$("#page").toggleClass("grille");
 	});
 	
+$(".slider").slider();
 
 });

@@ -1,6 +1,6 @@
 <div class="contenu-principal">
 	<BOUCLE_expo(ARTICLES){lang}{0,1}>
-	<div class="article grid_8">
+	<div class="article grid_6">
 		<h2>#TITRE</h2>
 		[<div class="chapo">
 			(#CHAPO)
@@ -15,8 +15,14 @@
 			(#NOTES)
 		</div><!-- .notes -->]
 	</div><!-- .article -->
-	<div class="slider grid_8">
-		&nbsp;
+	<div class="slider grid_9 prefix_1">
+		<div class="scroll">
+			<ul>
+				<BOUCLE_portfolio(DOCUMENTS){id_article}{extension IN jpg,gif,png}{vu=non}{par num titre, titre}>
+				[<li>(#FICHIER|image_reduire{520,0}|inserer_attribut{alt,[(#TITRE|textebrut)]})</li>]
+				</BOUCLE_portfolio>
+			</ul>
+		</div><!-- .scroll -->
 	</div><!-- .slider -->
 	</BOUCLE_expo>
 </div><!-- .contenu-principal -->

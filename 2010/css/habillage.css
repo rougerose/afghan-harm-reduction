@@ -12,6 +12,71 @@
 	background: transparent url('../img/drapeau.png') repeat-y 0 0;
 	padding-top: 3em; }
 
+/* ===================================  */
+/*	=Slider								*/
+/* ===================================  */
+.slider {
+	position: relative; width: 580px; }
+	#slider .navigation { 
+		position:absolute;
+		z-index: 4; }
+		#slider .navigation li { display: inline; }
+	.scroll {
+		position: relative; z-index: 2;
+		overflow: auto;
+		overflow-x: hidden;
+		width: 520px; }
+		.scrollConteneur {}
+		.scrollBouton { 
+			display: block;
+			background: rgba(206,206,206,0.5) url('../img/sprite.png') no-repeat;
+			width: 40px; height: 60px;
+			position: absolute; z-index: 0;
+			cursor:pointer; }
+		.scrollBouton.gauche { left:40px; background-position: 3px 13px; }
+		.scrollBouton.droite { right:-20px; background-position: -27px 13px; }
+		.scrollBouton:hover { z-index: 4; background-color: rgba(0,0,0,0.7); }
+
+
+
+/*
+.slider {
+	position: relative; }
+	#slider .navigation { 
+		position:absolute; right: 0; top: 9px;
+		padding-right: 40px;
+		z-index: 30; }
+		#slider .navigation li { display: inline; }
+			#slider .navigation li a { 
+				text-indent: -9999px; outline: 0;
+				background: url('../img/img-sprites.png') no-repeat -32px -18px;
+				height: 9px; width: 9px;
+				float: left;
+				margin-right: 4px; }
+			#slider .navigation li a:hover { background-position: -32px -34px; }
+			#slider .navigation li a.actif { background-position: -32px -2px; }
+	.scroll {
+		position: relative;
+		overflow: auto; overflow-x: hidden;
+		clear: left;
+		width: 700px; }
+		.scrollConteneur {}
+		.scrollBouton { 
+			display: block;
+			background: #fff url('../img/img-sprites.png') no-repeat -48px 0;
+			width: 17px; height: 17px;
+			position: absolute; z-index:33; right: 0; top: 5px;
+			cursor:pointer; }
+		.scrollBouton.gauche { right: 20px; background-position: -48px 0; }
+		.scrollBouton.droite { background-position: -64px 0; }
+		.scrollBouton.gauche:hover { background-position: -48px -16px; background-color: #000; }
+		.scrollBouton.droite:hover { background-position: -64px -16px; background-color: #000; }
+*/
+
+
+
+
+
 
 /* boutons d'administration */
 /* Boutons d'admin SPIP */
