@@ -1,14 +1,15 @@
-/* ------------------------------------ */
-/*	Site : Afghan Harm Reduction		*/
-/*	URL : afghan-harm-reduction.org		*/
-/*	Author : christophe le drean		*/
-/*	Date :	2010/12						*/
-/*	Version : 1							*/
-/* ------------------------------------ */
+/* ======================================== */
+/*	Site : 		Afghan Harm Reduction		*/
+/*	URL : 		afghan-harm-reduction.org	*/
+/*	Author : 	christophe le drean			*/
+/*				rouge-rose.net				*/
+/*	Date :		2010/12						*/
+/*	Version :	1							*/
+/* ======================================== */
 
 html { font-size:100.01%; }
 html { background: url('../img/line-height.png'); }
 	body {
-		font: 12px/1.5em 'Helvetica Neue', Arial, Helvetica, sans-serif;
+		font-size: 12px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #444;
 		-webkit-text-size-adjust: none; /* Forbid mobile webkit to adjust text size */ }

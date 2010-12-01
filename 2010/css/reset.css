@@ -1,31 +1,52 @@
-/* ------------------------------------ */
-/*	Site : Afghan Harm Reduction		*/
-/*	URL : afghan-harm-reduction.org		*/
-/*	Author : christophe le drean		*/
-/*	Date :	2010/12						*/
-/*	Version : 1							*/
-/* ------------------------------------ */
+/* ======================================== */
+/*	Site : 		Afghan Harm Reduction		*/
+/*	URL : 		afghan-harm-reduction.org	*/
+/*	Author : 	christophe le drean			*/
+/*				rouge-rose.net				*/
+/*	Date :		2010/12						*/
+/*	Version :	1							*/
+/* ======================================== */
 
-/* https://github.com/Kaelig/Project-Starter */
+/* repris de https://github.com/Kaelig/Project-Starter */
 
 html,body,div,span,object,iframe,
 h1,h2,h3,h4,h5,h6,
 p,blockquote,pre,a,abbr,acronym,
 address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,
-fieldset,form,label,legend {margin:0; padding:0; border:0; font-weight:inherit; font-style:inherit; font-size:100%;font-family:inherit;vertical-align:baseline;}
-body{line-height:1.5;}
-table{border-collapse:collapse;border-spacing:none;}
-caption,th,td{text-align:left;font-weight:normal;}
-table,td,th{vertical-align:middle;}
+fieldset,form,label,legend {
+	margin:0; padding:0; 
+	border:0; 
+	font-weight:inherit; font-style:inherit; font-size:100%; font-family:inherit;
+	vertical-align:baseline; }
+
+body{ line-height:1.5; }
+
+table{ border-collapse:collapse;border-spacing:none; }
+
+caption,th,td{ text-align:left;font-weight:normal; }
+
+table,td,th{ vertical-align:middle; }
+
 blockquote:before,blockquote:after,q:before,q:after{content:"";}
+
 blockquote,q{quotes:"" "";}
+
 a img{border:none;}
+
 strong{font-weight:bold;}
+
 .clear{clear:both;}
+
 .clearfix:before,.clearfix:after{content:".";display:block;height:0;visibility:hidden;}
+
 .clearfix:after{clear:both;}
+
 .clearfix{zoom:1;}
+
 body{text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;}
+
 input,textarea,select,optgroup,button{margin: 0;}
+
 button{width:auto;overflow:visible;}
+
 html{overflow-y: scroll;} /* Force scrollbar */
