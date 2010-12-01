@@ -8,8 +8,9 @@
 /* ======================================== */
 
 html { font-size:100.01%; }
-html { background: url('../img/line-height.png'); }
+html { xbackground: url('../img/line-height.png'); }
 	body {
-		font-size: 12px; font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold","Helvetica Neue", Helvetica, Arial, sans-serif; 
+		font-size: 12px; 
+		font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold","Helvetica Neue", Helvetica, Arial, sans-serif; 
 		color: #444;
 		-webkit-text-size-adjust: none; /* Forbid mobile webkit to adjust text size */ }
