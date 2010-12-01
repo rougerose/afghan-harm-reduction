@@ -13,3 +13,7 @@
 
 #entete { 
 	xbackground-color: #fff; }
+	#entete #logo #titre { font-size: 40px; line-height: 1em; }
+	#entete #logo #baseline {
+		font-family: "Helvetica Neue";
+		font-size: 26px;  line-height: 1.5em; }
