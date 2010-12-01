@@ -1,14 +1,10 @@
 <div id="logo" class="grid_8">
-	[(#ENV{composition}|match{sommaire}|oui)
-	<h1>
-	]
+	[(#ENV{composition}|match{sommaire}|?{'<h1 id="titre">','<p id="titre">'})]
 		[(#ENV{composition}|match{sommaire}|non)
-		<a href="#URL_SITE_SPIP/" rel="start home" title="<:accueil_site:>">]
+		<a class="" href="#URL_SITE_SPIP/" rel="start home" title="<:accueil_site:>">]
 		[(#NOM_SITE_SPIP)]
 		[(#ENV{composition}|match{sommaire}|non)
 		</a>]
-		[(#ENV{composition}|match{sommaire}|oui)
-	</h1>
-	]
+	[(#ENV{composition}|match{sommaire}|?{'</h1>','</p>'})]
 	[<p id="baseline">(#SLOGAN_SITE_SPIP)</p>]
 </div>
