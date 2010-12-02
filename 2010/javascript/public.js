@@ -7,10 +7,22 @@ $(document).ready(function(){
 		$("#grille").click(function(){
 			$("#page").toggleClass("grille");
 		});
-		/*
+	
+	
+	/*
 	 * Slider (cf. plugins.js)
 	 */
 	$(".slider").slider();
+	
+	/*
+	 * In-fields label (cf. plugins.js)
+	 */
+	$("label").inFieldLabels();
+	
+	$(".formulaire_spip.ajax").ajaxComplete(function(){
+		$("label").inFieldLabels();
+		$("li.erreur").inFieldLabels();
+	});
 
 
 	$(".article .texte").each(function(){
