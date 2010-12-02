@@ -16,7 +16,7 @@
 				pageLargeur = $items.outerWidth(),
 				pageHauteur = $items.eq((pageCourante - 1)).outerHeight(),
 				horizontal = true,
-				boutonHauteur = 60; console.log($items.eq(0));
+				boutonHauteur = 60;
 
 			// pas de barre défilement sur le div.scroll
 			$scroll.css({ 'overflow': 'hidden' });
