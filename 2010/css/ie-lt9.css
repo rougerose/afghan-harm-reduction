@@ -9,6 +9,8 @@
 
 
 #page { background: #fff url('../img/ie/drapeau.png') repeat-y 0 0; }
-
+#entete #logo #titre { font-size: 28px; }
 .scrollBouton { background: #000 url('../img/ie/sprite.png') no-repeat; }
-.imageLegend { width: 520px; }
+	.scrollBouton.gauche { left:40px; background-position: 3px 13px; }
+	.scrollBouton.droite { right:-20px; background-position: -27px 13px; }
+.imageLegend { width: 504px; }
