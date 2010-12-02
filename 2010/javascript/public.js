@@ -34,6 +34,9 @@ $(document).ready(function(){
 			return false;
 		});
 	});
+	
+	
+	$("p.website-info").delay(4000).fadeOut("slow");
 
 
 });
