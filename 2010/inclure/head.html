@@ -43,7 +43,8 @@
 [<link rel="stylesheet" href="(#CHEMIN{css/typo.css}|direction_css)" type="text/css" media="all" />]
 [(#REM) formulaires ]
 [<link rel="stylesheet" href="(#CHEMIN{css/formulaires.css}|direction_css)" type="text/css" media="all" />]
-
+[(#REM) IE > 9 ]
+[<!--[if lt IE 9]> <link rel="stylesheet" href="(#CHEMIN{css/ie-lt9.css}|direction_css)" type="text/css" media="all" /> <![endif]-->]
 
 [(#REM) Balise permettant aux plugins d'inserer des appels javascript ou css ;
 	C'est ici que SPIP va inserer l'appel de la librairie jQuery
