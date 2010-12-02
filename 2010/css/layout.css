@@ -50,7 +50,7 @@
 /* ==================================== */
 
 #contenu { margin-top: 1.5em; padding-bottom: 3em; }
-
+	#contenu .ps p, #contenu .notes p { font-size: 12px; color: #666; }
 
 /* ==================================== */
 /* =Pied=								*/

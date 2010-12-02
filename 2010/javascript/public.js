@@ -26,7 +26,8 @@ $(document).ready(function(){
 
 
 	$(".article .texte").each(function(){
-		$(">p",this).slice(2).wrapAll('<div class="more" />').parent("div.more").hide();
+		$("> p",this).slice(2).wrapAll('<div class="more" />').parent("div.more").hide();
+		$(".ps,.notes").appendTo(".more");
 		$("> p:visible:last",this).append(' <a href="#" class="read-more">MORE</a>');
 		$(".read-more").click(function(){
 			$(this).hide().parent().next().slideDown("slow");

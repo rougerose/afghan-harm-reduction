@@ -7,19 +7,27 @@
 		</div><!-- .chapo -->]
 		[<div class="texte">
 			(#TEXTE)
+			
+			[<div class="ps">
+				(#PS)
+			</div><!-- .ps -->]
+			[<div class="notes">
+				(#NOTES)
+			</div><!-- .notes -->]
+			
+			
 		</div><!-- .texte -->]
-		[<div class="ps">
-			(#PS)
-		</div><!-- .ps -->]
-		[<div class="notes">
-			(#NOTES)
-		</div><!-- .notes -->]
 	</div><!-- .article -->
 	<div class="slider grid_9 prefix_1 omega">
 		<div class="scroll">
 			<ul>
 				<BOUCLE_portfolio(DOCUMENTS){id_article}{extension IN jpg,gif,png}{vu=non}{par num titre, titre}>
-				[<li>(#FICHIER|image_reduire{520,0}|inserer_attribut{alt,[(#TITRE|textebrut)]})</li>]
+				[<li>
+					(#FICHIER|image_reduire{520,0}|inserer_attribut{alt,[(#TITRE|textebrut)]})
+					[<div class="imageLegend">
+						(#DESCRIPTIF)
+					</div>]
+				</li>]
 				</BOUCLE_portfolio>
 			</ul>
 		</div><!-- .scroll -->

@@ -26,6 +26,8 @@
 		overflow: auto;
 		overflow-x: hidden;
 		width: 520px; }
+		.scroll li {  }
+			.scroll li img { display:block; }
 		.scrollConteneur {}
 		.scrollBouton { 
 			display: block;
@@ -36,6 +38,15 @@
 		.scrollBouton.gauche { left:40px; background-position: 3px 13px; }
 		.scrollBouton.droite { right:-20px; background-position: -27px 13px; }
 		.scrollBouton:hover { z-index: 4; background-color: rgba(0,0,0,0.7); }
+		.imageLegend { 
+			position: absolute; left: 0; bottom: 0;
+			background-color: rgba(0,0,0,0.4);
+			color: #fff;
+			padding: 4px 8px; }
+			.contenu-principal .imageLegend p { 
+				margin-bottom: 0;
+				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+				font-size: 12px; }
 
 
 
