@@ -36,7 +36,7 @@ $(document).ready(function(){
 	});
 	
 	
-	$("p.website-info").delay(4000).fadeOut("slow");
+	$("p.website-info").delay(8000).fadeOut("slow");
 
 
 });
