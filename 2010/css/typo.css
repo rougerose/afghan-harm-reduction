@@ -22,5 +22,16 @@ html { xbackground: url('../img/line-height.png'); }
 
 h1,h2,h3,h4,h5,h6 { 
 	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold","Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-stretch: condensed;
 	text-transform: uppercase;
 	color: #000; }
+	
+#contenu h2 { font-size: 26px; line-height: 1em; margin-bottom: 1em; margin-top: 1.5em; }
+#pied h2 { font-size: 18px; line-height: 1em; margin-bottom: .5em; }
+	
+
+/* ==================================== */
+/* =Paragraphs, etc...=					*/
+/* ==================================== */
+
+.contenu-principal p { font-size: 13px; margin-bottom: 1.5em; }

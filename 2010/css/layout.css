@@ -12,7 +12,9 @@
 /* ==================================== */
 
 #entete { 
-	xbackground-color: #fff; }
+	background-color: #fff;
+	padding-top: 1.5em; padding-bottom: 1.5em;
+	margin: 0 10px 0; }
 	#entete #logo #titre { 
 		font-size: 38px; line-height: 1em;
 		/* pour Firefox http://log.edds.me.uk/post/436921532/firefox-3-6s-css-font-stretch-support */
@@ -29,5 +31,33 @@
 
 #nav { 
 	xbackground-color: #fff;
-	border-bottom: 1px solid #000;
-	padding: 1.5em 0 0; }
+	xborder-bottom: 1px solid #000;
+	xpadding: 1.5em 0 0; }
+	
+
+/* ==================================== */
+/* =Conteneur=							*/
+/* ==================================== */
+
+#conteneur { 
+	background-color: #fff;
+	border-top: 1px solid #000;
+	margin: 0 10px 0; }
+
+
+/* ==================================== */
+/* =Contenu=							*/
+/* ==================================== */
+
+#contenu { margin-top: 1.5em; padding-bottom: 3em; }
+
+
+/* ==================================== */
+/* =Pied=								*/
+/* ==================================== */
+
+#pied { 
+	background-color:#fff;
+	border-top: 1px solid #000;
+	margin: 0 10px 1.5em; padding: 3em 0 0; }
+	/*#pied .about p img { float: left; margin-right: 10px; }*/

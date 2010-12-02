@@ -1,1 +1,23 @@
-<!-- vide -->
+<div class="about grid_6 alpha">
+	<h2>About Us</h2>
+	<BOUCLE_about(SITES){id_syndic=1}>
+	[<p class="grid_4 alpha">(#DESCRIPTIF|PTOBR)</p>]
+	[<p class="grid_2 omega"><a href="[(#ID_SYNDIC|generer_url_entite{site})]" title="#NOM_SITE">(#LOGO_SITE|inserer_attribut{alt,#NOM_SITE}|image_reduire{100,0})</a></p>]
+	</BOUCLE_about>
+</div><!-- .about -->
+
+<div class="follow grid_3 prefix_1">
+	<h2>Follow Us</h2>
+	<ul>
+		<li><a href="#">Facebook</a></li>
+		<li><a href="#URL_PAGE{backend}" rel="alternate" title="<:syndiquer_site:>">RSS</a></li>
+	</ul>
+</div><!-- .follow -->
+
+
+<div class="contact grid_6 omega">
+	<h2>Contact Us</h2>
+	<BOUCLE_auteur(AUTEURS){id_auteur=1}{tout}>
+	[(#FORMULAIRE_ECRIRE_AUTEUR)]
+	</BOUCLE_auteur>
+</div><!-- .contact -->
