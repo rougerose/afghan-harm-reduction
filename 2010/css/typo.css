@@ -8,12 +8,12 @@
 /* ======================================== */
 
 html { font-size:100.01%; }
-html { xbackground: url('../img/line-height.png'); }
+html { /* background: url('../img/line-height.png');*/ }
 	body {
 		font-size: 12px;
 		font-family: Georgia, "Times New Roman", Times, serif;
 		color: #444;
-		x-webkit-text-size-adjust: none; /* Forbid mobile webkit to adjust text size */ }
+		-webkit-text-size-adjust: none; /* Forbid mobile webkit to adjust text size */ }
 
 
 /* ==================================== */
