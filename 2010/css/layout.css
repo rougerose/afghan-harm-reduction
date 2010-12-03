@@ -34,10 +34,7 @@
 /* =Navigation principale (#nav)=		*/
 /* ==================================== */
 
-#nav { 
-	xbackground-color: #fff;
-	xborder-bottom: 1px solid #000;
-	xpadding: 1.5em 0 0; }
+#nav {  }
 	
 
 /* ==================================== */
@@ -70,6 +67,7 @@
 		font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold","Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-stretch: condensed; /* pour Firefox */
 		text-transform: uppercase; }
+	#pied p.website-info { position: absolute; left: 0; top: 0; }
 	#pied .credits { position: relative; clear: both; }
 	#pied .credits p {
 		position: absolute; bottom: -20px;

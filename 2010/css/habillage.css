@@ -7,8 +7,6 @@
 /*	Version :	1							*/
 /* ======================================== */
 
-p.website-info { position: absolute; left: 0; top: 0; }
-
 
 /* ===================================  */
 /*	=Slider								*/
@@ -29,7 +27,7 @@ p.website-info { position: absolute; left: 0; top: 0; }
 		.scrollConteneur {}
 		.scrollBouton { 
 			display: block;
-			background: rgba(206,206,206,0.5) url('../img/sprite.png') no-repeat;
+			background: rgba(178,178,178,0.65) url('../img/sprite.png') no-repeat;
 			width: 40px; height: 60px;
 			position: absolute; z-index: 0;
 			cursor:pointer; }

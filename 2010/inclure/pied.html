@@ -1,9 +1,7 @@
 <div class="about grid_6 alpha">
 	<h2>About Us</h2>
-	<BOUCLE_about(SITES){id_syndic=1}>
-	[<p class="grid_4 alpha">(#DESCRIPTIF|PTOBR)</p>]
-	[<p class="grid_2 omega"><a href="[(#URL_SITE)]" title="#NOM_SITE">(#LOGO_SITE|inserer_attribut{alt,#NOM_SITE}|image_reduire{100,0})</a></p>]
-	</BOUCLE_about>
+	[<p class="grid_4 alpha">(#DESCRIPTIF_SITE_SPIP|PTOBR)</p>]
+	[<p class="grid_2 omega"><a href="http://www.medecinsdumonde.org">(#LOGO_SITE_SPIP|inserer_attribut{alt,'M&eacute;decins du Monde'}|image_reduire{100,0})</a></p>]
 </div><!-- .about -->
 
 <div class="follow grid_3 prefix_1">

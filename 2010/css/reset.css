@@ -44,7 +44,7 @@ strong{font-weight:bold;}
 .clearfix { display: block; }
 /* close commented backslash hack */
 
-body{text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;}
+body{text-rendering: optimizeLegibility;}
 
 input,textarea,select,optgroup,button{margin: 0;}
 
