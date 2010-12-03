@@ -62,16 +62,17 @@
 	background-color:#fff;
 	border-top: 1px solid #000; border-bottom: 1px solid #000;
 	margin: 0 10px 1.5em; padding: 3em 0 0; }
+	#pied > div { margin-bottom: 1.5em; }
 	#pied ul { list-style: none; margin-bottom: 1.5em; }
 	#pied .follow li { 
 		font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold","Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-stretch: condensed; /* pour Firefox */
 		text-transform: uppercase; }
 	#pied p.website-info { position: absolute; left: 0; top: 0; }
-	#pied .credits { position: relative; clear: both; }
+	#pied .credits { position: relative; clear: both; margin-bottom: 0; }
 	#pied .credits p {
-		position: absolute; bottom: -20px;
-		font: 10px/1 "HelveticaNeue-Light","Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		position: absolute; bottom: -2em;
+		font: 10px/1em "HelveticaNeue-Light","Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #999;
 	 }
 	#pied .credits a { color: #999; }
