@@ -12,7 +12,7 @@ html { xbackground: url('../img/line-height.png'); }
 	body {
 		font-size: 12px;
 		font-family: Georgia, "Times New Roman", Times, serif;
-		color: #222;
+		color: #444;
 		x-webkit-text-size-adjust: none; /* Forbid mobile webkit to adjust text size */ }
 
 
