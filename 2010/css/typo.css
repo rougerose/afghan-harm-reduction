@@ -32,6 +32,8 @@ p a.read-more {
 
 .ps a { color: #333; }
 
+.slider a:active, .slider a:focus { top: 0; outline: none;  }
+
 
 /* ==================================== */
 /* =Headings=							*/

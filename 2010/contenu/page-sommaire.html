@@ -23,7 +23,9 @@
 			<ul>
 				<BOUCLE_portfolio(DOCUMENTS){id_article}{extension IN jpg,gif,png}{vu=non}{par num titre, titre}>
 				[<li>
+					<a href="[(#FICHIER|image_reduire{800,0}|extraire_attribut{src})]" class="sliderImg icone-lien mediabox" rel="portfolio#ID_ARTICLE" type="#MIME_TYPE">
 					(#FICHIER|image_reduire{520,0}|inserer_attribut{alt,[(#TITRE|textebrut)]})
+					</a>
 					[<div class="imageLegend">
 						(#DESCRIPTIF)
 					</div>]

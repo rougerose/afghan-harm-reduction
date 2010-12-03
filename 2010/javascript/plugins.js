@@ -8,7 +8,7 @@
 (function($){
 	$.fn.slider = function () {
 		return this.each(function(){
-			var $scroll = $("> div", this),
+			var $scroll = $("> div.scroll",this),
 				$conteneur = $scroll.find('> ul'),
 				$items = $conteneur.find('> li'),
 				pages = $items.length,
@@ -16,7 +16,7 @@
 				pageLargeur = $items.outerWidth(),
 				pageHauteur = $items.eq((pageCourante - 1)).outerHeight(),
 				horizontal = true,
-				boutonHauteur = 60;
+				boutonHauteur = 60; 
 
 			// pas de barre défilement sur le div.scroll
 			$scroll.css({ 'overflow': 'hidden' });
