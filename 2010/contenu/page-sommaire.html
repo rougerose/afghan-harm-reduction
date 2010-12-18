@@ -1,7 +1,7 @@
 <div class="contenu-principal">
 	<BOUCLE_expo(ARTICLES){lang}{0,1}>
 	<h2>#TITRE</h2>
-	<div class="article grid_6 alpha">
+	<div class="article grid_6 suffix_1 alpha">
 		[<div class="chapo">
 			(#CHAPO)
 		</div><!-- .chapo -->]
@@ -18,7 +18,7 @@
 			
 		</div><!-- .texte -->]
 	</div><!-- .article -->
-	<div class="slider grid_9 prefix_1 omega">
+	<div class="slider grid_9 omega">
 		<div class="scroll">
 			<ul>
 				<BOUCLE_portfolio(DOCUMENTS){id_article}{extension IN jpg,gif,png}{vu=non}{par num titre, titre}>
