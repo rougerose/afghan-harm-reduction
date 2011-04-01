@@ -1,1 +1,19 @@
-<!-- vide -->
+<div class="container_16">
+	<div class="grid_16">
+		<ul>
+			<li[(#ENV{composition}|=={sommaire}|?{' class="on"'})]><a href="#URL_SITE_SPIP"><:accueil:></a></li>
+			<BOUCLE_menuPrincipal(RUBRIQUES){racine}{lang}{par num titre, titre}>
+			<li[ class="(#EXPOSE)"]>
+				<a href="#URL_RUBRIQUE">[(#TITRE)]</a>
+			<B_sousrubriques>
+			<ul>
+				<BOUCLE_sousrubriques(RUBRIQUES){id_parent}{lang}{par num titre, titre}>
+				<li><a href="#URL_RUBRIQUE">[(#TITRE)]</a></li>
+				</BOUCLE_sousrubriques>
+			</ul>
+			</B_sousrubriques>
+			</li>
+			</BOUCLE_menuPrincipal>
+		</ul>
+	</div>
+</div>

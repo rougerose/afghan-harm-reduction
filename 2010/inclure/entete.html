@@ -1,14 +1,22 @@
-<div id="logo" class="grid_8 alpha">
-	[(#ENV{composition}|match{sommaire}|?{'<h1 id="titre">','<p id="titre">'})]
-		[(#ENV{composition}|match{sommaire}|non)
-		<a class="" href="#URL_SITE_SPIP/" rel="start home" title="<:accueil_site:>">]
-		[(#NOM_SITE_SPIP)]
-		[(#ENV{composition}|match{sommaire}|non)
-		</a>]
-	[(#ENV{composition}|match{sommaire}|?{'</h1>','</p>'})]
-	[<p id="baseline">(#SLOGAN_SITE_SPIP)</p>]
-</div><!-- #logo -->
+<div class="container_16 clearfix">
+	<div class="grid_16">
+		<div id="logo" class="grid_8 alpha">
+			[(#ENV{composition}|match{sommaire}|?{'<h1 id="titre">','<p id="titre">'})]
+				[(#ENV{composition}|match{sommaire}|non)
+				<a class="" href="#URL_SITE_SPIP/" rel="start home" title="<:accueil_site:>">]
+				[(#NOM_SITE_SPIP)]
+				[(#ENV{composition}|match{sommaire}|non)
+				</a>]
+			[(#ENV{composition}|match{sommaire}|?{'</h1>','</p>'})]
+			[<p id="baseline">(#SLOGAN_SITE_SPIP)</p>]
+		</div><!-- #logo -->
+		<div id="langues">
+			<BOUCLE_langues(ARTICLES){!par lang}{" | "}{fusion lang}>
+			<a href="[(#URL_SITE_SPIP|parametre_url{lang,#LANG})]">[(#LANG|traduire_nom_langue)]</a>
+			</BOUCLE_langues>
+		</div><!-- #langues -->
+	</div><!-- .grid_16 -->
+</div><!-- .container_16 -->
 
-<div id="langues">
-	#MENU_LANG
-</div><!-- #langues -->
+
+

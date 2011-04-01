@@ -7,44 +7,63 @@
 /*	Version :	1							*/
 /* ======================================== */
 
-#page {
-	background: transparent url('../img/drapeau.png') repeat-y 0 0;
-	padding-top: 1.5em; padding-bottom: 3em; }
+#page { padding-bottom: 3em; }
 
 
 /* ==================================== */
 /* =Entete=								*/
 /* ==================================== */
 
-#entete { 
-	background-color: #fff;
-	padding-top: 1.5em; padding-bottom: 1.5em;
-	margin: 0 10px 0; }
-	#entete #logo #titre { 
-		font-size: 38px; line-height: 1em;
-		/* pour Firefox http://log.edds.me.uk/post/436921532/firefox-3-6s-css-font-stretch-support */
-		font-stretch: condensed;
-		text-transform: uppercase; }
-	#entete #logo #baseline {
-		/* déclaration explicite du HN Light pour Opera qui ne prend pas en compte correctement font-weight */
-		font-family: "Helvetica Neue Light", "Helvetica Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; font-weight: 200;
-		font-size: 26px;  line-height: 1.5em; }
-		
+#entete { padding-bottom: 1em; }
+	#entete .container_16 { background: transparent url('../img/drapeau.png') repeat-y 0 0; }
+	#entete .grid_16 {
+		background-color: #fff;
+		margin-top: 1.5em;
+		padding-top: 1.5em }
+		#entete #logo { margin-bottom: 1em }
+		#entete #logo #titre {
+			font-size: 38px; line-height: 1em;
+			/* pour Firefox http://log.edds.me.uk/post/436921532/firefox-3-6s-css-font-stretch-support */
+			font-stretch: condensed;
+			text-transform: uppercase; }
+			#entete #logo #baseline {
+				/* déclaration explicite du HN Light pour Opera qui ne prend pas en compte correctement font-weight */
+				font-family: "Helvetica Neue Light", "Helvetica Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; font-weight: 200;
+				font-size: 26px;  line-height: 1.5em; }
+
 /* ==================================== */
 /* =Navigation principale (#nav)=		*/
 /* ==================================== */
 
-#nav {  }
-	
+#nav { border-bottom: 1px solid #000; margin-top: 1em; }
+#nav .grid_16 { position: relative; }
+	#nav ul {
+		position: absolute; right: 0; top: -1.7em;
+ 		float: right; list-style : none outside none; }
+		#nav li {
+			font-family: "Helvetica Neue Light", "Helvetica Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; font-weight: 200;
+			font-size: 12px;
+			text-transform: uppercase;
+			float:left;  }
+			#nav li a {
+				color: #999;
+				padding-bottom: 1.2em;
+				display:block;
+				margin: 0 15px 0 0; }
+			#nav li:last-child a { margin-right: 0; }
+				#nav li.on a {
+					color: #000;
+					background: url('../img/barreNavigation_on.png') no-repeat scroll bottom center; }
+			#nav ul ul { top: 2em; right: auto; }
+
 
 /* ==================================== */
 /* =Conteneur=							*/
 /* ==================================== */
 
-#conteneur { 
+#conteneur {
 	background-color: #fff;
-	border-top: 1px solid #000;
-	margin: 0 10px 0; }
+	xborder-top: 1px solid #000; }
 
 
 /* ==================================== */
@@ -58,13 +77,13 @@
 /* =Pied=								*/
 /* ==================================== */
 
-#pied { 
+#pied {
 	background-color:#fff;
 	border-top: 1px solid #000; border-bottom: 1px solid #000;
 	margin: 0 10px 1.5em; padding: 3em 0 0; }
 	#pied > div { margin-bottom: 1.5em; }
 	#pied ul { list-style: none; margin-bottom: 1.5em; }
-	#pied .follow li { 
+	#pied .follow li {
 		font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold","Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-stretch: condensed; /* pour Firefox */
 		text-transform: uppercase; }
@@ -76,4 +95,3 @@
 		color: #999;
 	 }
 	#pied .credits a { color: #999; }
-	
