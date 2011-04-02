@@ -1,32 +1,32 @@
 $(document).ready(function(){
-	
+
 	/*
 	 * Grille de mise en page ajoutée aux boutons d'administration de spip
-	 */	
+	 */
 		$("#spip-admin").append("<a id='grille' class='spip-admin-boutons' href='#'>Grille</a>");
 		$("#grille").click(function(){
 			$("#page").toggleClass("grille");
 		});
-	
-	
+
+
 	/*
 	 * Slider (cf. plugins.js)
 	 */
 	$(".slider").slider();
-	
+
 	/*
 	 * In-fields label (cf. plugins.js)
 	 */
 	$("label").inFieldLabels();
-	
+
 	$(".formulaire_spip.ajax").ajaxComplete(function(){
 		$("label").inFieldLabels();
 		$("li.erreur").inFieldLabels();
 	});
-	
-	
+
+
 	/*
-	 * Afficher/masquer une partie d'un texte. 
+	 * Afficher/masquer une partie d'un texte.
 	 * Bricolage qui tiendra pour le site tant qu'il n'a qu'une seule page
 	 */
 	$(".article .texte").each(function(){
@@ -38,13 +38,13 @@ $(document).ready(function(){
 			return false;
 		});
 	});
-	
+
 	/*
 	 * Afficher/masquer l'info "website under construction"
 	 */
-	$("p.website-info").delay(8000).fadeOut("slow");
-	
-	
+//	$("p.website-info").delay(8000).fadeOut("slow");
+
+
 	$("a.icone-lien").append('<span class="icone-loupe"></span>').children("span").css({ 'opacity':0 });
 	$("a.icone-lien").hover(
 		function(){
@@ -57,45 +57,45 @@ $(document).ready(function(){
 				opacity: 0
 			}, 500);
 		});
-	
-	
+
+
 	/**
 	 *	Plugin Mediabox (colorbox) installé via Spip
 	 *	pour afficher titre et descriptif de l'image
 	 */
 	$("a.mediabox").colorbox({
 		title: function(){
-			// différentes hypothèses : 
-			// - ou bien l'image vient d'un modèle image ou img, 
-			// - ou bien d'un modèle doc, 
+			// différentes hypothèses :
+			// - ou bien l'image vient d'un modèle image ou img,
+			// - ou bien d'un modèle doc,
 			// - ou bien encore vient du slider (forme utilisée pour le slider mais aussi par inclure/documents.html)
-			
+
 			// Attention : dans l'immédiat, seule la 3è possibilité est en œuvre
-			
+
 			if ($(this).hasClass("modeleImg")) {
 				var description = $(this).children("img[title]");
 				var titre = description.attr("title");
-			
+
 				// l'image a un descriptif (précédé de *) ?
-				if (titre.match(/\*/)) { 
+				if (titre.match(/\*/)) {
 					titre = titre.match(/^(.+)\*(.+)$/);
 					return '<h3>' + titre[1] + '</h3>' + '<p>' + titre[2] + '</p>';
-				} else { 
+				} else {
 					// on ne prend que le titre + [date]
 					titre = titre.match(/^(.+)(\[.+\])$/);
 					return '<h3>' + titre[1] + '</h3>' + '<p>' + titre[2] + '</p>';
 				}
-			} 
+			}
 			else  if ($(this).hasClass("modeleDoc")) {
 				var titre = $(this).parent().parent("dl").children("dd.spip_doc_titre");
 				var description = titre.next("dd.spip_doc_descriptif");
 				titre = titre.html(); description = description.html();
-			
+
 				// au cas où le titre ou descriptif serait vide
 				if (titre == null) { titre = ''; }
 				if (description == null) { description = ''; }
 				return titre + description;
-			} 
+			}
 			else if ($(this).hasClass("sliderImg")) {
 				var titre = $(this).next(".imageLegend").html();
 				if (titre == null) { titre = ''; }

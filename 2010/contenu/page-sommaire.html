@@ -1,40 +1,42 @@
 <div class="contenu-principal">
 	<div class="container_16">
-		<BOUCLE_expo(ARTICLES){lang}{0,1}>
-		<h2>#TITRE</h2>
-		<div class="article grid_6 suffix_1 alpha">
-			[<div class="chapo">
-				(#CHAPO)
-			</div><!-- .chapo -->]
-			[<div class="texte">
-				(#TEXTE)
+		<div class="grid_16">
+			<BOUCLE_expo(ARTICLES){lang}{0,1}>
+			<h2>#TITRE</h2>
+			<div class="article grid_6 suffix_1 alpha">
+				[<div class="chapo">
+					(#CHAPO)
+				</div><!-- .chapo -->]
+				[<div class="texte">
+					(#TEXTE)
 
-				[<div class="ps">
-					(#PS)
-				</div><!-- .ps -->]
-				[<div class="notes">
-					(#NOTES)
-				</div><!-- .notes -->]
+					[<div class="ps">
+						(#PS)
+					</div><!-- .ps -->]
+					[<div class="notes">
+						(#NOTES)
+					</div><!-- .notes -->]
 
 
-			</div><!-- .texte -->]
-		</div><!-- .article -->
-		<div class="slider grid_9 omega">
-			<div class="scroll">
-				<ul>
-					<BOUCLE_portfolio(DOCUMENTS){id_article}{extension IN jpg,gif,png}{vu=non}{par num titre, titre}>
-					[<li>
-						<a href="[(#FICHIER|image_reduire{800,0}|extraire_attribut{src})]" class="sliderImg icone-lien mediabox" rel="portfolio#ID_ARTICLE" type="#MIME_TYPE">
-						(#FICHIER|image_reduire{520,0}|inserer_attribut{alt,[(#TITRE|textebrut)]})
-						</a>
-						[<div class="imageLegend">
-							(#DESCRIPTIF)
-						</div>]
-					</li>]
-					</BOUCLE_portfolio>
-				</ul>
-			</div><!-- .scroll -->
-		</div><!-- .slider -->
-		</BOUCLE_expo>
+				</div><!-- .texte -->]
+			</div><!-- .article -->
+			<div class="slider grid_9 omega">
+				<div class="scroll">
+					<ul>
+						<BOUCLE_portfolio(DOCUMENTS){id_article}{extension IN jpg,gif,png}{vu=non}{par num titre, titre}>
+						[<li>
+							<a href="[(#FICHIER|image_reduire{800,0}|extraire_attribut{src})]" class="sliderImg icone-lien mediabox" rel="portfolio#ID_ARTICLE" type="#MIME_TYPE">
+							(#FICHIER|image_reduire{520,0}|inserer_attribut{alt,[(#TITRE|textebrut)]})
+							</a>
+							[<div class="imageLegend">
+								(#DESCRIPTIF)
+							</div>]
+						</li>]
+						</BOUCLE_portfolio>
+					</ul>
+				</div><!-- .scroll -->
+			</div><!-- .slider -->
+			</BOUCLE_expo>
+		</div><!-- .grid_16 -->
 	</div><!-- .container_16 -->
 </div><!-- .contenu-principal -->

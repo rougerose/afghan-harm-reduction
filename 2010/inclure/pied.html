@@ -1,29 +1,31 @@
-<div class="container_16">
-	<div class="about grid_6 alpha">
-		<h2>About Us</h2>
-		[<p class="grid_4 alpha">(#DESCRIPTIF_SITE_SPIP|PTOBR)</p>]
-		[<p class="grid_2 omega"><a href="http://www.medecinsdumonde.org">(#LOGO_SITE_SPIP|inserer_attribut{alt,'M&eacute;decins du Monde'}|image_reduire{100,0})</a></p>]
-	</div><!-- .about -->
+<div class="container_16 clearfix">
+	<div class="grid_16">
+		<div class="about grid_6 alpha">
+			<h2>About Us</h2>
+			[<p class="grid_4 alpha">(#DESCRIPTIF_SITE_SPIP|PTOBR)</p>]
+			[<p class="grid_2 omega"><a href="http://www.medecinsdumonde.org">(#LOGO_SITE_SPIP|inserer_attribut{alt,'M&eacute;decins du Monde'}|image_reduire{100,0})</a></p>]
+		</div><!-- .about -->
 
-	<div class="follow grid_3 prefix_1">
-		<h2>Follow Us</h2>
-		<ul>
-			<li><a href="http://www.facebook.com/pages/Promote-Harm-Reduction-in-AfghanistanMdM/102238776497019">Facebook</a></li>
-			<li><a href="#URL_PAGE{backend}" rel="alternate" title="<:syndiquer_site:>">RSS</a></li>
-		</ul>
-	</div><!-- .follow -->
+		<div class="follow grid_3 prefix_1">
+			<h2>Follow Us</h2>
+			<ul>
+				<li><a href="http://www.facebook.com/pages/Promote-Harm-Reduction-in-AfghanistanMdM/102238776497019">Facebook</a></li>
+				<li><a href="#URL_PAGE{backend}" rel="alternate" title="<:syndiquer_site:>">RSS</a></li>
+			</ul>
+		</div><!-- .follow -->
 
 
-	<div class="contact grid_6 omega">
-		<h2>Contact Us</h2>
-		<BOUCLE_auteur(AUTEURS){id_auteur=3}{tout}>
-		[(#FORMULAIRE_ECRIRE_AUTEUR)]
-		</BOUCLE_auteur>
-	</div><!-- .contact -->
+		<div class="contact grid_6 omega">
+			<h2>Contact Us</h2>
+			<BOUCLE_auteur(AUTEURS){id_auteur=3}{tout}>
+			[(#FORMULAIRE_ECRIRE_AUTEUR)]
+			</BOUCLE_auteur>
+		</div><!-- .contact -->
 
-	<div class="credits">
-		<p class="credits">Site created with <a href="http://www.spip.net">SPIP</a>. Design & development by <a href="http://www.rouge-rose.net">christophe le drean</a>.</p>
-	</div><!-- .credits -->
+		<div class="credits grid_16">
+			<p class="credits">Site created with <a href="http://www.spip.net">SPIP</a>. Design & development by <a href="http://www.rouge-rose.net">christophe le drean</a>.</p>
+		</div><!-- .credits -->
 
-	[<p class="website-info">(#CHEMIN{img/website-info.png}|balise_img{'Website under construction'})</p>]
+		[<p class="website-info">(#CHEMIN{img/website-info.png}|balise_img{'Website under construction'})</p>]
+	</div><!-- .grid_16 -->
 </div><!-- .container_16 -->
