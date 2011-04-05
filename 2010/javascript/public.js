@@ -8,6 +8,11 @@ $(document).ready(function(){
 			$("#page").toggleClass("grille");
 		});
 
+	$("#barreNav").superfish({
+		animation:   {opacity:'show',height:'show'},
+		autoArrows: false
+	});
+
 
 	/*
 	 * Slider (cf. plugins.js)

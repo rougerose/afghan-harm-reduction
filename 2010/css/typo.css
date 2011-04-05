@@ -15,9 +15,26 @@ html { /* background: url('../img/line-height.png');*/ }
 		color: #444;
 		-webkit-text-size-adjust: none; /* Forbid mobile webkit to adjust text size */ }
 
+/* ==================================== */
+/* =Fontes								*/
+/* ==================================== */
+h1,h2,h3,h4,h5,h6,
+p a.read-more,
+#nav li,
+.vevent dt {
+	font-family: "HelveticaNeue-CondensedBold","Helvetica Neue Condensed Bold","Helvetica Neue", Helvetica, "Arial Black", Arial, sans-serif;
+	font-stretch: condensed; /* pour Firefox */
+	text-transform: uppercase; }
+
+.surtitreRubrique {
+	font-family: "HelveticaNeue-CondensedBlack","Helvetica Neue Condensed Black","Helvetica Neue", Helvetica, "Arial Black", Arial, sans-serif;
+	font-stretch: condensed; /* pour Firefox */
+	font-weight: 800;
+	text-transform: uppercase; }
+
 
 /* ==================================== */
-/* =Links=							*/
+/* =Links=								*/
 /* ==================================== */
 a { color: #000; font-weight: bold; text-decoration: none; }
 a:hover { text-decoration: underline; color: #000 !important; }
@@ -25,10 +42,7 @@ a:visited {  }
 a:active, a:focus { position: relative; top: 1px; outline: thin dotted; }
 a:active { outline: none; }
 
-p a.read-more { 
-	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold","Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-stretch: condensed; /* pour Firefox */
-	text-transform: uppercase; }
+p a.read-more { }
 
 .ps a { color: #333; }
 
@@ -39,18 +53,17 @@ p a.read-more {
 /* =Headings=							*/
 /* ==================================== */
 
-h1,h2,h3,h4,h5,h6 { 
-	font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold","Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-stretch: condensed; /* pour Firefox */
-	text-transform: uppercase;
-	color: #000; }
-	
-#contenu h2 { font-size: 26px; line-height: 1em; margin-bottom: 1em; margin-top: 1.5em; }
+h1,h2,h3,h4,h5,h6 { color: #000; }
+
+h2.surtitreRubrique {
+	font-size: 18px; line-height: 1em; margin-bottom: 1em; }
 #pied h2 { font-size: 18px; line-height: 1em; margin-bottom: .5em; }
-	
+
+h3.entry-title, h3.summary { font-size: 16px; line-height: 1em; margin-bottom: .5em; }
+
 
 /* ==================================== */
 /* =Paragraphs, etc...=					*/
 /* ==================================== */
 
-.contenu-principal p { font-size: 13px; margin-bottom: 1.5em; }
+p { font-size: 13px; margin-bottom: 1.5em; }

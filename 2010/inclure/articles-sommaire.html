@@ -1,0 +1,12 @@
+#SET{articles_selection,#ENV{articles_selection}}
+
+<B_articles>
+<div class="liste articles sommaire hfeed">
+	<h2 class="surtitreRubrique"><:dernieres_actu:></h2>
+	#ANCRE_PAGINATION
+	<BOUCLE_articles(ARTICLES){lang}{id_article IN #GET{articles_selection}}{pagination 3}{doublons}>
+	[(#INCLURE{fond=inclure/article-resume, id_article, env})]
+	</BOUCLE_articles>
+	[<p class="pagination bas">(#PAGINATION{page})</p>]
+</div><!-- liste articles sommaire -->
+</B_articles>

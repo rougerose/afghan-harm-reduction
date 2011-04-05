@@ -7,7 +7,7 @@
 /*	Version :	1							*/
 /* ======================================== */
 
-#page { xpadding-bottom: 3em; }
+#page {  }
 
 
 /* ==================================== */
@@ -29,7 +29,8 @@
 			#entete #logo #baseline {
 				/* déclaration explicite du HN Light pour Opera qui ne prend pas en compte correctement font-weight */
 				font-family: "Helvetica Neue Light", "Helvetica Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; font-weight: 200;
-				font-size: 26px;  line-height: 1.5em; }
+				font-size: 26px;  line-height: 1.5em;
+				margin-bottom: 0; }
 
 /* ==================================== */
 /* =Navigation principale (#nav)=		*/
@@ -41,7 +42,6 @@
 		position: absolute; right: 0; top: -1.7em;
  		float: right; list-style : none outside none; }
 		#nav li {
-			font-family: "Helvetica Neue Light", "Helvetica Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; font-weight: 200;
 			font-size: 12px;
 			text-transform: uppercase;
 			float:left;  }
@@ -54,7 +54,7 @@
 				#nav li.on a {
 					color: #000;
 					background: url('../img/barreNavigation_on.png') no-repeat scroll bottom center; }
-			#nav ul ul { top: 2em; right: auto; }
+			#nav ul ul { top: 2em; right: auto; left: 0 }
 
 
 /* ==================================== */
@@ -70,7 +70,7 @@
 /* =Contenu=							*/
 /* ==================================== */
 
-#contenu { margin-top: 1.5em; padding-bottom: 3em; }
+#contenu { margin-top: 4.5em; padding-bottom: 3em; }
 	#contenu .ps p, #contenu .notes p { font-size: 12px; color: #666; }
 
 /* ==================================== */
@@ -79,7 +79,7 @@
 
 #pied {
 	background-color:#fff;
-	margin: 0; padding: 0 0 0; }
+	margin: 0; padding: 0; }
 	#pied .container_16 {
 		background: transparent url('../img/drapeau.png') repeat-y 0 0; }
 	#pied .container_16 > .grid_16 {

@@ -1,6 +1,6 @@
 <div class="container_16">
 	<div class="grid_16">
-		<ul>
+		<ul id="barreNav">
 			<li[(#ENV{composition}|=={sommaire}|?{' class="on"'})]><a href="#URL_SITE_SPIP"><:accueil:></a></li>
 			<BOUCLE_menuPrincipal(RUBRIQUES){racine}{lang}{par num titre, titre}>
 			<li[ class="(#EXPOSE)"]>

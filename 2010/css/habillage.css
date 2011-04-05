@@ -7,13 +7,122 @@
 /*	Version :	1							*/
 /* ======================================== */
 
+/* ===================================  */
+/*	=Hentry								*/
+/* ===================================  */
+.hentry { margin-bottom: 3em; }
+	.hentry .slider { margin-bottom: 1.5em; }
+
+	.meta-publi {
+		list-style-type: none;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		clear: both;
+		background: url('../img/fleches-sprite.png') repeat-x scroll 0 -24px; }
+		.meta-publi li {
+			text-transform: uppercase;
+			font-size: 10px; line-height: 10px;
+			float: left; background-color: #fff;
+			padding-right: 5px }
+
+
+
+
+	a.suite {
+		font-size: 11px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		text-transform: uppercase;
+		background: url('../img/fleches-sprite.png') no-repeat scroll top right;
+		padding-right: 16px; }
+
+
+/* ===================================  */
+/*	=Hcalendar							*/
+/* ===================================  */
+.vevent {  }
+	.vevent dt {
+		background-color: #000; color: #fff;
+		text-align: center;
+		float: left;
+		margin-right: 10px;
+		-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+		   -moz-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+		     -o-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+		        box-shadow: 0 0 5px rgba(0,0,0,0.3);
+		-webkit-border-radius: 4px;
+		   -moz-border-radius: 4px;
+		        border-radius: 4px; }
+		.vevent dt .jour { font-size: 36px; line-height: 36px; }
+		.vevent dt .sep.first { display: none; }
+		.vevent dt .mois-annee {
+			font-size: 12px; font-weight: bold; line-height: 18px;
+			background-color: #600099;
+			margin-top: 5px; padding: 2px 5px;
+			display: block; }
+		.vevent dd { overflow: hidden; }
+/*
+.vcalendar {  }
+.page_article .vcalendar { margin-bottom: 36px; }
+	.page_rubrique .vevent {
+		margin: 0 0 18px 0; }
+	.page_article .vevent { margin: 0 0 18px; }
+		.page_rubrique .vevent dt, #extra .liste dt, .secondaire .liste dt {
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; text-align: center;
+			background-color: #8234b1; color: #fff;
+			float: left;
+			padding: 5px;
+			border-radius: 4px;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			box-shadow: 0 0 5px rgba(72,0,114,0.3);
+			-webkit-box-shadow: 0 0 5px rgba(72,0,114,0.3);
+			-moz-box-shadow: 0 0 5px rgba(72,0,114,0.3); }
+		.page_article .vevent dt {
+			font: bold 12px/14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+			color: #b80000;
+			border-bottom: 1px dotted #ccc;
+			margin: 0 0 9px; padding-bottom: 9px; }
+			.vevent dt .jour {
+				font-size: 36px; line-height: 30px; }
+			.vevent dt .mois-annee, #extra .liste dt .mois-annee, .secondaire .liste dt .mois-annee {
+				font-size: 11px; font-weight: bold; line-height: 18px;
+				background-color: #600099;
+				margin-top: 5px; padding: 2px 5px;
+				display: block;
+				box-shadow: 0 0 5px #333;
+				-webkit-box-shadow: 0 0 5px #333;
+				-moz-box-shadow: 0 0 4px #333; }
+			.vevent dt .sep.first, #extra .liste dt .sep.first, .secondaire .liste dt .sep.first { display: none; }
+			.page_rubrique .vevent dd { margin-left: 6em; }
+			.page_article .vevent dd {  }
+				.vevent dd h3 { margin: 36px 0 9px 0; }
+				.vevent dd .infos {
+						font: 12px/14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+						text-align: left;
+						border-bottom: 1px dotted #ccc;
+						margin: 0 0 9px; padding: 0 0 9px 7em; }
+					.vevent dd .label {
+						color: #600099; font-weight: bold;
+						display: block; float: left;
+						margin-left: -7em; width: 7em; }
+*/
+
+/* ===================================  */
+/*	=Pagination							*/
+/* ===================================  */
+.pagination {
+	border-top: 1px dotted #ccc; border-bottom: 1px solid #000;
+	text-align: center;
+	font-size: 11px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+	.pagination .pagination_label { text-transform: uppercase; }
+	.pagination .on { font-size: 14px; line-height: 16.5px; }
+
+
 
 /* ===================================  */
 /*	=Slider								*/
 /* ===================================  */
 .slider {
-	position: relative; width: 580px; }
-	#slider .navigation { 
+	position: relative; width: 460px; }
+	#slider .navigation {
 		position:absolute;
 		z-index: 4; }
 		#slider .navigation li { display: inline; }
@@ -21,12 +130,12 @@
 		position: relative; z-index: 2;
 		overflow: auto;
 		overflow-x: hidden;
-		width: 520px; }
+		width: 460px; }
 		.scroll li { list-style: none; }
 			.scroll li a { display: block; }
 				.scroll li img {  }
 		.scrollConteneur {}
-		.scrollBouton { 
+		.scrollBouton {
 			display: block;
 			background: rgba(178,178,178,0.65) url('../img/sprite.png') no-repeat;
 			width: 40px; height: 60px;
@@ -35,12 +144,12 @@
 		.scrollBouton.gauche { left:-20px; background-position: 3px 13px; }
 		.scrollBouton.droite { right:-20px; background-position: -27px 13px; }
 		.scrollBouton:hover { z-index: 4; background-color: rgba(0,0,0,0.7); }
-		.imageLegend { 
+		.imageLegend {
 			position: absolute; left: 0; bottom: 0;
 			background-color: rgba(0,0,0,0.4);
 			color: #fff;
 			padding: 4px 8px; }
-			.contenu-principal .imageLegend p { 
+			.contenu-principal .imageLegend p {
 				margin-bottom: 0;
 				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 				font-size: 12px; }
@@ -52,7 +161,7 @@
 
 a.icone-lien { position: relative; }
 	a.icone-lien span.icone-loupe {
-		height: 16px; width: 16px; 
+		height: 16px; width: 16px;
 		background: transparent url('../img/sprite.png') no-repeat -48px -80px;
 		position: absolute; z-index: 20; top: 50%; left: 50%; }
 
@@ -77,7 +186,7 @@ a.icone-lien { position: relative; }
 #cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
 
 
-/* 
+/*
     ColorBox example user style
     The following rules are ordered and tabbed in a way that represents the
     order/nesting of the generated HTML, so that the structure easier to understand.
@@ -91,8 +200,8 @@ a.icone-lien { position: relative; }
 			padding: 20px;
 			background-color: #000; }
         #cboxTitle {
-			position:absolute; bottom:0; left:0; 
-			color:#fff; 
+			position:absolute; bottom:0; left:0;
+			color:#fff;
 			font-size: 12px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 			margin: 0 8px 0 13px; }
 			#cboxTitle h3, #cboxTitle h4 { font-size: 13px; }
@@ -107,16 +216,16 @@ a.icone-lien { position: relative; }
 			margin-top: -22px; }
 		#cboxPrevious {
 			left: 0px; }
-        #cboxNext { 
+        #cboxNext {
 			right: 0px;
 	 		background-position: -64px -64px;}
 		#cboxPrevious:hover { background-position: -48px -48px; background-color: #fff; }
 		#cboxNext:hover { background-position: -64px -48px; background-color: #fff; }
-		
+
         #cboxLoadingOverlay { background: #000 url('../img/loading.gif') 50% 40% no-repeat; }
         #cboxClose {
-			position:absolute; top: 0px; left: 0px; 
-			display:block; 
+			position:absolute; top: 0px; left: 0px;
+			display:block;
 			color:#ddd;
 			text-indent: -9999px;
 			height: 16px; width: 16px;
