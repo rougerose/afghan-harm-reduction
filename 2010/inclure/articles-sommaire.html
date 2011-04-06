@@ -4,7 +4,7 @@
 <div class="liste articles sommaire hfeed">
 	<h2 class="surtitreRubrique"><:dernieres_actu:></h2>
 	#ANCRE_PAGINATION
-	<BOUCLE_articles(ARTICLES){lang}{id_article IN #GET{articles_selection}}{pagination 3}{doublons}>
+	<BOUCLE_articles(ARTICLES){lang}{id_article IN #GET{articles_selection}}{pagination 4}{doublons}>
 	[(#INCLURE{fond=inclure/article-resume, id_article, env})]
 	</BOUCLE_articles>
 	[<p class="pagination bas">(#PAGINATION{page})</p>]

@@ -59,51 +59,7 @@
 			display: block; }
 		.vevent dd { overflow: hidden; }
 /*
-.vcalendar {  }
-.page_article .vcalendar { margin-bottom: 36px; }
-	.page_rubrique .vevent {
-		margin: 0 0 18px 0; }
-	.page_article .vevent { margin: 0 0 18px; }
-		.page_rubrique .vevent dt, #extra .liste dt, .secondaire .liste dt {
-			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; text-align: center;
-			background-color: #8234b1; color: #fff;
-			float: left;
-			padding: 5px;
-			border-radius: 4px;
-			-webkit-border-radius: 4px;
-			-moz-border-radius: 4px;
-			box-shadow: 0 0 5px rgba(72,0,114,0.3);
-			-webkit-box-shadow: 0 0 5px rgba(72,0,114,0.3);
-			-moz-box-shadow: 0 0 5px rgba(72,0,114,0.3); }
-		.page_article .vevent dt {
-			font: bold 12px/14px "Helvetica Neue", Helvetica, Arial, sans-serif;
-			color: #b80000;
-			border-bottom: 1px dotted #ccc;
-			margin: 0 0 9px; padding-bottom: 9px; }
-			.vevent dt .jour {
-				font-size: 36px; line-height: 30px; }
-			.vevent dt .mois-annee, #extra .liste dt .mois-annee, .secondaire .liste dt .mois-annee {
-				font-size: 11px; font-weight: bold; line-height: 18px;
-				background-color: #600099;
-				margin-top: 5px; padding: 2px 5px;
-				display: block;
-				box-shadow: 0 0 5px #333;
-				-webkit-box-shadow: 0 0 5px #333;
-				-moz-box-shadow: 0 0 4px #333; }
-			.vevent dt .sep.first, #extra .liste dt .sep.first, .secondaire .liste dt .sep.first { display: none; }
-			.page_rubrique .vevent dd { margin-left: 6em; }
-			.page_article .vevent dd {  }
-				.vevent dd h3 { margin: 36px 0 9px 0; }
-				.vevent dd .infos {
-						font: 12px/14px "Helvetica Neue", Helvetica, Arial, sans-serif;
-						text-align: left;
-						border-bottom: 1px dotted #ccc;
-						margin: 0 0 9px; padding: 0 0 9px 7em; }
-					.vevent dd .label {
-						color: #600099; font-weight: bold;
-						display: block; float: left;
-						margin-left: -7em; width: 7em; }
-*/
+
 
 /* ===================================  */
 /*	=Pagination							*/
