@@ -23,6 +23,7 @@
 		#entete #logo { margin-bottom: 1em }
 		#entete #logo #titre {
 			font-size: 38px; line-height: 1em;
+			margin: 0;
 			/* pour Firefox http://log.edds.me.uk/post/436921532/firefox-3-6s-css-font-stretch-support */
 			font-stretch: condensed;
 			text-transform: uppercase; }

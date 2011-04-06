@@ -5,7 +5,7 @@ $(document).ready(function(){
 	 */
 		$("#spip-admin").append("<a id='grille' class='spip-admin-boutons' href='#'>Grille</a>");
 		$("#grille").click(function(){
-			$("#page").toggleClass("grille");
+			$(".grid_16").toggleClass("grille");
 		});
 
 	$("#barreNav").superfish({
@@ -34,7 +34,7 @@ $(document).ready(function(){
 	 * Afficher/masquer une partie d'un texte.
 	 * Bricolage qui tiendra pour le site tant qu'il n'a qu'une seule page
 	 */
-	$(".article .texte").each(function(){
+/*	$(".article .texte").each(function(){
 		$("> p",this).slice(2).wrapAll('<div class="more" />').parent("div.more").hide();
 		$(".ps,.notes").appendTo(".more");
 		$("> p:visible:last",this).append(' <a href="#" class="read-more">MORE</a>');
@@ -43,7 +43,7 @@ $(document).ready(function(){
 			return false;
 		});
 	});
-
+*/
 	/*
 	 * Afficher/masquer l'info "website under construction"
 	 */

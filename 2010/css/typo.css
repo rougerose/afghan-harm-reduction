@@ -19,6 +19,7 @@ html { /* background: url('../img/line-height.png');*/ }
 /* =Fontes								*/
 /* ==================================== */
 h1,h2,h3,h4,h5,h6,
+#logo #titre,
 p a.read-more,
 #nav li,
 .vevent dt {
@@ -31,6 +32,10 @@ p a.read-more,
 	font-stretch: condensed; /* pour Firefox */
 	font-weight: 800;
 	text-transform: uppercase; }
+
+.articles .meta-publi,
+.surtitre, .soustitre {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 
 /* ==================================== */
@@ -54,6 +59,8 @@ p a.read-more { }
 /* ==================================== */
 
 h1,h2,h3,h4,h5,h6 { color: #000; }
+
+.article h1 { font-size: 28px; }
 
 h2.surtitreRubrique {
 	font-size: 18px; line-height: 1em; margin-bottom: 1em; }
