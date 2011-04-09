@@ -5,7 +5,7 @@ $(document).ready(function(){
 	 */
 		$("#spip-admin").append("<a id='grille' class='spip-admin-boutons' href='#'>Grille</a>");
 		$("#grille").click(function(){
-			$(".grid_16").toggleClass("grille");
+			$(".grid_16,#contenu").toggleClass("grille");
 		});
 
 	$("#barreNav").superfish({

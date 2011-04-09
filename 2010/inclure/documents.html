@@ -1,0 +1,47 @@
+[(#REM)
+	Liste des autres documents joints
+]
+<B_documents_joints>
+<div id="docs" class="liste documents documents_joints clearfix">
+	<h2 class="spip"><:documents:></h2>
+	<BOUCLE_documents_joints(DOCUMENTS){id_article?}{id_rubrique?}{extension !IN gif,jpg,png}{vu=non}{par num titre, date}>
+	<dl id="document-#ID_DOCUMENT" class="grid_4 document[ numero-(#COMPTEUR_BOUCLE|modulo{2}) [(#COMPTEUR_BOUCLE|modulo{2}|=={1}|oui)alpha] [(#COMPTEUR_BOUCLE|modulo{2}|=={0}|oui)omega]]">
+		<dt>[(#LOGO_DOCUMENT|#URL_DOCUMENT)]</dt>
+		<dd>
+			[<h3><a href="(#URL_DOCUMENT)" title="<:bouton_telecharger:>" type="#MIME_TYPE">[(#TITRE|sinon{<:document_sans_titre:>})]</a></h3>]
+			<p class="descriptif">
+				[(#DESCRIPTIF|PtoBR)] <span><:fichier:> #TYPE_DOCUMENT[ &ndash; (#TAILLE|taille_en_octets)]</span>
+			</p>
+			[<p class="descriptif date">
+				 (#DATE|affdate)
+			</p>]
+		</dd>
+	</dl>
+	</BOUCLE_documents_joints>
+</div>
+</B_documents_joints>
+
+[(#REM) Portfolio : album d'images ]
+<B_documents_portfolio>
+<div id="images" class="documents documents_portfolio">
+	<h2 class="spip"><:info_portfolio:></h2>
+
+	<div class="slider">
+		<div class="scroll">
+			<ul>
+				<BOUCLE_portfolio(DOCUMENTS){id_article}{extension IN jpg,gif,png}{vu=non}{par num titre, titre}>
+				[<li>
+					<a href="[(#FICHIER|image_reduire{800,0}|extraire_attribut{src})]" class="sliderImg icone-lien mediabox" rel="portfolio#ID_ARTICLE" type="#MIME_TYPE">
+					(#FICHIER|image_reduire{520,0}|inserer_attribut{alt,[(#TITRE|textebrut)]})
+					</a>
+					[<div class="imageLegend">
+						(#DESCRIPTIF)
+					</div>]
+				</li>]
+				</BOUCLE_portfolio>
+			</ul>
+		</div><!-- .scroll -->
+	</div><!-- .slider -->
+
+</div><!-- #images -->
+</B_documents_portfolio>

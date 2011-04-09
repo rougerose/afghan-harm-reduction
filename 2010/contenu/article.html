@@ -1,52 +1,48 @@
 <BOUCLE_article(ARTICLES){id_article}>
-<div class="contenu-principal article">
-	<div class="container_16">
-		<div class="grid_16 hentry">
+<div class="contenu-principal article grid_9 suffix_1 alpha">
+	<div class="hentry">
+		<div class="titre">
+			[<p class="surtitre">(#SURTITRE)</p>]
+			[<h1 class="entry-title">(#TITRE)</h1>]
+			[<p class="soustitre">(#SOUSTITRE)</p>]
+		</div><!-- .titre -->
 
-			[(#REM) colonne principale ]
-			<div class="grid_9 suffix_1 alpha">
-				<div class="titre">
-					[<p class="surtitre">(#SURTITRE)</p>]
-					[<h1 class="entry-title">(#TITRE)</h1>]
-					[<p class="soustitre">(#SOUSTITRE)</p>]
-				</div><!-- .titre -->
+		<B_evenement>
+		<div class="evenement vcalendar">
+			<BOUCLE_evenement(EVENEMENTS){id_article}>
+			[(#INCLURE{fond=inclure/evenement-resume,id_evenement,id_article,env})]
+			</BOUCLE_evenement>
+		</div><!-- .evenement -->
+		</B_evenement>
 
-				<B_evenement>
-				<div class="evenement vcalendar">
-					<BOUCLE_evenement(EVENEMENTS){id_article}>
-					[(#INCLURE{fond=inclure/evenement-resumeı,id_evenement,id_article,env})]
-					</BOUCLE_evenement>
-				</div><!-- .evenement -->
-				</B_evenement>
+		[<div class="#EDIT{chapo} chapo surlignable entry-summary">
+			(#CHAPO|image_reduire{250,0})
+		</div><!-- .chapeau -->]
 
-				[<div class="#EDIT{chapo} chapo surlignable entry-summary">
-					(#CHAPO|image_reduire{250,0})
-				</div><!-- .chapeau -->]
+		[<div class="#EDIT{texte} texte surlignable entry-content">
+			(#TEXTE|image_reduire{250,0})
+		</div><!-- .entry-content -->]
 
-				[<div class="#EDIT{texte} texte surlignable entry-content">
-					(#TEXTE|image_reduire{250,0})
-				</div><!-- .entry-content -->]
+		[<p class="#EDIT{hyperlien} hyperlien"><span class="label"><:voir_en_ligne:> </span><a href="(#URL_SITE)" class="spip_out">[(#NOM_SITE|sinon{[(#URL_SITE|couper{80})]})]</a></p>]
 
-				[<p class="#EDIT{hyperlien} hyperlien"><span class="label"><:voir_en_ligne:> : </span><a href="(#URL_SITE)" class="spip_out">[(#NOM_SITE|sinon{[(#URL_SITE|couper{80})]})]</a></p>]
+		[<div class="ps">
+			<h3 class="spip"><:ps:></h3>
+			<div class="#EDIT{ps} surlignable">(#PS|image_reduire{200,0})</div>
+		</div><!-- .ps -->]
 
-				[<div class="ps">
-					<h3 class="spip"><:ps:></h3>
-					<div class="#EDIT{ps} surlignable">(#PS|image_reduire{200,0})</div>
-				</div><!-- .ps -->]
+		[(#REM) Gestion du portfolio et des documents ]
+		[(#INCLURE{fond=inclure/documents}{id_article})]
 
-				[(#REM) Gestion du portfolio et des documents ]
-				[(#INCLURE{fond=inclure/documents}{id_article})]
+		[<div class="notes surlignable"><h3 class="spip pas_surlignable"><:info_notes:></h3>(#NOTES)</div>]
 
-				[<div class="notes surlignable"><h3 class="spip pas_surlignable"><:info_notes:></h3>(#NOTES)</div>]
+		<ul class="meta-publi clearfix">
+			<li class="permalink"><a rel="bookmark" href="#URL_ARTICLE"><:permalink:></a></li>
+			<li class="info-publi updated published">[<span class="value" title="[(#DATE|date_iso)]"><:publie:> (#DATE|affdate)</span>]</li>
+			<B_auteurs>
+			<li><:par:> <span class="vcard author"><BOUCLE_auteurs(AUTEURS){id_article}{', '}><a class="contrib-link fn" title="Bio page for #NOM" href="#URL_AUTEUR">#NOM</a></BOUCLE_auteurs></span></li>
+			</B_auteurs>
+		</ul>
+	</div><!-- .hentry -->
 
-			</div><!-- .grid_10 -->
-
-			[(#REM) colonne secondaire ]
-			<div class="grid_6 omega">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div><!-- .grid_6 omega -->
-
-		</div><!-- .grid_16 -->
-	</div><!-- .container_16 -->
 </div><!-- .contenu-principal -->
 </BOUCLE_article>

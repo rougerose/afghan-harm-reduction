@@ -1,63 +1,59 @@
-<div class="contenu-principal">
-	<div class="container_16">
-		<div class="grid_16">
-			[(#REM) colonne gauche ]
+<div class="contenu-principal grid_16">
+	[(#REM) colonne gauche ]
 
-			<BOUCLE_selections(ARTICLES pb_selection){par ordre}{spip_pb_selection.id_rubrique=0}{doublons}>
-			[(#SET_PUSH{articles_selection,#ID_ARTICLE})]
-			</BOUCLE_selections>
+	<BOUCLE_selections(ARTICLES pb_selection){par ordre}{spip_pb_selection.id_rubrique=0}{doublons}>
+	[(#SET_PUSH{articles_selection,#ID_ARTICLE})]
+	</BOUCLE_selections>
 
-			<div class="grid_7 suffix_1 alpha">
-				<INCLURE{fond=inclure/articles-sommaire,env,ajax,articles_selection=#GET{articles_selection}}>
-			</div><!-- .grid_7 suffix_1 -->
+	<div class="grid_7 suffix_1 alpha">
+		<INCLURE{fond=inclure/articles-sommaire,env,ajax,articles_selection=#GET{articles_selection}}>
+	</div><!-- .grid_7 suffix_1 -->
 
 
-			[(#REM) colonne droite ]
-			<div class="grid_8 omega">
-				[(#REM) portfolios ]
-				<div class="liste portfolios sommaire hfeed">
-					<h2 class="surtitreRubrique"><:portfolio:></h2>
-					<BOUCLE_art_portfolios(ARTICLES){lang}{0,1}>
-					<div id="article-#ID_ARTICLE" class="item hentry">
-						<h3 class="entry-title titre"><a href="#URL_ARTICLE" rel="bookmark">#TITRE</a></h3>
-						<div class="slider">
-							<div class="scroll">
-								<ul>
-									<BOUCLE_portfolio(DOCUMENTS){id_article}{extension IN jpg,gif,png}{vu=non}{par num titre, titre}>
-									[<li>
-										<a href="[(#FICHIER|image_reduire{800,0}|extraire_attribut{src})]" class="sliderImg icone-lien mediabox" rel="portfolio#ID_ARTICLE" type="#MIME_TYPE">
-										(#FICHIER|image_reduire{460,0}|inserer_attribut{alt,[(#TITRE|textebrut)]})
-										</a>
-										[<div class="imageLegend">
-											(#DESCRIPTIF)
-										</div>]
-									</li>]
-									</BOUCLE_portfolio>
-								</ul>
-							</div><!-- .scroll -->
-						</div><!-- .slider -->
-						[<p class="intro">(#INTRODUCTION|PtoBR) <a href="#URL_ARTICLE" class="suite"><:lire_la_suite:></a></p>]
-						<ul class="meta-publi clearfix">
-							<li class="info-publi updated published">[<span class="value" title="[(#DATE|date_iso)]"><:publie:> (#DATE|affdate)</span>]</li>
+	[(#REM) colonne droite ]
+	<div class="grid_8 omega">
+		[(#REM) portfolios ]
+		<div class="liste portfolios sommaire hfeed">
+			<h2 class="surtitreRubrique"><:portfolio:></h2>
+			<BOUCLE_art_portfolios(ARTICLES){lang}{0,1}>
+			<div id="article-#ID_ARTICLE" class="item hentry">
+				<h3 class="entry-title titre"><a href="#URL_ARTICLE" rel="bookmark">#TITRE</a></h3>
+				<div class="slider">
+					<div class="scroll">
+						<ul>
+							<BOUCLE_portfolio(DOCUMENTS){id_article}{extension IN jpg,gif,png}{vu=non}{par num titre, titre}>
+							[<li>
+								<a href="[(#FICHIER|image_reduire{800,0}|extraire_attribut{src})]" class="sliderImg icone-lien mediabox" rel="portfolio#ID_ARTICLE" type="#MIME_TYPE">
+								(#FICHIER|image_reduire{460,0}|inserer_attribut{alt,[(#TITRE|textebrut)]})
+								</a>
+								[<div class="imageLegend">
+									(#DESCRIPTIF)
+								</div>]
+							</li>]
+							</BOUCLE_portfolio>
 						</ul>
-					</div>
-					</BOUCLE_art_portfolios>
-				</div><!-- .liste portfolio -->
+					</div><!-- .scroll -->
+				</div><!-- .slider -->
+				[<p class="intro">(#INTRODUCTION|PtoBR) <a href="#URL_ARTICLE" class="suite"><:lire_la_suite:></a></p>]
+				<ul class="meta-publi clearfix">
+					<li class="info-publi updated published">[<span class="value" title="[(#DATE|date_iso)]"><:publie:> (#DATE|affdate)</span>]</li>
+				</ul>
+			</div>
+			</BOUCLE_art_portfolios>
+		</div><!-- .liste portfolio -->
 
-				[(#REM) agenda ]
-				<B_events>
-				<h2 class="surtitreRubrique"><:agenda:></h2>
-				<BOUCLE_events(EVENEMENTS){id_rubrique=10}{statut=publie}{date_debut>=#ENV{date}}>
-				<dl id="id-#ID_EVENEMENT" class="vevent clearfix">
-					<dt class="dtstart"><span class="value" title="[(#DATE_DEBUT|affdate{c})]">[<span class="jour">(#DATE_DEBUT|jour)</span>[<span class="sep first">/</span><span class="mois-annee">(#DATE_DEBUT|mois)]<span class="sep">/</span>[(#DATE_DEBUT|annee)</span>]]</dt>
-					<dd>
-						<h3 class="summary"><a href="#URL_ARTICLE">#TITRE</a></h3>
-						[<p class="description">(#DESCRIPTIF|PtoBR) <a href="#URL_ARTICLE" class="suite"><:lire_la_suite:></a></p>]
-					</dd>
-				</dl>
-				</BOUCLE_events></B_events>
+		[(#REM) agenda ]
+		<B_events>
+		<h2 class="surtitreRubrique"><:agenda:></h2>
+		<BOUCLE_events(EVENEMENTS){id_rubrique=10}{statut=publie}{date_debut>=#ENV{date}}>
+		<dl id="id-#ID_EVENEMENT" class="vevent clearfix">
+			<dt class="dtstart"><span class="value" title="[(#DATE_DEBUT|affdate{c})]">[<span class="jour">(#DATE_DEBUT|jour)</span>[<span class="sep first">/</span><span class="mois-annee">(#DATE_DEBUT|mois)]<span class="sep">/</span>[(#DATE_DEBUT|annee)</span>]]</dt>
+			<dd>
+				<h3 class="summary"><a href="#URL_ARTICLE">#TITRE</a></h3>
+				[<p class="description">(#DESCRIPTIF|PtoBR) <a href="#URL_ARTICLE" class="suite"><:lire_la_suite:></a></p>]
+			</dd>
+		</dl>
+		</BOUCLE_events></B_events>
 
-			</div><!-- .grid_8 omega -->
-		</div><!-- .grid_16 -->
-	</div><!-- .container_16 -->
+	</div><!-- .grid_8 omega -->
 </div><!-- .contenu-principal -->

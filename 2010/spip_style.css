@@ -1,0 +1,82 @@
+/* SPIP-STYLE                                                           */
+/* Cette feuille contient les styles associes au code genere par SPIP.  */
+/* Ces styles sont indispensables et doivent necessairement etre        */
+/* definis pour le bon fonctionnement de vos squelettes.                */
+
+
+/* Intertitre */
+h3.spip {  }
+hr.spip {
+	background-color: #000;
+	border: none;
+	height: 2px; width: 60%;
+	margin: 3em auto; }
+
+/* Listes SPIP */
+ul.spip, ol.spip { margin-bottom: 1.5em; }
+ul.spip { list-style-position: outside; }
+	ul.spip ul.spip { margin-bottom: 0; margin-left: 20px; }
+ol.spip { list-style-type: decimal; list-style-position: outside; }
+	ul.spip li, ol.spip li { margin-left: 1.4em; font-size: 13px; }
+
+/* Citations, code et poesie */
+/* blockquote.spip { margin: 2em 0; padding-left: 1em; border-left: 0.30em solid; } */
+blockquote.spip_poesie { margin: 2em 0; padding-left: 1em; border-left: 1px solid; font-family: Garamond, Georgia, Times, serif; font-size:120%; }
+blockquote.spip_poesie div { text-indent: -3em; margin-left: 3em; }
+
+p q { }
+blockquote {
+	background-color: #f0f0f0;
+	display: block; }
+blockquote p { padding-left: 50px; padding-right: 10px; }
+blockquote p:first-child { padding-top: .5em; }
+blockquote p:last-child { padding-bottom: .5em; }
+
+.spip_code, .spip_cadre { font-family: Courier, "Courier New", monospace; color: #000; }
+.spip_cadre {  background-color: #F4F8F8; border: 1px inset; }
+div.spip_code, .spip_cadre { margin-bottom: 1em;  }
+
+.spip_surligne { background-color: #ffed2a; padding: 2px; border: 1px solid #000; border-color: #fffbcc #e5d526 #e5d526 #fffbcc; }
+
+/* Tableaux */
+table.spip {
+	margin:0 0 1.5em;
+	border-collapse: collapse; border-spacing: 0;
+	width: 100%; }
+
+	table.spip caption {
+		caption-side: top; /* bottom pas pris en compte par IE */
+		text-align: left; font-size: 14px;
+		margin-bottom: .5em; }
+	table.spip tr.row_first {  }
+	table.spip tr.row_odd { background: rgb(240,240,240); }
+	table.spip tr.row_even {  }
+	table.spip th, table.spip td {
+		text-align: left;
+		padding: 0.20em 0.40em;
+		border: 1px solid #444; border-width: 1px 0; }
+	table.spip th:first-child, table.spip td:first-child { border-left-width: 1px; }
+	table.spip th:last-child, table.spip td:last-child { border-right-width: 1px; }
+	table.spip th {
+		vertical-align: bottom;
+		color: #fff; background-color: #444; }
+	table.spip td { vertical-align: top; }
+
+/* Logos, documents et images */
+img, .spip_logos { margin: 0; padding: 0; border: 0; }
+.spip_documents { text-align: center; line-height: normal; }
+.spip_documents p { margin: 0.10em; padding: 0; }
+.spip_documents_center { display: block;display: table; clear: both; margin: 1em auto; }
+.spip_documents_left { float: left; margin-right: 15px; margin-bottom: 5px; }
+.spip_documents_right { float: right; margin-left: 15px; margin-bottom: 5px; }
+.spip_doc_titre { margin-right: auto; margin-left: auto; font-weight: bold; font-size: 0.90em; }
+.spip_doc_descriptif { clear: both; margin-right: auto; margin-left: auto; font-size: 0.90em; }
+
+/* modeles par defaut */
+.spip_modele { float: right; display: block; padding: 1em; border: 1px solid; width: 180px; }
+
+
+.small {font-size:90%;}
+
+/* Non visible a l'ecran */
+.invisible { position: absolute; top: -3000em; height: 1%; }

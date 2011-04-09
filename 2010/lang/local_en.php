@@ -13,6 +13,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'lire_la_suite' => 'Read more',
 
 	// P
+	'par' => 'By',
+	'permalink' => 'Permalink',
 	'portfolio' => 'Portfolio',
 	'publie' => 'Published'
 );
