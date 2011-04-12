@@ -6,14 +6,14 @@
 		<INCLURE{fond=inclure/barre-nav,env}>
 	</div>
 
-	<div id="conteneur" class="container_16">
-		<div id="contenu" class="clearfix">
+	<div id="conteneur" class="container_16 clearfix">
+		<div id="contenu">
 			<INCLURE{fond=contenu/#ENV{type},env}>
 		</div>
 
 		<div id="navigation">
-			<INCLURE{fond=navigation/#ENV{type},env}>
 			<INCLURE{fond=extra/#ENV{type},env}>
+			<INCLURE{fond=navigation/#ENV{type},env}>
 		</div>
 	</div>
 
