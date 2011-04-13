@@ -39,7 +39,8 @@ p a.read-more,
 .hyperlien .label,
 .pagination,
 #navigation h2,
-#suivantPrecedent dt {
+#suivantPrecedent dt,
+.hentry .vevent {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-stretch: normal; }
 
 

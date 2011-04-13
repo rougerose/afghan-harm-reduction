@@ -44,16 +44,19 @@
 
 		[(#REM) agenda ]
 		<B_events>
-		<h2 class="surtitreRubrique"><:agenda:></h2>
-		<BOUCLE_events(EVENEMENTS){id_rubrique=10}{statut=publie}{date_debut>=#ENV{date}}>
-		<dl id="id-#ID_EVENEMENT" class="vevent clearfix">
-			<dt class="dtstart"><span class="value" title="[(#DATE_DEBUT|affdate{c})]">[<span class="jour">(#DATE_DEBUT|jour)</span>[<span class="sep first">/</span><span class="mois-annee">(#DATE_DEBUT|mois)]<span class="sep">/</span>[(#DATE_DEBUT|annee)</span>]]</dt>
-			<dd>
-				<h3 class="summary"><a href="#URL_ARTICLE">#TITRE</a></h3>
-				[<p class="description">(#DESCRIPTIF|PtoBR) <a href="#URL_ARTICLE" class="suite"><:lire_la_suite:></a></p>]
-			</dd>
-		</dl>
-		</BOUCLE_events></B_events>
+		<div class="liste agenda sommaire">
+			<h2 class="surtitreRubrique"><:agenda:></h2>
+			<BOUCLE_events(EVENEMENTS){id_rubrique=10}{statut=publie}{date_debut>=#ENV{date}}>
+			<dl id="id-#ID_EVENEMENT" class="vevent clearfix">
+				<dt class="dtstart"><span class="value" title="[(#DATE_DEBUT|affdate{c})]">[<span class="jour">(#DATE_DEBUT|jour)</span>[<span class="sep first">/</span><span class="mois-annee">(#DATE_DEBUT|mois)]<span class="sep">/</span>[(#DATE_DEBUT|annee)</span>]]</dt>
+				<dd>
+					<h3 class="summary"><a href="#URL_ARTICLE">#TITRE</a></h3>
+					[<p class="description">(#DESCRIPTIF|PtoBR) <a href="#URL_ARTICLE" class="suite"><:lire_la_suite:></a></p>]
+				</dd>
+			</dl>
+			</BOUCLE_events>
+		</div><!-- .liste agenda sommaire -->
+		</B_events>
 
 	</div><!-- .grid_8 omega -->
 </div><!-- .contenu-principal -->

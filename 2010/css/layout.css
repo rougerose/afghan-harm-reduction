@@ -52,7 +52,7 @@
 				display:block;
 				margin: 0 15px 0 0; }
 			#nav li:last-child a { margin-right: 0; }
-				#nav li.sf-breadcrumb a {
+				#nav li.sf-breadcrumb a, #nav li.on a {
 					color: #000;
 					background: url('../img/barreNavigation_on.png') no-repeat scroll bottom center; }
 			#nav ul ul {
@@ -86,7 +86,8 @@
 	margin-left: 10px; margin-right: 10px; }
 
 
-.portfolios { margin-bottom: 4.5em; }
+.liste { margin-bottom: 4.5em; }
+#navigation .liste { margin-bottom: 3em; }
 
 
 
