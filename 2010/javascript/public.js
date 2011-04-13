@@ -10,7 +10,8 @@ $(document).ready(function(){
 
 	$("#barreNav").superfish({
 		animation:   {opacity:'show',height:'show'},
-		autoArrows: false
+		autoArrows: false,
+		pathClass:  'current'
 	});
 
 

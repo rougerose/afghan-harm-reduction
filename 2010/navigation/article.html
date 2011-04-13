@@ -1,0 +1,29 @@
+<BOUCLE_article(ARTICLES){id_article}{lang}>
+<div class="">
+	<div id="suivantPrecedent">
+		<dl class="grid_3 alpha">
+			<dt><:precedent:></dt>
+			<BOUCLE_precedent(ARTICLES){lang}{id_rubrique}{age_relatif>=0}{!par date}{1,1}>
+			<dd>
+				<h3><a href="#URL_ARTICLE" rel="prev">[(#TITRE|supprimer_numero)]</a></h3>
+			</dd>
+				</BOUCLE_precedent>
+				</B_precedent>
+				<dd><h3><:aucun_article_disponible:></h3></dd>
+				<//B_precedent>
+			</dl>
+
+			<dl class="grid_3 omega">
+				<dt><:suivant:></dt>
+				<BOUCLE_suivant(ARTICLES){lang}{id_rubrique}{age_relatif<0}{par date}{0,1}>
+				<dd>
+					<h3><a href="#URL_ARTICLE" rel="next">[(#TITRE|supprimer_numero)]</a></h3>
+				</dd>
+				</BOUCLE_suivant>
+				</B_suivant>
+				<dd><h3><:aucun_article_disponible:></h3></dd>
+				<//B_suivant>
+			</dl>
+		</div>
+	</div><!-- .grid_6 omega -->
+	</BOUCLE_article>

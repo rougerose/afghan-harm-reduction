@@ -22,7 +22,8 @@ h1,h2,h3,h4,h5,h6,
 #logo #titre,
 p a.read-more,
 #nav li,
-.vevent dt {
+.vevent dt,
+.mots p {
 	font-family: "HelveticaNeue-CondensedBold","Helvetica Neue Condensed Bold","Helvetica Neue", Helvetica, "Arial Black", Arial, sans-serif;
 	font-stretch: condensed; /* pour Firefox */
 	text-transform: uppercase; }
@@ -35,8 +36,11 @@ p a.read-more,
 
 .meta-publi,
 .surtitre, .soustitre,
-.hyperlien .label {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.hyperlien .label,
+.pagination,
+#navigation h2,
+#suivantPrecedent dt {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-stretch: normal; }
 
 
 /* ==================================== */

@@ -37,10 +37,10 @@
 /* =Navigation principale (#nav)=		*/
 /* ==================================== */
 
-#nav { border-bottom: 1px solid #000; margin-top: 1em; }
+#nav { border-bottom: 1px solid #000; margin-top: 1em;  }
 #nav .grid_16 { position: relative; }
 	#nav ul {
-		position: absolute; right: 0; top: -1.7em;
+		position: absolute; right: 0; top: -1.7em; z-index: 90;
  		float: right; list-style : none outside none; }
 		#nav li {
 			font-size: 12px;
@@ -52,25 +52,38 @@
 				display:block;
 				margin: 0 15px 0 0; }
 			#nav li:last-child a { margin-right: 0; }
-				#nav li.on a {
+				#nav li.sf-breadcrumb a {
 					color: #000;
 					background: url('../img/barreNavigation_on.png') no-repeat scroll bottom center; }
-			#nav ul ul { top: 2em; right: auto; left: 0 }
+			#nav ul ul {
+				width: 100%;
+				top: 1.8em; right: auto; left: 0; z-index: -10; }
+				#nav ul ul li a { padding-bottom: 0; }
+				#nav ul ul li.current a { background:none; }
 
 
 /* ==================================== */
 /* =Conteneur=							*/
 /* ==================================== */
 
-#conteneur { background-color: #fff; }
+#conteneur {
+	background-color: #fff;
+	margin-top: 4.5em; }
 
 
 /* ==================================== */
 /* =Contenu=							*/
 /* ==================================== */
 
-#contenu { margin-top: 4.5em; padding-bottom: 3em; }
-.page_article #contenu { width: 590px; }
+#contenu { padding-bottom: 3em; }
+
+.page_article #contenu { width: 580px; }
+.page_article #navigation { width: 340px; }
+
+.page_article #contenu,
+.page_article #navigation {
+	float: left; display: inline;
+	margin-left: 10px; margin-right: 10px; }
 
 
 .portfolios { margin-bottom: 4.5em; }

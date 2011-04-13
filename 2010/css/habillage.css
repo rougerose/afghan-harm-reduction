@@ -103,13 +103,33 @@
 			display: block; }
 		.vevent dd { overflow: hidden; }
 
+
+
+
+/* ===================================  */
+/*	=Mots-clés							*/
+/* ===================================  */
+.mots h2 {
+	margin-bottom: 0;
+	border-bottom: 1px solid #000; }
+.mots p {  }
+
+/* ===================================  */
+/*	=Article Suivant/Précédent			*/
+/* ===================================  */
+#suivantPrecedent dt {
+	text-transform: uppercase;
+	color: #000;
+	border-bottom: 1px solid #000; }
+	#suivantPrecedent dd h3 { color: #666; }
+
 /* ===================================  */
 /*	=Pagination							*/
 /* ===================================  */
 .pagination {
 	border-top: 1px dotted #ccc; border-bottom: 1px solid #000;
 	text-align: center;
-	font-size: 11px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+	font-size: 11px; }
 	.pagination .pagination_label { text-transform: uppercase; }
 	.pagination .on { font-size: 14px; line-height: 16.5px; }
 
