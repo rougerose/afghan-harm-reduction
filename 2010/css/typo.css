@@ -20,15 +20,16 @@ html { /* background: url('../img/line-height.png');*/ }
 /* ==================================== */
 h1,h2,h3,h4,h5,h6,
 #logo #titre,
-p a.read-more,
+a.suite,
 #nav li,
 .vevent dt,
-.mots p {
+.mots p, .liste li h3,
+#pied .hierarchie {
 	font-family: "HelveticaNeue-CondensedBold","Helvetica Neue Condensed Bold","Helvetica Neue", Helvetica, "Arial Black", Arial, sans-serif;
 	font-stretch: condensed; /* pour Firefox */
 	text-transform: uppercase; }
 
-.surtitreRubrique {
+.liste h2, #suivantPrecedent dt {
 	font-family: "HelveticaNeue-CondensedBlack","Helvetica Neue Condensed Black","Helvetica Neue", Helvetica, "Arial Black", Arial, sans-serif;
 	font-stretch: condensed; /* pour Firefox */
 	font-weight: 800;
@@ -38,8 +39,6 @@ p a.read-more,
 .surtitre, .soustitre,
 .hyperlien .label,
 .pagination,
-#navigation h2,
-#suivantPrecedent dt,
 .hentry .vevent {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-stretch: normal; }
 
@@ -76,8 +75,9 @@ h3 { line-height: 1.5em; margin-bottom: 1em; }
 
 .article h1 { font-size: 26px; line-height: 26px; }
 
-h2.surtitreRubrique {
+.sommaire.liste h2 {
 	font-size: 18px; margin-bottom: 1em; }
+
 #pied h2 { font-size: 18px; line-height: 1em; margin-bottom: .5em; }
 
 h3.entry-title, h3.summary { font-size: 16px; line-height: 1em; margin-bottom: .5em; }

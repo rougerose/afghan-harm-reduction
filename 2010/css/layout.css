@@ -51,15 +51,15 @@
 				padding-bottom: 1.2em;
 				display:block;
 				margin: 0 15px 0 0; }
-			#nav li:last-child a { margin-right: 0; }
-				#nav li.sf-breadcrumb a, #nav li.on a {
+			#nav ul li.n1:last-child > a { margin-right: 0; }
+				#nav li.n1.sf-breadcrumb > a {
 					color: #000;
 					background: url('../img/barreNavigation_on.png') no-repeat scroll bottom center; }
 			#nav ul ul {
 				width: 100%;
-				top: 1.8em; right: auto; left: 0; z-index: -10; }
+				top: 2.3em; right: auto; left: 0; z-index: -10; }
 				#nav ul ul li a { padding-bottom: 0; }
-				#nav ul ul li.current a { background:none; }
+				#nav ul ul li.current a { background:none; color: #000; }
 
 
 /* ==================================== */
@@ -87,7 +87,9 @@
 
 
 .liste { margin-bottom: 4.5em; }
-#navigation .liste { margin-bottom: 3em; }
+#navigation .liste {
+	margin-bottom: 3em;
+	clear: both }
 
 
 
@@ -106,6 +108,15 @@
 		border-bottom: 1px solid #000;
 		margin-bottom: 3em; padding-top: 1.5em; }
 	#pied .grid_16 > div { margin-bottom: 1.5em;  }
+
+	/* hierarchie */
+	#pied .hierarchie { border-bottom: 1px solid #000; }
+	#pied .hierarchie a { color: #999; }
+	#pied .hierarchie a:hover, #pied .hierarchie strong { color: #000; }
+	#pied .hierarchie a, #pied .hierarchie strong { padding-right: 5px; margin-left: 5px; }
+	#pied .hierarchie a:first-child, #pied .hierarchie strong:first-child { margin-left: 0; }
+
+
 	#pied ul { list-style: none; margin-bottom: 1.5em; }
 	#pied .follow li {
 		font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold","Helvetica Neue", Helvetica, Arial, sans-serif;

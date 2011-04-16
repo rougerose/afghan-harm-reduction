@@ -1,29 +1,68 @@
 <BOUCLE_article(ARTICLES){id_article}{lang}>
-<div class="">
-	<div id="suivantPrecedent">
-		<dl class="grid_3 alpha">
-			<dt><:precedent:></dt>
-			<BOUCLE_precedent(ARTICLES){lang}{id_rubrique}{age_relatif>=0}{!par date}{1,1}>
-			<dd>
-				<h3><a href="#URL_ARTICLE" rel="prev">[(#TITRE|supprimer_numero)]</a></h3>
-			</dd>
-				</BOUCLE_precedent>
-				</B_precedent>
-				<dd><h3><:aucun_article_disponible:></h3></dd>
-				<//B_precedent>
-			</dl>
+<div id="suivantPrecedent" class="liste clearfix">
+	<dl class="grid_3 alpha">
+		<dt><:precedent:></dt>
+		<BOUCLE_precedent(ARTICLES){lang}{id_rubrique}{age_relatif>=0}{!par date}{1,1}>
+		<dd>
+			<h3><a href="#URL_ARTICLE" rel="prev">[(#TITRE|supprimer_numero)]</a></h3>
+		</dd>
+		</BOUCLE_precedent>
+		</B_precedent>
+		<dd><h3><:aucun_article_disponible:></h3></dd>
+		<//B_precedent>
+	</dl>
 
-			<dl class="grid_3 omega">
-				<dt><:suivant:></dt>
-				<BOUCLE_suivant(ARTICLES){lang}{id_rubrique}{age_relatif<0}{par date}{0,1}>
-				<dd>
-					<h3><a href="#URL_ARTICLE" rel="next">[(#TITRE|supprimer_numero)]</a></h3>
-				</dd>
-				</BOUCLE_suivant>
-				</B_suivant>
-				<dd><h3><:aucun_article_disponible:></h3></dd>
-				<//B_suivant>
-			</dl>
-		</div>
-	</div><!-- .grid_6 omega -->
-	</BOUCLE_article>
+	<dl class="grid_3 omega">
+		<dt><:suivant:></dt>
+		<BOUCLE_suivant(ARTICLES){lang}{id_rubrique}{age_relatif<0}{par date}{0,1}>
+		<dd>
+			<h3><a href="#URL_ARTICLE" rel="next">[(#TITRE|supprimer_numero)]</a></h3>
+		</dd>
+		</BOUCLE_suivant>
+		</B_suivant>
+		<dd><h3><:aucun_article_disponible:></h3></dd>
+		<//B_suivant>
+	</dl>
+</div>
+</BOUCLE_article>
+
+<B_last_news>
+<div class="liste news">
+	<h2 class="h2"><:last_news:></h2>
+	<ul class="liste-items">
+		<BOUCLE_last_news(ARTICLES pb_selection){par ordre}{spip_pb_selection.id_rubrique=0}{exclus}>
+		<li class="item">
+			<h3><a href="#URL_ARTICLE">#TITRE</a></h3>
+			[<p>(#INTRODUCTION|couper{100}) <a href="#URL_ARTICLE" class="suite"><:lire_la_suite:></a></p>]
+		</li>
+		</BOUCLE_last_news>
+	</ul>
+</div><!-- .news -->
+</B_last_news>
+
+<B_agenda>
+<div class="liste agenda">
+	<h2 class="h2"><:agenda:></h2>
+	<BOUCLE_agenda(EVENEMENTS){id_rubrique=10}{statut=publie}{date_debut>=#ENV{date}}{exclus}{par date}>
+	[(#INCLURE{fond=inclure/evenement-liste}{env}{id_evenement})]
+	</BOUCLE_agenda>
+</div><!-- .liste agenda -->
+</B_agenda>
+
+<B_portfolio>
+<div class="liste portfolio">
+	<h2 class="h2"><:portfolio:></h2>
+	<ul class="liste-items">
+	<BOUCLE_portfolio(ARTICLES){id_rubrique=11}{0,1}{!par date}{exclus}>
+	<li class="item">
+		<BOUCLE_imagePrincipale(DOCUMENTS){id_article}{par num titre, titre}{mode=document}{extension IN png,jpg,gif}{vu=non}{0,1}>
+		[<a href="#URL_ARTICLE" class="logo-article">
+		(#FICHIER|image_reduire{340,0}
+			|inserer_attribut{alt,[(#TITRE|textebrut)]}|inserer_attribut{class,spip_logos})
+		</a>]</BOUCLE_imagePrincipale>
+		<h3><a href="#URL_ARTICLE">#TITRE</a></h3>
+		[<p>(#INTRODUCTION|couper{100}) <a href="#URL_ARTICLE" class="suite"><:lire_la_suite:></a></p>]
+	</li>
+	</BOUCLE_portfolio>
+	</ul>
+</div><!-- .liste portfolio -->
