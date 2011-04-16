@@ -20,28 +20,3 @@
 	</BOUCLE_documents_joints>
 </div>
 </B_documents_joints>
-
-[(#REM) Portfolio : album d'images ]
-<B_portfolio>
-<div id="images" class="documents documents_portfolio">
-	<h2 class="spip"><:info_portfolio:></h2>
-
-	<div class="slider">
-		<div class="scroll">
-			<ul>
-				<BOUCLE_portfolio(DOCUMENTS){id_article}{extension IN jpg,gif,png}{vu=non}{par num titre, titre}>
-				[<li>
-					<a href="[(#FICHIER|image_reduire{800,0}|extraire_attribut{src})]" class="sliderImg icone-lien mediabox" rel="portfolio#ID_ARTICLE" type="#MIME_TYPE">
-					(#FICHIER|image_reduire{520,0}|inserer_attribut{alt,[(#TITRE|textebrut)]})
-					</a>
-					[<div class="imageLegend">
-						(#DESCRIPTIF)
-					</div>]
-				</li>]
-				</BOUCLE_portfolio>
-			</ul>
-		</div><!-- .scroll -->
-	</div><!-- .slider -->
-
-</div><!-- #images -->
-</B_portfolio>
