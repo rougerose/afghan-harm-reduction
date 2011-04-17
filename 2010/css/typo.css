@@ -18,21 +18,24 @@ html { /* background: url('../img/line-height.png');*/ }
 /* ==================================== */
 /* =Fontes								*/
 /* ==================================== */
+
+.liste h2, #suivantPrecedent dt {
+	font-family: "HelveticaNeue-CondensedBlack","Helvetica Neue Condensed Black","Helvetica Neue", Helvetica, "Arial Black", Arial, sans-serif;
+	font-stretch: condensed; /* pour Firefox */
+	font-weight: 800;
+	text-transform: uppercase; }
+
 h1,h2,h3,h4,h5,h6,
 #logo #titre,
 a.suite,
 #nav li,
 .vevent dt,
 .mots p, .liste li h3,
+.hentry .liste h2,
 #pied .hierarchie {
 	font-family: "HelveticaNeue-CondensedBold","Helvetica Neue Condensed Bold","Helvetica Neue", Helvetica, "Arial Black", Arial, sans-serif;
 	font-stretch: condensed; /* pour Firefox */
-	text-transform: uppercase; }
-
-.liste h2, #suivantPrecedent dt {
-	font-family: "HelveticaNeue-CondensedBlack","Helvetica Neue Condensed Black","Helvetica Neue", Helvetica, "Arial Black", Arial, sans-serif;
-	font-stretch: condensed; /* pour Firefox */
-	font-weight: 800;
+	font-weight: 400;
 	text-transform: uppercase; }
 
 .meta-publi,
