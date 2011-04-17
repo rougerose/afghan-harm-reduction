@@ -32,9 +32,9 @@
 		</div><!-- .ps -->]
 
 		[(#REM) Gestion du portfolio et des documents ]
-		[(#INCLURE{fond=inclure/documents}{id_article})]
+		[(#INCLURE{fond=inclure/documents,id_article})]
 
-		[(#INCLURE{fond=inclure/portfolio}{id_article}{composition=article})]
+		[(#INCLURE{fond=inclure/portfolio, id_article, composition=article})]
 
 		[<div class="notes surlignable"><h3 class="spip pas_surlignable"><:info_notes:></h3>(#NOTES)</div>]
 
