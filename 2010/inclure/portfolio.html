@@ -1,8 +1,9 @@
 [(#REM) Portfolio : album d'images ]
 <B_portfolio>
 <div id="images" class="documents documents_portfolio">
+	[(#ENV{composition}|=={article-portfolio}|non)
 	<h2 class="spip"><:info_portfolio:></h2>
-
+	]
 	<div class="slider">
 		<div class="scroll">
 			<ul>

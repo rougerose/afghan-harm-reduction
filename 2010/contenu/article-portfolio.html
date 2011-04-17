@@ -9,7 +9,7 @@
 		</div><!-- .titre -->
 
 		[(#REM) Gestion du portfolio et des documents ]
-		[(#INCLURE{fond=inclure/documents}{id_article})]
+		[(#INCLURE{fond=inclure/portfolio}{id_article}{env}{composition=article-portfolio})]
 
 		<B_evenement>
 		<div class="evenement vcalendar">
@@ -33,6 +33,8 @@
 			<h3 class="spip"><:ps:></h3>
 			<div class="#EDIT{ps} surlignable">(#PS|image_reduire{200,0})</div>
 		</div><!-- .ps -->]
+
+		[(#INCLURE{fond=inclure/documents}{id_article}{env})]
 
 		[<div class="notes surlignable"><h3 class="spip pas_surlignable"><:info_notes:></h3>(#NOTES)</div>]
 
