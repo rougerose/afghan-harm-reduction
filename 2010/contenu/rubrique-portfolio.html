@@ -1,0 +1,54 @@
+<BOUCLE_contenu_rubrique(RUBRIQUES){id_rubrique}>
+<div class="contenu-principal rubrique grid_9 suffix_1 alpha">
+	<div class="titre">
+		[(#LOGO_RUBRIQUE||image_reduire{200,200})]
+		<h1 class="h1 #EDIT{titre} titre">#TITRE</h1>
+	</div>
+	[<div class="#EDIT{texte} chapo">(#TEXTE|image_reduire{250,0})</div>]
+
+
+	[(#REM) articles mis en sélection ]
+	<B_selections>
+	<ul class="liste articles rubrique groupe hfeed clearfix">
+		<BOUCLE_selections(ARTICLES pb_selection){par ordre}{spip_pb_selection.id_rubrique=#ID_RUBRIQUE}{doublons}>
+		<li>
+			[(#INCLURE{fond=inclure/portfolios-liste,id_article,tailleLogo=520})]
+		</li>
+		</BOUCLE_selections>
+	</ul>
+	</B_selections>
+
+
+	[(#REM) les articles publiés dans la rubrique ]
+	[(#INCLURE{fond=inclure/portfolios-rubrique,ajax,env,id_rubrique,tailleLogo=520,doublons})]
+
+
+	<B_sous_rubriques>
+	<div class="liste rubriques">
+		<h2 class="section-titre"><:sous_rubriques:></h2>
+		<ul class="hfeed">
+			<BOUCLE_sous_rubriques(RUBRIQUES){id_parent}{par num titre, titre}>
+			<li class="liste item rubrique">
+				<h2><a href="#URL_RUBRIQUE">[(#TITRE)]</a></h2>
+				[<p class="descriptif">(#INTRODUCTION|couper{200}) <a href="#URL_RUBRIQUE"><:lire_la_suite:></a></p>]
+				<B_ss_rub_articles>
+				<ul class="liste articles clearfix grid">
+					<BOUCLE_ss_rub_articles(ARTICLES){id_rubrique}{!par date}{0,6}>
+					[(#INCLURE{fond=inclure/article-resume,
+						id_article,tailleLogo=220,compteur=[(#COMPTEUR_BOUCLE|modulo{2})]})]
+					</BOUCLE_ss_rub_articles>
+					<BOUCLE_ss_rub_articles_supplementaires(ARTICLES){id_rubrique}{!par date}{6,1}>
+					<li class="articles-tous"><a href="#URL_RUBRIQUE"><:tous_articles_in_rubrique:> #_sous_rubriques:TITRE</a></li>
+					</BOUCLE_ss_rub_articles_supplementaires>
+				</ul>
+				</B_ss_rub_articles>
+			</li>
+			</BOUCLE_sous_rubriques>
+		</ul>
+		</div>
+	</B_sous_rubriques>
+
+	[<div class="notes"><h2 class="h2"><:info_notes:></h2>(#NOTES)</div>]
+	</BOUCLE_contenu_rubrique>
+
+</div>

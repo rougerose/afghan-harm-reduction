@@ -33,7 +33,7 @@ div.titre { margin-bottom: 3em; }
 	.liste .logo-article {
 		display: block;
 		float: left;
-		margin-right: 20px; }
+		margin-right: 20px; margin-bottom: 1em; }
 	.liste .intro { overflow: hidden; }
 
 /* sous-rubriques d'une rubrique */
