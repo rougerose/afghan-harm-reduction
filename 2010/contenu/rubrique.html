@@ -9,16 +9,16 @@
 
 	[(#REM) articles mis en sélection ]
 	<B_selections>
-	<ul class="groupe clearfix">
+	<ul class="liste articles rubrique groupe hfeed clearfix">
 		<BOUCLE_selections(ARTICLES pb_selection){par ordre}{spip_pb_selection.id_rubrique=#ID_RUBRIQUE}{doublons}>
-		[(#INCLURE{fond=inclure/article-resume, id_article})]
+		[(#INCLURE{fond=inclure/article-resume, id_article,tailleLogo=160})]
 		</BOUCLE_selections>
 	</ul>
 	</B_selections>
 
 
 	[(#REM) les articles publiés dans la rubrique ]
-	[(#INCLURE{fond=inclure/articles-rubrique,ajax,env,id_rubrique,doublons})]
+	[(#INCLURE{fond=inclure/articles-rubrique,ajax,env,id_rubrique,tailleLogo=160,doublons})]
 
 
 	<B_sous_rubriques>
@@ -35,7 +35,7 @@
 					[(#INCLURE{fond=inclure/article-resume,
 						id_article,tailleLogo=220,compteur=[(#COMPTEUR_BOUCLE|modulo{2})]})]
 					</BOUCLE_ss_rub_articles>
-					<BOUCLE_ss_rub_articles_supplementaires(ARTICLES){id_rubrique}{!par date}{0,1}>
+					<BOUCLE_ss_rub_articles_supplementaires(ARTICLES){id_rubrique}{!par date}{6,1}>
 					<li class="articles-tous"><a href="#URL_RUBRIQUE"><:tous_articles_in_rubrique:> #_sous_rubriques:TITRE</a></li>
 					</BOUCLE_ss_rub_articles_supplementaires>
 				</ul>

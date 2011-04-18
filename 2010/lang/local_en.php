@@ -5,7 +5,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// A
 	'accueil' => 'Home',
 	'agenda' => 'Agenda',
-	'aucun_article_disponible' => 'Aucun article disponible',
+	'aucun_article_disponible' => 'Aucun article disponible [traduire]',
 	'_a' => 'at',
 	'_au' => 'to',
 
@@ -21,6 +21,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'par' => 'By',
 	'permalink' => 'Permalink',
 	'portfolio' => 'Portfolio',
-	'publie' => 'Published'
+	'publie' => 'Published',
+
+	// T
+	'tous_articles_in_rubrique' => 'tous les articles de cette rubrique [traduire]'
 );
 ?>

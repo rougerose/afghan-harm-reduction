@@ -51,7 +51,9 @@
 	<h2 class="h2"><:portfolio:></h2>
 	<ul class="liste-items">
 	<BOUCLE_portfolio(ARTICLES){id_rubrique=11}{0,1}{!par date}{exclus}>
-	[(#INCLURE{fond=inclure/portfolios-liste,id_article})]
+	<li>
+		[(#INCLURE{fond=inclure/portfolios-liste,id_article,tailleLogo=340})]
+	</li>
 	</BOUCLE_portfolio>
 	</ul>
 </div><!-- .liste portfolio -->

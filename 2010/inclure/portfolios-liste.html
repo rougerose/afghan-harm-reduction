@@ -1,10 +1,11 @@
-
+<BOUCLE_article(ARTICLES){lang}{id_article}>
 	<BOUCLE_imagePrincipale(DOCUMENTS){id_article}{par num titre, titre}{mode=document}{extension IN png,jpg,gif}{vu=non}{0,1}>
-	[<a href="#URL_ARTICLE" class="logo-article">
+	[<a href="#URL_ARTICLE" class="logo-article" rel="bookmark">
 	(#FICHIER|image_reduire{#ENV{tailleLogo},0}
 		|inserer_attribut{alt,[(#TITRE|textebrut)]}|inserer_attribut{class,spip_logos})
 	</a>]
-	<BOUCLE_article(ARTICLES){lang}{id_article}>
-	<h3><a href="#URL_ARTICLE">#TITRE</a></h3>
+	</BOUCLE_imagePrincipale>
+	<h3 class="entry-title titre"><a href="#URL_ARTICLE">#TITRE</a></h3>
 	[<p>(#INTRODUCTION|couper{100}) <a href="#URL_ARTICLE" class="suite"><:lire_la_suite:></a></p>]
-	</BOUCLE_article></BOUCLE_imagePrincipale>
+
+</BOUCLE_article>

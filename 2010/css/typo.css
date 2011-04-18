@@ -32,7 +32,8 @@ a.suite,
 .vevent dt,
 .mots p, .liste li h3,
 .hentry .liste h2,
-#pied .hierarchie {
+#pied .hierarchie,
+.articles-tous {
 	font-family: "HelveticaNeue-CondensedBold","Helvetica Neue Condensed Bold","Helvetica Neue", Helvetica, "Arial Black", Arial, sans-serif;
 	font-stretch: condensed; /* pour Firefox */
 	font-weight: 400;
