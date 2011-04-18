@@ -1,0 +1,14 @@
+<B_e>
+<div class="groupe liste articles rubrique hfeed clearfix">
+	<h2 class="h2 section-titre"><:archives:></h2>
+	#ANCRE_PAGINATION
+	<ul>
+		<BOUCLE_e(EVENEMENTS){id_rubrique}{statut=publie}{date_debut<#ENV{date}}{pagination 4}{par date}>
+		<li>
+			[(#INCLURE{fond=inclure/evenements-liste, id_evenement, env})]
+		</li>
+		</BOUCLE_e>
+	</ul>
+	[<p class="pagination bas">(#PAGINATION{page})</p>]
+</div><!-- liste articles sommaire -->
+</B_e>

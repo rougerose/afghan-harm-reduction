@@ -186,6 +186,7 @@ div.titre { margin-bottom: 3em; }
 /* ===================================  */
 .slider {
 	position: relative; width: 460px; }
+	.liste .slider { margin-bottom: 1em; }
 #images .slider { width: 520px; }
 	#slider .navigation {
 		position:absolute;
