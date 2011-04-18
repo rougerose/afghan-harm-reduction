@@ -1,0 +1,18 @@
+<B_event>
+<ul class="liste articles[ (#ENV{format})] clearfix">
+	<BOUCLE_event(EVENEMENTS){id_rubrique}{0,6}>
+	<li class="item[ no(#COMPTEUR_BOUCLE|modulo{2})]">
+		<dl id="id-#ID_EVENEMENT" class="vevent clearfix">
+			<dt class="dtstart"><span class="value" title="[(#DATE_DEBUT|affdate{c})]">[<span class="jour">(#DATE_DEBUT|jour)</span>[<span class="sep first">/</span><span class="mois-annee">(#DATE_DEBUT|mois)]<span class="sep">/</span>[(#DATE_DEBUT|annee)</span>]]</dt>
+			<dd>
+				<h3 class="summary"><a href="#URL_ARTICLE">#TITRE</a></h3>
+				[<p class="description">(#DESCRIPTIF|PtoBR) <a href="#URL_ARTICLE" class="suite"><:lire_la_suite:></a></p>]
+			</dd>
+		</dl>
+	</li>
+	</BOUCLE_event>
+	<BOUCLE_supplementaires(EVENEMENTS){id_rubrique}{6,1}>
+	<li class="articles-tous"><a href="#URL_RUBRIQUE"><:tous_articles_in_rubrique:> #_sous_rubriques:TITRE</a></li>
+	</BOUCLE_supplementaires>
+</ul>
+</B_event>

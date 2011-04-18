@@ -1,11 +1,9 @@
-#SET{articles_selection,#ENV{articles_selection}}
-
 <B_articles>
-<div class="liste articles sommaire hfeed">
-	<h2><:dernieres_actu:></h2>
+<div class="groupe liste articles rubrique hfeed clearfix">
+	<h2 class="h2 section-titre"><:articles_rubrique:></h2>
 	#ANCRE_PAGINATION
 	<ul>
-		<BOUCLE_articles(ARTICLES){lang}{id_article IN #GET{articles_selection}}{pagination 4}{doublons}>
+		<BOUCLE_articles(ARTICLES){lang}{id_rubrique}{pagination 4}{doublons}>
 		[(#INCLURE{fond=inclure/article-resume, id_article, env})]
 		</BOUCLE_articles>
 	</ul>

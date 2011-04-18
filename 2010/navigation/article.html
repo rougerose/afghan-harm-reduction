@@ -51,15 +51,7 @@
 	<h2 class="h2"><:portfolio:></h2>
 	<ul class="liste-items">
 	<BOUCLE_portfolio(ARTICLES){id_rubrique=11}{0,1}{!par date}{exclus}>
-	<li class="item">
-		<BOUCLE_imagePrincipale(DOCUMENTS){id_article}{par num titre, titre}{mode=document}{extension IN png,jpg,gif}{vu=non}{0,1}>
-		[<a href="#URL_ARTICLE" class="logo-article">
-		(#FICHIER|image_reduire{340,0}
-			|inserer_attribut{alt,[(#TITRE|textebrut)]}|inserer_attribut{class,spip_logos})
-		</a>]</BOUCLE_imagePrincipale>
-		<h3><a href="#URL_ARTICLE">#TITRE</a></h3>
-		[<p>(#INTRODUCTION|couper{100}) <a href="#URL_ARTICLE" class="suite"><:lire_la_suite:></a></p>]
-	</li>
+	[(#INCLURE{fond=inclure/portfolios-liste,id_article})]
 	</BOUCLE_portfolio>
 	</ul>
 </div><!-- .liste portfolio -->

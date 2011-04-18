@@ -77,20 +77,26 @@
 
 #contenu { padding-bottom: 3em; }
 
-.page_article #contenu { width: 580px; }
-.page_article #navigation { width: 340px; }
-
 .page_article #contenu,
-.page_article #navigation {
+.page_rubrique #contenu { width: 580px; }
+
+.page_article #contenu, .page_article #navigation,
+.page_rubrique #contenu, .page_rubrique #navigation {
 	float: left; display: inline;
 	margin-left: 10px; margin-right: 10px; }
 
-
 .liste { margin-bottom: 4.5em; }
+
+
+/* ==================================== */
+/* =Colonne latérale=					*/
+/* ==================================== */
+.page_article #navigation,
+.page_rubrique #navigation { width: 340px; }
+
 #navigation .liste {
 	margin-bottom: 3em;
 	clear: both }
-
 
 
 /* ==================================== */

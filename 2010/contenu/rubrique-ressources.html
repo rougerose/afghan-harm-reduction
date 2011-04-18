@@ -1,0 +1,54 @@
+<BOUCLE_contenu_rubrique(RUBRIQUES){id_rubrique}>
+<div class="contenu-principal rubrique grid_9 suffix_1 alpha">
+	<div class="titre">
+		[(#LOGO_RUBRIQUE||image_reduire{200,200})]
+		<h1 class="h1 #EDIT{titre} titre">#TITRE</h1>
+	</div>
+	[<div class="#EDIT{texte} chapo">(#TEXTE|image_reduire{250,0})</div>]
+
+
+	[(#REM) articles mis en sélection ]
+	<B_selections>
+	<ul class="groupe clearfix">
+		<BOUCLE_selections(ARTICLES pb_selection){par ordre}{spip_pb_selection.id_rubrique=#ID_RUBRIQUE}{doublons}>
+		[(#INCLURE{fond=inclure/article-resume, id_article})]
+		</BOUCLE_selections>
+	</ul>
+	</B_selections>
+
+
+	[(#REM) les articles publiés dans la rubrique ]
+	[(#INCLURE{fond=inclure/articles-rubrique,ajax,env,id_rubrique,doublons})]
+
+
+	<B_sous_rubriques>
+	<div class="liste rubriques">
+		<h2 class="section-titre"><:sous_rubriques:></h2>
+		<ul class="hfeed">
+			<BOUCLE_sous_rubriques(RUBRIQUES){id_parent}{par num titre, titre}>
+			<li class="liste item rubrique">
+				<h2><a href="#URL_RUBRIQUE">[(#TITRE)]</a></h2>
+				[<p class="descriptif">(#INTRODUCTION|couper{200}) <a href="#URL_RUBRIQUE"><:lire_la_suite:></a></p>]
+
+				<BOUCLE_test1(CONDITION){si #ID_RUBRIQUE|=={10}|oui}>
+				[(#INCLURE{fond=inclure/articles-rubrique-agenda,env,id_rubrique,format=grid})]
+				</BOUCLE_test1>
+
+				<BOUCLE_test2(CONDITION){si #ID_RUBRIQUE|=={11}|oui}>
+				[(#INCLURE{fond=inclure/articles-rubrique-portfolio,env,id_rubrique,format=grid,tailleLogo=220})]
+				</BOUCLE_test2>
+
+				<BOUCLE_test3(CONDITION){si #ID_RUBRIQUE|=={12}|oui}>
+				[(#INCLURE{fond=inclure/articles-sous_rubrique,env,id_rubrique,format=grid,tailleLogo=220})]
+				</BOUCLE_test3>
+
+			</li>
+			</BOUCLE_sous_rubriques>
+		</ul>
+		</div>
+	</B_sous_rubriques>
+
+	[<div class="notes"><h2 class="h2"><:info_notes:></h2>(#NOTES)</div>]
+	</BOUCLE_contenu_rubrique>
+
+</div>
