@@ -1,7 +1,7 @@
 <div class="contenu-principal grid_16">
 	[(#REM) colonne gauche ]
 
-	<BOUCLE_selections(ARTICLES pb_selection){par ordre}{spip_pb_selection.id_rubrique=0}{doublons}>
+	<BOUCLE_selections(ARTICLES pb_selection){lang}{par ordre}{spip_pb_selection.id_rubrique=0}{id_rubrique!=11}{doublons}>
 	[(#SET_PUSH{articles_selection,#ID_ARTICLE})]
 	</BOUCLE_selections>
 
@@ -15,7 +15,7 @@
 		[(#REM) portfolios ]
 		<div class="liste portfolios sommaire hfeed">
 			<h2><:portfolio:></h2>
-			<BOUCLE_art_portfolios(ARTICLES){lang}{0,1}>
+			<BOUCLE_art_portfolios(ARTICLES){id_rubrique=11}{lang}{0,3}{!par date}>
 			<div id="article-#ID_ARTICLE" class="item hentry">
 				<h3 class="entry-title titre"><a href="#URL_ARTICLE" rel="bookmark">#TITRE</a></h3>
 				<div class="slider">
