@@ -25,6 +25,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'publie' => 'Published',
 
 	// T
-	'tous_articles_in_rubrique' => 'tous les articles de cette rubrique [traduire]'
+	'tous_articles_in_rubrique' => 'Tous les articles de cette rubrique [traduire]',
+
+	// V
+	'votre_recherche' => 'Your search'
 );
 ?>
