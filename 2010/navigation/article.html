@@ -28,10 +28,10 @@
 
 <B_last_news>
 <div class="liste news">
-	<h2 class="h2"><:last_news:></h2>
+	<h2 class="h2"><:dernieres_actus:></h2>
 	<ul class="liste-items">
-		<BOUCLE_last_news(ARTICLES pb_selection){par ordre}{spip_pb_selection.id_rubrique=0}{id_rubrique!=11}{exclus}>
-		[(#INCLURE{fond=inclure/lastNews-liste,id_article})]
+		<BOUCLE_last_news(ARTICLES pb_selection){par ordre}{spip_pb_selection.id_rubrique=0}{id_rubrique!=11}{exclus}{lang}>
+		[(#INCLURE{fond=inclure/lastNews-liste,id_article,env,lang})]
 		</BOUCLE_last_news>
 	</ul>
 </div><!-- .news -->

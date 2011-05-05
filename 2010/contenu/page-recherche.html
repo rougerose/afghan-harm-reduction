@@ -1,0 +1,18 @@
+<div class="contenu-principal grid_10">
+	<div class="titre">
+		<h1><:resultats_recherche:> "#RECHERCHE"</h1>
+	</div>
+
+	[(#REM) Articles trouves ]
+	 <INCLURE{fond=inclure/recherche-articles,env,ajax}>
+
+	[(#REM) Rubriques trouvees ]
+	<INCLURE{fond=inclure/recherche-rubriques,env,ajax}>
+
+	[(#REM) Documents trouves ]
+	<INCLURE{fond=inclure/recherche-documents,env,ajax}>
+
+	[(#REM) Sites ]
+	<INCLURE{fond=inclure/recherche-sites,env,ajax}>
+
+</div>
