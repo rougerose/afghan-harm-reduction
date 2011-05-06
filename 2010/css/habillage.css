@@ -34,7 +34,7 @@ div.titre { margin-bottom: 3em; }
 		display: block;
 		float: left;
 		margin-right: 20px; margin-bottom: 1em; }
-	.liste .intro { overflow: hidden; }
+	.liste .intro, .liste .descriptif { overflow: hidden; }
 
 /* sous-rubriques d'une rubrique */
 .liste h2.section-titre { border-bottom: 0; margin-bottom: 1em; }
@@ -156,6 +156,11 @@ div.titre { margin-bottom: 3em; }
 
 .portfolio .logo-article { margin-right: 0; margin-bottom: 1em; }
 
+/* ===================================  */
+/*	=Rubrique Liens						*/
+/* ===================================  */
+.site li { margin-bottom: 3em; }
+.site .meta-publi li { font-size: 11px; line-height: 9px; }
 
 
 /* ===================================  */
@@ -183,7 +188,9 @@ div.titre { margin-bottom: 3em; }
 /* ===================================  */
 /*	=Recherche							*/
 /* ===================================  */
-.resultats h2 { border-bottom: 1px solid #000; }
+.resultats h2.spip {
+	font-size: 20px;
+	border-bottom: 1px solid #000; }
 .resultats h3.spip { margin-top: 0; }
 	.resultats .liste li { margin-bottom: 1.5em; }
 

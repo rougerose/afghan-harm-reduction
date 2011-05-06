@@ -67,4 +67,15 @@
 .formulaire_login .choix label {
 	line-height: 24px;
 	margin-left: 14px; }
-	
+
+/* ==================================== */
+/* =formulaire tri						*/
+/* ==================================== */
+.formulaire_tri { margin-bottom: 1.5em; }
+.formulaire_tri p { line-height: 13px; text-align: right; }
+.formulaire_tri p label {
+	float: none; display: inline;
+	line-height: inherit;
+	margin-right: 15px;
+	position: static; }
+.formulaire_tri p select { width: auto; }

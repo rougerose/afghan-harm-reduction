@@ -1,0 +1,52 @@
+<BOUCLE_contenu_rubrique(RUBRIQUES){id_rubrique}>
+<div class="contenu-principal rubrique grid_9 suffix_1 alpha">
+	<div class="titre">
+		[(#LOGO_RUBRIQUE||image_reduire{200,200})]
+		<h1 class="h1 #EDIT{titre} titre">#TITRE</h1>
+	</div>
+	[<div class="#EDIT{texte} chapo">(#TEXTE|image_reduire{250,0})</div>]
+
+	[(#SET{titre-section,<:tous_les_sites:>})]
+
+	<form id="tri" action="#" method="get" name="tri" class="formulaire_spip formulaire_tri">
+		<p>
+			<label for="choix_critere"><:afficher_categorie:></label>
+			<select size="1" name="choix_critere"
+			onchange="if (options[selectedIndex].value) {
+				location = options[selectedIndex].value;
+			}">
+			<option value="[(#SELF|parametre_url{tri,tout}|parametre_url{id_mot,''})]"[(#ENV{tri}|=={tout}|oui) selected="selected"]><:toutes:></option>
+			<BOUCLE_mots(mots_syndic)>
+			<BOUCLE_m(MOTS){id_mot}{par titre}{unique}>
+			[(#ENV{id_mot}=={#ID_MOT}|oui)#SET{titre-section,#TITRE}]
+			<option value="[(#SELF|parametre_url{id_mot,#ID_MOT}|parametre_url{tri,''})]"[(#ENV{id_mot}|=={#ID_MOT}|oui) selected="selected"]>#TITRE</option>
+			</BOUCLE_m>
+			</BOUCLE_mots>
+			</select>
+		</p>
+	</form>
+
+	<B_sites>
+	<div class="groupe liste sites clearfix">
+		#ANCRE_PAGINATION
+		<ul>
+			<BOUCLE_sites(SITES){id_rubrique}{id_mot?}{par nom_site}{pagination}>
+			<li class="liste item site">
+				<h3 class="titre"><a href="#URL_SITE" class="spip_out">[(#NOM_SITE)]</a></h3>
+				[<span class="logo-article">(#LOGO_SITE|image_reduire{100,0})</span>]
+				[<p class="descriptif">(#DESCRIPTIF|PtoBR)</p>]
+				<ul class="meta-publi clearfix">
+					<li class="url"><a href="#URL_SITE" class="spip_out">#URL_SITE</a></li>
+				</ul>
+
+			</li>
+			</BOUCLE_sites>
+		</ul>
+		[<p class="pagination bas">(#PAGINATION{page})</p>]
+	</div><!-- liste sites -->
+	</B_sites>
+
+	[<div class="notes"><h2 class="h2"><:info_notes:></h2>(#NOTES)</div>]
+	</BOUCLE_contenu_rubrique>
+
+</div>

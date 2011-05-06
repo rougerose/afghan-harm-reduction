@@ -2,7 +2,7 @@
 <div class="resultats rubriques clearfix">
 	#ANCRE_PAGINATION
 	<h2 class="spip">[[(#GRAND_TOTAL) ](#GRAND_TOTAL|singulier_ou_pluriel{local:_rubrique,local:_rubriques})]</h2>
-	<ul class="liste">
+	<ul class="liste clearfix">
 		<BOUCLE_rubriques(RUBRIQUES){lang}{recherche}{par points}{inverse}{pagination 5}>
 		<li class="[(#COMPTEUR_BOUCLE|alterner{grid_8 colonne1 alpha suffix_1,grid_7 colonne2 omega})]">
 			<h3 class="spip">[[(#COMPTEUR_BOUCLE|<{10}|oui)0](#COMPTEUR_BOUCLE)].&ensp;<a href="#URL_RUBRIQUE">#TITRE</a></h3>

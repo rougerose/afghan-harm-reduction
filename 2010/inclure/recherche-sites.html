@@ -2,7 +2,7 @@
 <div class="resultats sites">
 	#ANCRE_PAGINATION
 	<h2 class="spip">[[(#GRAND_TOTAL) ](#GRAND_TOTAL|singulier_ou_pluriel{local:_site_web,local:_sites_web})]</h2>
-	<ul class="liste">
+	<ul class="liste clearfix">
 		<BOUCLE_sites(SITES){recherche}{par points}{inverse}{pagination}>
 		<li class="[(#COMPTEUR_BOUCLE|alterner{grid_8 colonne1 alpha suffix_1,grid_7 colonne2 omega})]">
 			[<a href="[(#ID_SYNDIC|generer_url_entite{site,'','',#CONNECT})]" class="logo-article">(#LOGO_SITE|image_reduire{95,0}|inserer_attribut{alt,#NOM_SITE})</a>]
