@@ -1,9 +1,9 @@
 <B_documents>
 <div class="resultats documents clearfix">
 	#ANCRE_PAGINATION
-	<h2 class="spip">[[(#GRAND_TOTAL) ](#GRAND_TOTAL|singulier_ou_pluriel{local:_document,local:_documents})]</h2>
+	<h2 class="spip">[[(#GRAND_TOTAL) ](#GRAND_TOTAL|singulier_ou_pluriel{local:_image,local:_images})]</h2>
 	<ul class="liste">
-		<BOUCLE_documents(DOCUMENTS){extension !IN gif,jpg,png}{recherche}{par points}{inverse}{pagination}>
+		<BOUCLE_documents(DOCUMENTS){extension IN gif,jpg,png}{recherche}{par points}{inverse}{pagination}>
 
 		[(#REM) calcul de l'url de l'objet parent ]
 		<BOUCLE_lien_article(documents_liens){id_document}{objet=article}>
@@ -14,12 +14,12 @@
 		</BOUCLE_lien_rubrique>
 
 		<li class="[(#COMPTEUR_BOUCLE|alterner{grid_8 colonne1 alpha suffix_1,grid_7 colonne2 omega})]">
-			<h3 class="spip">[[(#COMPTEUR_BOUCLE|<{10}|oui)0](#COMPTEUR_BOUCLE)].&ensp;<a href="[(#GET{url})#docs]">[(#TITRE|sinon{<:document_sans_titre:>})]</a></h3>
-			[<a href="[(#GET{url})#docs]" class="logo-article">(#LOGO_DOCUMENT|image_reduire{95,0}|inserer_attribut{alt,[(#TITRE|sinon{<:document_sans_titre:>})]})</a>]
+			<h3 class="spip">[[(#COMPTEUR_BOUCLE|<{10}|oui)0](#COMPTEUR_BOUCLE)].&ensp;<a href="[(#GET{url})#docs]">[(#TITRE|sinon{<:image_sans_titre:>})]</a></h3>
+			[<a href="[(#GET{url})#images]" class="logo-article">(#LOGO_DOCUMENT|image_reduire{95,0}|inserer_attribut{alt,[(#TITRE|sinon{<:image_sans_titre:>})]})</a>]
 			[<p class="intro">(#DESCRIPTIF|PtoBR)</p>]
 			<ul class="meta-publi clearfix">
 				<li class="info-publi">[(#DATE|affdate)]</li>
-				<li class="lire-suite"><a href="[(#GET{url})#docs]" title="<:afficher_document:>"><:afficher_document:></a></li>
+				<li class="lire-suite"><a href="[(#GET{url})#docs]" title="<:afficher_document:>"><:afficher_image:></a></li>
 			</ul>
 		</li>
 		</BOUCLE_documents>

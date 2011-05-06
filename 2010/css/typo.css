@@ -80,7 +80,7 @@ h3 { line-height: 1.5em; margin-bottom: 1em; }
 
 h1.titre { font-size: 26px; line-height: 26px; }
 
-.sommaire.liste h2 {
+.sommaire.liste h2, .resultats h2 {
 	font-size: 18px; margin-bottom: 1em; }
 
 #pied h2 { font-size: 18px; line-height: 1em; margin-bottom: .5em; }

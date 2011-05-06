@@ -6,6 +6,8 @@ if (!defined("_ECRIRE_INC_VERSION")) return;
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// A
 	'accueil' => 'pashto',
+	'afficher_document' => 'pashto',
+	'afficher_image' => 'pashto',
 	'agenda' => 'pashto',
 	'archives' => 'pashto',
 	'_article' => 'pashto',
@@ -18,7 +20,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'dernieres_actus' => 'pashto',
 	'_document' => 'pashto',
 	'_documents' => 'pashto',
+	'document_sans_titre' => 'pashto',
 	'_du' => 'pashto',
+
+	// I
+	'image' => 'image',
+	'image_sans_titre'=> 'image',
 
 	// L
 	'lire_la_suite' => 'pashto',
@@ -32,6 +39,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'publie' => 'pashto',
 
 	// R
+	'resultats_recherche_pour' => 'pashto',
 	'_rubrique' => 'pashto',
 	'_rubriques' => 'pashto',
 

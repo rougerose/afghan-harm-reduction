@@ -1,6 +1,6 @@
-<div class="contenu-principal grid_10">
+<div class="contenu-principal grid_16">
 	<div class="titre">
-		<h1><:resultats_recherche:> "#RECHERCHE"</h1>
+		<h1 class="titre"><:resultats_recherche_pour:> "#RECHERCHE"</h1>
 	</div>
 
 	[(#REM) Articles trouves ]
@@ -12,7 +12,10 @@
 	[(#REM) Documents trouves ]
 	<INCLURE{fond=inclure/recherche-documents,env,ajax}>
 
-	[(#REM) Sites ]
+	[(#REM) Images trouvees ]
+	<INCLURE{fond=inclure/recherche-images,env,ajax}>
+
+	[(#REM) Sites trouves ]
 	<INCLURE{fond=inclure/recherche-sites,env,ajax}>
 
 </div>

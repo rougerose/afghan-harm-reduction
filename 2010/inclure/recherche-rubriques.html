@@ -4,10 +4,10 @@
 	<h2 class="spip">[[(#GRAND_TOTAL) ](#GRAND_TOTAL|singulier_ou_pluriel{local:_rubrique,local:_rubriques})]</h2>
 	<ul class="liste">
 		<BOUCLE_rubriques(RUBRIQUES){lang}{recherche}{par points}{inverse}{pagination 5}>
-		<li>
+		<li class="[(#COMPTEUR_BOUCLE|alterner{grid_8 colonne1 alpha suffix_1,grid_7 colonne2 omega})]">
 			<h3 class="spip">[[(#COMPTEUR_BOUCLE|<{10}|oui)0](#COMPTEUR_BOUCLE)].&ensp;<a href="#URL_RUBRIQUE">#TITRE</a></h3>
 			[<p class="intro">(#INTRODUCTION|PtoBR)</p>]
-			<ul class="meta-publi">
+			<ul class="meta-publi clearfix">
 				<li class="info-publi">[(#DATE|affdate)]</li>
 				<li class="lire-suite"><a href="#URL_ARTICLE" title="<:lire_la_suite:>"><:lire_la_suite:></a></li>
 			</ul>
