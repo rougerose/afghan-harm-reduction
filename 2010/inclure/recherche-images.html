@@ -14,12 +14,12 @@
 		</BOUCLE_lien_rubrique>
 
 		<li class="[(#COMPTEUR_BOUCLE|alterner{grid_8 colonne1 alpha suffix_1,grid_7 colonne2 omega})]">
-			<h3 class="spip">[[(#COMPTEUR_BOUCLE|<{10}|oui)0](#COMPTEUR_BOUCLE)].&ensp;<a href="[(#GET{url})#docs]">[(#TITRE|sinon{<:image_sans_titre:>})]</a></h3>
-			[<a href="[(#GET{url})#images]" class="logo-article">(#LOGO_DOCUMENT|image_reduire{95,0}|inserer_attribut{alt,[(#TITRE|sinon{<:image_sans_titre:>})]})</a>]
+			<h3 class="spip">[[(#COMPTEUR_BOUCLE|<{10}|oui)0](#COMPTEUR_BOUCLE)].&ensp;<a href="[(#GET{url})#image-#ID_DOCUMENT]">[(#TITRE|sinon{<:image_sans_titre:>})]</a></h3>
+			[<a href="[(#GET{url})#image-#ID_DOCUMENT]" class="logo-article">(#LOGO_DOCUMENT|image_reduire{95,0}|inserer_attribut{alt,[(#TITRE|sinon{<:image_sans_titre:>})]})</a>]
 			[<p class="intro">(#DESCRIPTIF|PtoBR)</p>]
 			<ul class="meta-publi clearfix">
 				<li class="info-publi">[(#DATE|affdate)]</li>
-				<li class="lire-suite"><a href="[(#GET{url})#docs]" title="<:afficher_document:>"><:afficher_image:></a></li>
+				<li class="lire-suite"><a href="[(#GET{url})#image-#ID_DOCUMENT]" title="<:afficher_document:>"><:afficher_image:></a></li>
 			</ul>
 		</li>
 		</BOUCLE_documents>

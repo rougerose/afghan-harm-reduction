@@ -93,9 +93,6 @@
 				var afficher = '[hash=' + window.location.hash + ']';
 				$(".slider .raccourcis li a").filter(afficher).click();
 			}
-
-
-
 		});
 	}
 })(jQuery);

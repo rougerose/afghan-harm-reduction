@@ -22,7 +22,7 @@
 		<div class="scroll">
 			<ul>
 				<BOUCLE_portfolio(DOCUMENTS){id_document IN #GET{documents_slider}}>
-				[<li>
+				[<li id="image-#ID_DOCUMENT">
 					<a href="[(#FICHIER|image_reduire{800,0}|extraire_attribut{src})]" class="sliderImg icone-lien mediabox" rel="portfolio#ID_ARTICLE" type="#MIME_TYPE">
 					(#FICHIER|image_reduire{520,0}|inserer_attribut{alt,[(#TITRE|textebrut)]})
 					</a>
