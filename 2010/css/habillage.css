@@ -180,6 +180,13 @@ div.titre { margin-bottom: 3em; }
 	.pagination .on { font-size: 14px; line-height: 16.5px; }
 
 
+/* ===================================  */
+/*	=Recherche							*/
+/* ===================================  */
+.resultats h2 { border-bottom: 1px solid #000; }
+.resultats h3.spip { margin-top: 0; }
+	.resultats .liste li { margin-bottom: 1.5em; }
+
 
 /* ===================================  */
 /*	=Slider								*/
@@ -188,10 +195,14 @@ div.titre { margin-bottom: 3em; }
 	position: relative; width: 460px; }
 	.liste .slider { margin-bottom: 1em; }
 #images .slider { width: 520px; }
-	#slider .navigation {
-		position:absolute;
+	.slider .raccourcis {
+		position:absolute; bottom: -22px; right: 0;
 		z-index: 4; }
-		#slider .navigation li { display: inline; }
+		.slider .raccourcis li { display: inline; }
+		.slider .raccourcis li a {
+			display:block; float: left; }
+			.slider .raccourcis li a { padding: 2px; margin-left: 2px; }
+		.slider .raccourcis li a:hover, .slider .raccourcis li a.actif { background-color:#000; }
 	.scroll {
 		position: relative; z-index: 2;
 		overflow: auto;

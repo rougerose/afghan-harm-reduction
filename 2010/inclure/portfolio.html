@@ -1,13 +1,27 @@
 [(#REM) Portfolio : album d'images ]
+<BOUCLE_documents_portfolio(DOCUMENTS){id_article}{par num titre, date}{mode=document}{extension IN png,jpg,gif}{vu=non}>
+[(#SET_PUSH{documents_slider,#ID_DOCUMENT})]
+</BOUCLE_documents_portfolio>
+
+
 <B_portfolio>
 <div id="images" class="documents documents_portfolio">
 	[(#ENV{composition}|=={article-portfolio}|non)
 	<h2 class="spip"><:info_portfolio:></h2>
 	]
 	<div class="slider">
+		<ul class="raccourcis">
+			<BOUCLE_raccourcis(DOCUMENTS){id_document IN #GET{documents_slider}}>
+			<li>
+				[<a href="#image-#ID_DOCUMENT">
+					(#LOGO_DOCUMENT|image_reduire{64,0}|image_recadre{16,16,center}|vider_attribut{class})
+				</a>]
+			</li>
+			</BOUCLE_raccourcis>
+		</ul><!-- .raccourcis -->
 		<div class="scroll">
 			<ul>
-				<BOUCLE_portfolio(DOCUMENTS){id_article}{extension IN jpg,gif,png}{vu=non}{par num titre, titre}>
+				<BOUCLE_portfolio(DOCUMENTS){id_document IN #GET{documents_slider}}>
 				[<li>
 					<a href="[(#FICHIER|image_reduire{800,0}|extraire_attribut{src})]" class="sliderImg icone-lien mediabox" rel="portfolio#ID_ARTICLE" type="#MIME_TYPE">
 					(#FICHIER|image_reduire{520,0}|inserer_attribut{alt,[(#TITRE|textebrut)]})
