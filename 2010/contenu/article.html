@@ -38,6 +38,14 @@
 
 		[<div class="notes surlignable"><h3 class="spip pas_surlignable"><:info_notes:></h3>(#NOTES)</div>]
 
+		<B_mots>
+		<div class="liste mots">
+			<h2 class="h2"><:mots_clefs:></h2>
+			<p><BOUCLE_mots(MOTS){id_article}{par titre}{', '}><a href="#URL_MOT" rel="tag">#TITRE</a></BOUCLE_mots>
+			</p>
+		</div>
+		</B_mots>
+
 		<ul class="meta-publi clearfix">
 			<li class="permalink"><a rel="bookmark" href="#URL_ARTICLE"><:permalink:></a></li>
 			<li class="info-publi updated published">[<span class="value" title="[(#DATE|date_iso)]"><:publie:> (#DATE|affdate)</span>]</li>

@@ -1,4 +1,4 @@
-<div class="container_16 clearfix">
+<div class="container_16 clearfix" dir="#LANG_DIR">
 	<div class="grid_16">
 		<div id="logo" class="grid_8 alpha">
 			[(#ENV{composition}|match{sommaire}|?{'<h1 id="titre">','<p id="titre">'})]
@@ -15,5 +15,6 @@
 			<a href="[(#URL_SITE_SPIP|parametre_url{lang,#LANG})]">[(#LANG|traduire_nom_langue)]</a>
 			</BOUCLE_langues>
 		</div><!-- #langues -->
+
 	</div><!-- .grid_16 -->
 </div><!-- .container_16 -->

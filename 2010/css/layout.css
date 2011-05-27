@@ -16,6 +16,7 @@
 
 #entete { padding-bottom: 1em; }
 	#entete .container_16 { background: transparent url('../img/drapeau.png') repeat-y 0 0; }
+	#entete .container_16[dir=rtl] { background-image: url('../img/drapeau_ltr.png'); }
 	#entete .grid_16 {
 		background-color: #fff;
 		margin-top: 1.5em;
@@ -108,6 +109,7 @@
 	margin: 0; padding: 0; }
 	#pied .container_16 {
 		background: transparent url('../img/drapeau.png') repeat-y 0 0; }
+	#pied .container_16[dir=rtl] { background-image: url('../img/drapeau_ltr.png'); }
 	#pied .container_16 > .grid_16 {
 		background-color: #fff;
 		border-top: 1px solid #000;
