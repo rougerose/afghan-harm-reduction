@@ -1,0 +1,14 @@
+[(#REM) fichier inclus depuis rubrique et mot ]
+
+<B_articles>
+<div class="groupe liste articles rubrique hfeed clearfix">
+	<h2 class="h2 section-titre"><:articles_rubrique:></h2>
+	#ANCRE_PAGINATION
+	<ul>
+		<BOUCLE_articles(ARTICLES){lang}{id_rubrique?}{id_mot?}{pagination 4}{doublons}>
+		[(#INCLURE{fond=inclure/article-resume, id_article, env})]
+		</BOUCLE_articles>
+	</ul>
+	[<p class="pagination bas">(#PAGINATION{page})</p>]
+</div><!-- liste articles sommaire -->
+</B_articles>

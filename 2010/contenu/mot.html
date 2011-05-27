@@ -1,0 +1,19 @@
+<BOUCLE_p(MOTS){id_mot}>
+<div class="contenu-principal article grid_9 suffix_1 alpha">
+	<div class="titre">
+		[(#LOGO_MOT|image_reduire{160,0}|inserer_attribut{class,spip_logos logo})]
+		<h1 class="h1 #EDIT{titre} titre">#TITRE</h1>
+	</div><!-- .titre -->
+
+	[<div class="#EDIT{texte} chapo">(#TEXTE|image_reduire{250,0})</div>]
+
+	<B_articles>
+	<ul class="liste articles rubrique groupe hfeed clearfix">
+		<BOUCLE_articles(ARTICLES){id_mot}{!par date}>
+		[(#INCLURE{fond=inclure/articles-rubrique,ajax,env,id_mot,tailleLogo=160})]
+		</BOUCLE_articles>
+	</ul>
+	</B_articles>
+
+</div><!-- .contenu-principal -->
+</BOUCLE_p>

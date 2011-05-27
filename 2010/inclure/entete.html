@@ -11,7 +11,7 @@
 			[<p id="baseline">(#SLOGAN_SITE_SPIP)</p>]
 		</div><!-- #logo -->
 		<div id="langues">
-			<BOUCLE_langues(ARTICLES){!par lang}{" | "}{fusion lang}>
+			<BOUCLE_langues(ARTICLES){par lang}{" | "}{fusion lang}>
 			<a href="[(#URL_SITE_SPIP|parametre_url{lang,#LANG})]">[(#LANG|traduire_nom_langue)]</a>
 			</BOUCLE_langues>
 		</div><!-- #langues -->
