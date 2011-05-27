@@ -2,7 +2,12 @@
 
 <B_articles>
 <div class="groupe liste articles rubrique hfeed clearfix">
+	[(#ID_MOT|oui)
+	<h2 class="h2 section-titre"><:articles:></h2>
+	]
+	[(#ID_RUBRIQUE|oui)
 	<h2 class="h2 section-titre"><:articles_rubrique:></h2>
+	]
 	#ANCRE_PAGINATION
 	<ul>
 		<BOUCLE_articles(ARTICLES){lang}{id_rubrique?}{id_mot?}{pagination 4}{doublons}>

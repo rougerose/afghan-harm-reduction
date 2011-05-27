@@ -12,6 +12,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'archives' => 'pashto',
 	'_article' => 'pashto',
 	'_articles' => 'pashto',
+	'articles' => 'Articles (traduire)',
 	'aucun_article_disponible' => 'pashto',
 	'_a' => 'pashto',
 	'_au' => 'pashto',

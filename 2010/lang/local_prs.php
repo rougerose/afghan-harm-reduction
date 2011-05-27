@@ -10,6 +10,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'afficher_image' => 'dari',
 	'agenda' => 'dari',
 	'archives' => 'dari',
+	'articles' => 'Article (traduire)',
 	'_article' => 'dari',
 	'_articles' => 'dari',
 	'aucun_article_disponible' => 'dari',
