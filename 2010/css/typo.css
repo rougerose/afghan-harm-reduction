@@ -94,7 +94,7 @@ h3.entry-title, h3.summary, .sites h3.titre { font-size: 16px; line-height: 1em;
 .texte h5 { font-size: 14px; margin: 1em 0 0.25em; }
 .texte h6 { font-size: 12px; margin: 1em 0 0.25em; }
 
-.documents h2, .notes h3, .ps h3 { font-size: 16px; border-bottom: 1px solid #000; }
+.documents h2, .notes h3, .ps h3, .mots h2 { font-size: 16px; border-bottom: 1px solid #000; }
 
 
 
