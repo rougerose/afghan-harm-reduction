@@ -42,6 +42,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'resultats_recherche_pour' => 'dari',
 	'_rubrique' => 'dari',
 	'_rubriques' => 'dari',
+	'rubriques' => 'Rubriques (traduire)',
 
 	// S
 	'_site_web' => 'dari',

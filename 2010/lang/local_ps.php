@@ -43,6 +43,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'resultats_recherche_pour' => 'pashto',
 	'_rubrique' => 'pashto',
 	'_rubriques' => 'pashto',
+	'rubriques' => 'Rubriques (traduire)',
 
 	// S
 	'_site_web' => 'pashto',

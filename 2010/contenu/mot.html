@@ -7,13 +7,13 @@
 
 	[<div class="#EDIT{texte} chapo">(#TEXTE|image_reduire{250,0})</div>]
 
-	<B_articles>
-	<ul class="liste articles rubrique groupe hfeed clearfix">
-		<BOUCLE_articles(ARTICLES){id_mot}{!par date}>
-		[(#INCLURE{fond=inclure/articles-liste,ajax,env,id_mot,tailleLogo=160})]
-		</BOUCLE_articles>
-	</ul>
-	</B_articles>
+	<BOUCLE_articles(ARTICLES){id_mot}{!par date}>
+	[(#INCLURE{fond=inclure/articles-liste,ajax,env,id_mot,tailleLogo=160})]
+	</BOUCLE_articles>
+
+
+	<INCLURE{fond=inclure/rubriques-liste,ajax,env,id_mot,tailleLogo=160}>
+
 
 </div><!-- .contenu-principal -->
 </BOUCLE_p>

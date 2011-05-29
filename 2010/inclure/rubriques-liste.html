@@ -1,0 +1,21 @@
+[(#REM) fichier inclus depuis mot ]
+
+[(#SET{tailleLogo,[(#ENV{tailleLogo,100})]})]
+<B_rubriques>
+<div class="groupe liste rubriques clearfix">
+	<h2 class="h2 section-titre"><:rubriques:></h2>
+	#ANCRE_PAGINATION
+	<ul>
+		<BOUCLE_rubriques(RUBRIQUES){lang}{id_mot}{pagination}>
+		<li id="rubrique-#ID_RUBRIQUE" class="item">
+			[<a href="#URL_ARTICLE" class="logo-article">(#LOGO_ARTICLE|image_reduire{#GET{tailleLogo},0})</a>]
+			<h3 class="titre"><a href="#URL_RUBRIQUE">#TITRE</a></h3>
+			<div class="introduction">
+				[<p class="intro">(#INTRODUCTION|PtoBR) <a href="#URL_RUBRIQUE" class="suite"><:lire_la_suite:></a></p>]
+			</div>
+		</li><!-- #rubrique-#ID_RUBRIQUE -->
+		</BOUCLE_rubriques>
+	</ul>
+	[<p class="pagination bas">(#PAGINATION{page})</p>]
+</div><!-- liste rubriques -->
+</B_rubriques>
