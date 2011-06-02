@@ -79,10 +79,12 @@
 #contenu { padding-bottom: 3em; }
 
 .page_article #contenu,
-.page_rubrique #contenu { width: 580px; }
+.page_rubrique #contenu,
+.page_mot #contenu { width: 580px; }
 
 .page_article #contenu, .page_article #navigation,
-.page_rubrique #contenu, .page_rubrique #navigation {
+.page_rubrique #contenu, .page_rubrique #navigation,
+.page_mot #contenu, .page_mot #navigation {
 	float: left; display: inline;
 	margin-left: 10px; margin-right: 10px; }
 
@@ -93,7 +95,8 @@
 /* =Colonne latérale=					*/
 /* ==================================== */
 .page_article #navigation,
-.page_rubrique #navigation { width: 340px; }
+.page_rubrique #navigation,
+.page_mot #navigation { width: 340px; }
 
 #navigation .liste {
 	margin-bottom: 3em;
