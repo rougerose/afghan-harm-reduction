@@ -32,6 +32,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'lire_la_suite' => 'dari',
 	'_le' => 'dari',
 
+	// M
+	'mots_clefs' => 'mots-clés (traduire)',
+
 	// P
 	'par' => 'dari',
 	'permalink' => 'dari',
@@ -47,6 +50,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// S
 	'_site_web' => 'dari',
 	'_sites_web' => 'dari',
+	'sites_web' => 'sites web (traduire)',
 	'suivant' => 'dari',
 
 	// T

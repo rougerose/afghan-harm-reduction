@@ -43,7 +43,9 @@ div.titre { margin-bottom: 3em; }
 	.liste .intro, .liste .descriptif { overflow: hidden; }
 
 /* sous-rubriques d'une rubrique */
-.liste h2.section-titre { border-bottom: 0; margin-bottom: 1em; }
+.liste h2.section-titre {
+	font-size: 20px;
+	border-bottom: 0; margin-bottom: 1em; }
 
 .hfeed .rubrique h2 { font-size: 18px; margin-bottom: 1em; }
 .hfeed .rubrique .articles.grid .item {

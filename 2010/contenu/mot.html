@@ -7,13 +7,14 @@
 
 	[<div class="#EDIT{texte} chapo">(#TEXTE|image_reduire{250,0})</div>]
 
-	<BOUCLE_articles(ARTICLES){id_mot}{!par date}>
-	[(#INCLURE{fond=inclure/articles-liste,ajax,env,id_mot,tailleLogo=160})]
-	</BOUCLE_articles>
+	[(#REM) articles ]
+	<INCLURE{fond=inclure/articles-liste,ajax,env,id_mot,tailleLogo=160}>
 
-
+	[(#REM) rubriques ]
 	<INCLURE{fond=inclure/rubriques-liste,ajax,env,id_mot,tailleLogo=160}>
 
+	[(#REM) sites ]
+	<INCLURE{fond=inclure/sites-liste,ajax,env,id_mot,tailleLogo=160}>
 
 </div><!-- .contenu-principal -->
 </BOUCLE_p>

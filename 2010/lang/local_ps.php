@@ -31,6 +31,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// L
 	'lire_la_suite' => 'pashto',
 	'_le' => 'pashto',
+	
+	// M
+	'mots_clefs' => 'mots-clés (traduire)',
 
 	// P
 	'par' => 'pashto',
@@ -48,6 +51,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// S
 	'_site_web' => 'pashto',
 	'_sites_web' => 'pashto',
+	'sites_web' => 'sites web (traduire)',
 	'suivant' => 'pashto',
 
 	// T
