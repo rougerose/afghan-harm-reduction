@@ -1,0 +1,30 @@
+<BOUCLE_sites(SITES){id_syndic}>
+#SET{nom_site,#NOM_SITE}
+<div id="suivantPrecedent" class="liste clearfix">
+	<dl class="grid_3 alpha">
+		<dt><:precedent:></dt>
+		<BOUCLE_precedent(SITES){id_rubrique}{nom_site<=#GET{nom_site}}{!par nom_site}{1,1}>
+		<dd>
+			<h3><a href="[(#ID_SYNDIC|generer_url_entite{site,'','',#CONNECT})]" rel="prev">#NOM_SITE</a></h3>
+		</dd>
+		</BOUCLE_precedent>
+		</B_precedent>
+		<dd><h3><:aucun_site_disponible:></h3></dd>
+		<//B_precedent>
+	</dl>
+
+	<dl class="grid_3 omega">
+		<dt><:suivant:></dt>
+		<BOUCLE_suivant(SITES){id_rubrique}{par nom_site}{nom_site>#GET{nom_site}}{0,1}>
+		<dd>
+			<h3><a href="[(#ID_SYNDIC|generer_url_entite{site,'','',#CONNECT})]" rel="prev">#NOM_SITE</a></h3>
+		</dd>
+		</BOUCLE_suivant>
+		</B_suivant>
+		<dd><h3><:aucun_site_disponible:></h3></dd>
+		<//B_suivant>
+	</dl>
+</div>
+</BOUCLE_sites>
+
+<INCLURE{fond=inclure/secondaire,env,lang}>

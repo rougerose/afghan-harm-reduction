@@ -14,6 +14,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'_article' => 'dari',
 	'_articles' => 'dari',
 	'aucun_article_disponible' => 'dari',
+	'aucun_site_disponible' => 'aucun site dispo (traduire)',
 	'_a' => 'dari',
 	'_au' => 'dari',
 

@@ -1,0 +1,22 @@
+<BOUCLE_p(SITES){id_syndic}>
+<div class="contenu-principal site grid_9 suffix_1 alpha">
+	<div class="titre">
+		<a href="#URL_SITE">[(#LOGO_SITE||image_reduire{160,0}|inserer_attribut{class,spip_logos logo})]</a>
+		<h1 class="h1 #EDIT{nom_site} titre">#NOM_SITE</h1>
+	</div><!-- .titre -->
+
+	[<div class="#EDIT{descriptif} chapo">(#DESCRIPTIF)</div>]
+	[<p class="#EDIT{url_site} hyperlien"><a href="#URL_SITE" class="spip_out">(#URL_SITE)</a></p>]
+
+	[<div class="notes"><h2 class="h2"><:info_notes:></h2>(#NOTES)</div>]
+
+	<B_mots>
+	<div class="liste mots">
+		<h2 class="h2"><:mots_clefs:></h2>
+		<p><BOUCLE_mots(MOTS){id_syndic}{par titre}{', '}><a href="#URL_MOT" rel="tag">#TITRE</a></BOUCLE_mots>
+		</p>
+	</div>
+	</B_mots>
+
+</div><!-- .contenu-principal -->
+</BOUCLE_p>
