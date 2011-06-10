@@ -24,13 +24,8 @@
 		#entete #logo { margin-bottom: 1em }
 		#entete #logo #titre {
 			font-size: 38px; line-height: 1em;
-			margin: 0;
-			/* pour Firefox http://log.edds.me.uk/post/436921532/firefox-3-6s-css-font-stretch-support */
-			font-stretch: condensed;
-			text-transform: uppercase; }
+			margin: 0; }
 			#entete #logo #baseline {
-				/* déclaration explicite du HN Light pour Opera qui ne prend pas en compte correctement font-weight */
-				font-family: "Helvetica Neue Light", "Helvetica Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; font-weight: 200;
 				font-size: 26px;  line-height: 1.5em;
 				margin-bottom: 0; }
 
@@ -44,12 +39,12 @@
 		position: absolute; right: 0; top: -1.7em; z-index: 90;
  		float: right; list-style : none outside none; }
 		#nav li {
-			font-size: 12px;
+			font-size: 13px;
 			text-transform: uppercase;
 			float:left;  }
 			#nav li a {
 				color: #999;
-				padding-bottom: 1.2em;
+				padding-bottom: 1em;
 				display:block;
 				margin: 0 15px 0 0; }
 			#nav ul li.n1:last-child > a { margin-right: 0; }
@@ -127,6 +122,7 @@
 	#pied .hierarchie { border-bottom: 1px solid #000; }
 	#pied .hierarchie a { color: #999; }
 	#pied .hierarchie a:hover, #pied .hierarchie strong { color: #000; }
+	#pied .hierarchie strong { font-weight: normal; }
 	#pied .hierarchie a, #pied .hierarchie strong { padding-right: 5px; margin-left: 5px; }
 	#pied .hierarchie a:first-child, #pied .hierarchie strong:first-child { margin-left: 0; }
 

@@ -19,11 +19,41 @@ html { /* background: url('../img/line-height.png');*/ }
 /* =Fontes								*/
 /* ==================================== */
 
-.liste h2, #suivantPrecedent dt {
-	font-family: "HelveticaNeue-CondensedBlack","Helvetica Neue Condensed Black","Helvetica Neue", Helvetica, "Arial Black", Arial, sans-serif;
-	font-stretch: condensed; /* pour Firefox */
-	font-weight: 800;
-	text-transform: uppercase; }
+@font-face {
+    font-family: 'TGBC';
+    src: url('fonts/tgbc.eot');
+    src: url('fonts/tgbc.eot?#iefix') format('embedded-opentype'),
+         url('fonts/tgbc.woff') format('woff'),
+         url('fonts/tgbc.ttf') format('truetype'),
+         url('fonts/tgbc.svg#TradeGothicLTStdBdCnNo.20') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TGL';
+    src: url('fonts/tgl.eot');
+    src: url('fonts/tgl.eot?#iefix') format('embedded-opentype'),
+         url('fonts/tgl.woff') format('woff'),
+         url('fonts/tgl.ttf') format('truetype'),
+         url('fonts/tgl.svg#TradeGothicLTStdLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TGR';
+    src: url('fonts/tgr.eot');
+    src: url('fonts/tgr.eot?#iefix') format('embedded-opentype'),
+         url('fonts/tgr.woff') format('woff'),
+         url('fonts/tgr.ttf') format('truetype'),
+         url('fonts/tgr.svg#TradeGothicLTStdRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 h1,h2,h3,h4,h5,h6,
 #logo #titre,
@@ -34,10 +64,12 @@ a.suite,
 .mots p, .liste li h3,
 .hentry .liste h2,
 #pied .hierarchie,
-.articles-tous {
-	font-family: "HelveticaNeue-CondensedBold","Helvetica Neue Condensed Bold","Helvetica Neue", Helvetica, "Arial Black", Arial, sans-serif;
-	font-stretch: condensed; /* pour Firefox */
-	font-weight: 400;
+.articles-tous,
+.article .hentry .hyperlien .label,
+.liste h2, #suivantPrecedent dt {
+	font-family: "TGBC","HelveticaNeue-CondensedBlack","Helvetica Neue Condensed Black","Helvetica Neue", Helvetica, "Arial Black", Arial, sans-serif;;
+	/*font-stretch: condensed; /* pour Firefox */
+	/*font-weight: bold;*/
 	text-transform: uppercase; }
 
 .meta-publi,
@@ -47,13 +79,14 @@ a.suite,
 .hentry .vevent,
 .liste h2.section-titre,
 .hyperlien {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-stretch: normal; font-weight:normal; }
+	font-family: "TGR","Helvetica Neue", Helvetica, Arial, sans-serif; font-stretch: normal; font-weight:normal; }
 
+#baseline { font-family: "TGL"; }
 
 /* ==================================== */
 /* =Links=								*/
 /* ==================================== */
-a { color: #000; font-weight: bold; text-decoration: none; }
+a { color: #000; text-decoration: none; }
 a:hover { text-decoration: underline; color: #000 !important; }
 a:visited {  }
 a:active, a:focus { position: relative; top: 1px; outline: thin dotted; }
@@ -64,7 +97,9 @@ a.spip_out, a.spip_glossaire {
 	background: url('../img/icones-sprite.png') no-repeat right 0; }
 a.spip_glossaire { background-position: right -32px; }
 
-p a.read-more { }
+.intro a, .description a, .texte a { font-weight: bold; }
+
+a.suite { font-weight: normal; }
 
 .ps a { color: #333; }
 
@@ -83,11 +118,13 @@ h3 { line-height: 1.5em; margin-bottom: 1em; }
 h1.titre { font-size: 26px; line-height: 26px; }
 
 .sommaire.liste h2 {
-	font-size: 18px; margin-bottom: 1em; }
+	font-size: 20px; margin-bottom: 1em; }
 
-#pied h2 { font-size: 18px; line-height: 1em; margin-bottom: .5em; }
+#pied h2 { font-size: 20px; line-height: 1em; margin-bottom: .5em; }
 
 h3.titre, h3.entry-title, h3.summary, .sites h3.titre { font-size: 16px; line-height: 1em; margin-bottom: .5em; }
+h3.summary { line-height: 1.5em; }
+
 
 .texte h2 { font-size: 20px; margin: 1.25em 0 .25em; }
 .texte h3, h3.spip { font-size: 18px; line-height: 1.5em; margin: 1em 0 0.25em; }
