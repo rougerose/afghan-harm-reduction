@@ -97,7 +97,7 @@ a.spip_out, a.spip_glossaire {
 	background: url('../img/icones-sprite.png') no-repeat right 0; }
 a.spip_glossaire { background-position: right -32px; }
 
-.intro a, .description a, .texte a { font-weight: bold; }
+.intro a, .description a, .descriptif a, .texte a { font-weight: bold; }
 
 a.suite { font-weight: normal; }
 
