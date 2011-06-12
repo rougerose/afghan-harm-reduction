@@ -10,7 +10,7 @@
 
 #page { background: #fff url('../img/ie/drapeau.png') repeat-y 0 0; }
 #entete #logo #titre { font-size: 28px; font-weight: bold; }
-.scroll li { width: 520px; margin: 0; padding: 0; }
+.scroll li, .scroll li a { width: 520px;}
 .scrollBouton { background: #000 url('../img/ie/sprite.png') no-repeat; }
 .imageLegend {
 	width: 504px;
