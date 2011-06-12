@@ -14,6 +14,7 @@
 				$raccourcis = $("> .raccourcis li a", this),
 				pages = $items.length,
 				pageCourante = 1,
+				p = 1,
 				pageLargeur = $items.outerWidth(),
 				pageHauteur = $items.eq((pageCourante - 1)).outerHeight(),
 				horizontal = true,
@@ -42,9 +43,13 @@
 			$("span.scrollBouton").css({ top: Math.round((pageHauteur - boutonHauteur)/2) });
 
 			$('span.scrollBouton.gauche', this).click(function () {
+				p--; if (p < 1) p = pages;
+				var el = $raccourcis.eq(p-1); selectNav.call(el);
 				return gotoPage(pageCourante - 1);
 			});
 			$('span.scrollBouton.droite', this).click(function () {
+				p++; if (p > pages) p = 1;
+				var el = $raccourcis.eq(p-1); selectNav.call(el);
 				return gotoPage(pageCourante + 1);
 			});
 

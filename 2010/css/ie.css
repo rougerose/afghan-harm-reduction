@@ -7,8 +7,6 @@
 /*	Version :	1							*/
 /* ======================================== */
 
-
-/*#page { background: #fff url('../img/ie/drapeau.png') repeat-y 0 0; }*/
 #entete #logo #titre { font-size: 28px; font-weight: bold; }
 .scroll li { width: 520px;}
 .scrollBouton { background: #000 url('../img/ie/sprite.png') no-repeat; }
