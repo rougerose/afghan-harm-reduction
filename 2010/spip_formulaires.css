@@ -53,7 +53,7 @@ input, select, textarea { font-size: 100%; font-family: monospace; }
 .formulaire_spip fieldset.previsu { margin-bottom: 2em; border: 2px solid #F57900; }
 .formulaire_spip fieldset.previsu legend { padding: 0 0.50em; font-weight: bold; color: #F57900; }
 .formulaire_spip fieldset.previsu li { padding: 3px; border: none; }
-.formulaire_spip fieldset.previsu p { margin: 1em 0; } 
+.formulaire_spip fieldset.previsu p { margin: 1em 0; }
 
 /* Reponse du formulaire */
 .reponse_formulaire { font-weight: bold; color: #e86519; font-size: 1.20em; }
@@ -90,7 +90,7 @@ table.spip_barre input.barre { width: 99%; background: transparent; border: 0; c
 .formulaire_recherche { margin: 0; padding: 0; background: none; }
 .formulaire_recherche * { display: inline; vertical-align: middle; }
 .formulaire_recherche label {}
-.formulaire_recherche input.text { width: 10em; padding-left: 25px; background: #FFF url(rechercher.gif) no-repeat left center; }
+.formulaire_recherche input.text { width: 10em; padding-left: 25px; xbackground: #FFF url(rechercher.gif) no-repeat left center; }
 .formulaire_recherche input.submit {}
 
 .spip_surligne {} /* Cf.: spip_style.css */
