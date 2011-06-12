@@ -13,5 +13,5 @@
 .imageLegend {
 	width: 504px;
 	background: url('../img/ie/calque.png') repeat 0 0; }
-
+.formulaire_recherche p label { line-height: 24px; }
 .formulaire_spip input.text, .formulaire_spip textarea, .formulaire_spip input.password { border-radius: 0; }
