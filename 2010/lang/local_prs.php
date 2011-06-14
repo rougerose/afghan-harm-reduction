@@ -19,7 +19,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'_au' => 'dari',
 
 	// D
-	'dernieres_actus' => 'dari',
+	'dernieres_actu' => 'dari',
 	'_document' => 'dari',
 	'document_sans_titre' => 'dari',
 	'_documents' => 'dari',

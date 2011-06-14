@@ -15,7 +15,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'_au' => 'to',
 
 	// D
-	'dernieres_actus' => 'Last news',
+	'dernieres_actu' => 'Last news',
 	'_document' => 'file',
 	'document_sans_titre' => 'file',
 	'_documents' => 'files',

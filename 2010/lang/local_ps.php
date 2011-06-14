@@ -19,7 +19,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'_au' => 'pashto',
 
 	// D
-	'dernieres_actus' => 'pashto',
+	'dernieres_actu' => 'pashto',
 	'_document' => 'pashto',
 	'_documents' => 'pashto',
 	'document_sans_titre' => 'pashto',
