@@ -46,7 +46,7 @@
 		<B_events>
 		<div class="liste agenda sommaire">
 			<h2><:agenda:></h2>
-			<BOUCLE_events(EVENEMENTS){id_rubrique=10}{statut=publie}{date_debut>=#ENV{date}}>
+			<BOUCLE_events(EVENEMENTS){id_rubrique=10}{statut=publie}{date_debut>=#ENV{date}}{par date}>
 			[(#INCLURE{fond=inclure/evenements-liste}{env}{id_evenement})]
 			</BOUCLE_events>
 		</div><!-- .liste agenda sommaire -->
