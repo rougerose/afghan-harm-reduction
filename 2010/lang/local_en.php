@@ -4,13 +4,13 @@ if (!defined("_ECRIRE_INC_VERSION")) return;
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// A
 	'accueil' => 'Home',
-	'afficher_document' => 'See the file',
-	'afficher_image' => 'See the image',
+	'afficher_document' => 'Show the file',
+	'afficher_image' => 'Show the picture',
 	'agenda' => 'Agenda',
 	'archives' => 'Archives',
 	'_article' => 'article',
 	'_articles' => 'articles',
-	'aucun_article_disponible' => 'Aucun article disponible [traduire]',
+	'aucun_article_disponible' => 'No articles available',
 	'_a' => 'at',
 	'_au' => 'to',
 
@@ -22,12 +22,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'_du' => 'from',
 
 	// I
-	'image' => 'image',
-	'image_sans_titre'=> 'image',
+	'image' => 'picture',
+	'image_sans_titre'=> 'picture',
 
 	// L
 	'lire_la_suite' => 'Read more',
-	'_le' => 'le [traduire]',
+	'_le' => 'the',
 
 	// P
 	'par' => 'By',
@@ -47,7 +47,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'suivant' => 'Next',
 
 	// T
-	'tous_articles_in_rubrique' => 'Tous les articles de cette rubrique [traduire]',
+	'tous_articles_in_rubrique' => 'All articles of this section',
+	'trad_article_traduction' => 'All the versions of this article:',
 
 	// V
 	'votre_recherche' => 'Your search'
