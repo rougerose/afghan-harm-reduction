@@ -8,7 +8,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'afficher_document' => 'Show the file',
 	'afficher_image' => 'Show the picture',
 	'agenda' => 'Agenda',
-	'antispam_champ_vide' => 'Please leave this field empty:',
 	'archives' => 'Archives',
 	'_article' => 'article',
 	'_articles' => 'articles',
