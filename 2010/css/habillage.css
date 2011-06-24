@@ -245,8 +245,6 @@ div.titre { margin-bottom: 3em; }
 			cursor:pointer; }
 		.scrollBouton.gauche { left:-20px; background-position: 3px 13px; }
 		.scrollBouton.droite { right:-20px; background-position: -27px 13px; }
-		html[dir="rtl"] .scrollBouton.gauche { left:-20px; }
-		html[dir="rtl"] .scrollBouton.droite { right:-20px; }
 		.scrollBouton:hover { z-index: 4; background-color: rgba(0,0,0,0.7); }
 		.imageLegend {
 			position: absolute; left: 0; bottom: 0;
