@@ -1,7 +1,7 @@
 <div class="contenu-principal grid_16">
 	[(#REM) colonne gauche ]
 
-	<BOUCLE_selections(ARTICLES pb_selection){lang}{par ordre}{spip_pb_selection.id_rubrique=0}{id_rubrique!=11}{doublons}>
+	<BOUCLE_selections(ARTICLES pb_selection){lang}{par ordre}{spip_pb_selection.id_rubrique=0}{id_rubrique !IN 11,23,27}{doublons}>
 	[(#SET_PUSH{articles_selection,#ID_ARTICLE})]
 	</BOUCLE_selections>
 
@@ -14,20 +14,23 @@
 	<div class="grid_8 omega">
 		[(#REM) portfolios ]
 		<div class="liste portfolios sommaire hfeed">
-			<h2><:portfolio:></h2>
-			<BOUCLE_art_portfolios(ARTICLES){id_rubrique=11}{lang}{0,3}{!par date}>
+			<BOUCLE_rubrique_multimedia(RUBRIQUES){lang}{id_rubrique IN 11,23,27}>
+			<h2>#TITRE</h2>
+			<BOUCLE_art_portfolios(ARTICLES){id_rubrique}{lang}{0,3}{!par date}>
 			<div id="article-#ID_ARTICLE" class="item hentry clearfix">
-				[(#REM)  ]
 				[(#INCLURE{fond=inclure/portfolios-liste,id_article,tailleLogo=460,env})]
 			</div>
 			</BOUCLE_art_portfolios>
+			</BOUCLE_rubrique_multimedia>
 		</div><!-- .liste portfolio -->
 
 		[(#REM) agenda ]
 		<B_events>
 		<div class="liste agenda sommaire">
-			<h2><:agenda:></h2>
-			<BOUCLE_events(EVENEMENTS){id_rubrique=10}{statut=publie}{date_debut>=#ENV{date}}{par date}>
+			<BOUCLE_agenda(RUBRIQUES){lang}{id_rubrique IN 10,22,26}>
+			<h2>#TITRE</h2>
+			</BOUCLE_agenda>
+			<BOUCLE_events(EVENEMENTS){id_rubrique IN 10,22,26}{lang}{statut=publie}{date_debut>=#ENV{date}}{par date}>
 			[(#INCLURE{fond=inclure/evenements-liste}{env}{id_evenement})]
 			</BOUCLE_events>
 		</div><!-- .liste agenda sommaire -->

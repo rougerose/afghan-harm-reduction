@@ -16,11 +16,11 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'_a' => 'at',
 	'_au' => 'to',
 	'aucun_site_disponible' => 'No website available',
-	
+
 	// C
 	'contact_us' => 'Contact us',
 	'credits_site' => 'Site created with SPIP. Design & development by christophe le drean',
-	
+
 	// D
 	'dernieres_actu' => 'Latest news',
 	'_document' => 'file',
@@ -48,7 +48,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'publie' => 'Published',
 
 	// R
-	recherche' => 'Search',
+	'recherche' => 'Search',
 	'rss' => 'RSS',
 	'resultats_recherche_pour' => 'Search results for',
 	'_rubrique' => 'section',

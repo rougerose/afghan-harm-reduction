@@ -4,27 +4,27 @@
 			<INCLURE{fond=hierarchie/#ENV{type},env}>
 		</div><!-- .hierarchie -->
 		<div class="about grid_6 alpha">
-			<h2>About Us</h2>
+			<h2><:about_us:></h2>
 			[<p class="descriptif grid_4 alpha">(#DESCRIPTIF_SITE_SPIP|PTOBR)</p>]
 			[<p class="grid_2 omega"><a href="http://www.medecinsdumonde.org">(#LOGO_SITE_SPIP|inserer_attribut{alt,'M&eacute;decins du Monde'}|image_reduire{100,0})</a></p>]
 		</div><!-- .about -->
 
 		<div id="search" class="search grid_9 prefix_1 omega">
-			<h2>Search</h2>
+			<h2><:recherche:></h2>
 			#FORMULAIRE_RECHERCHE
 		</div><!-- .search grid_9 prefix_1 -->
 
 		<div class="follow grid_3 prefix_1">
-			<h2>Follow Us</h2>
+			<h2><:follow_us:></h2>
 			<ul>
-				<li><a href="http://www.facebook.com/pages/Promote-Harm-Reduction-in-AfghanistanMdM/102238776497019">Facebook</a></li>
-				<li><a href="#URL_PAGE{backend}" rel="alternate" title="<:syndiquer_site:>">RSS</a></li>
+				<li><a href="http://www.facebook.com/pages/Promote-Harm-Reduction-in-AfghanistanMdM/102238776497019"><:facebook:></a></li>
+				<li><a href="#URL_PAGE{backend}" rel="alternate" title="<:syndiquer_site:>"><:rss:></a></li>
 			</ul>
 		</div><!-- .follow -->
 
 
 		<div class="contact grid_6 omega">
-			<h2>Contact Us</h2>
+			<h2><:contact_us:></h2>
 			<BOUCLE_auteur(AUTEURS){id_auteur=3}{tout}>
 			[(#FORMULAIRE_ECRIRE_AUTEUR)]
 			</BOUCLE_auteur>

@@ -9,23 +9,28 @@
 </div><!-- .news -->
 </B_last_news>
 
+<BOUCLE_rub_agenda(RUBRIQUES){lang}{id_rubrique IN 10,22,26}>
 <B_agenda>
 <div class="liste agenda">
-	<h2 class="h2"><:agenda:></h2>
-	<BOUCLE_agenda(EVENEMENTS){id_rubrique=10}{statut=publie}{date_debut>=#ENV{date}}{exclus}{par date}>
+	<h2 class="h2">#_rub_agenda:TITRE</h2>
+	<BOUCLE_agenda(EVENEMENTS){id_rubrique}{statut=publie}{date_debut>=#ENV{date}}{exclus}{par date}>
 	[(#INCLURE{fond=inclure/evenements-liste,env,id_evenement})]
 	</BOUCLE_agenda>
 </div><!-- .liste agenda -->
 </B_agenda>
+</BOUCLE_rub_agenda>
 
+<BOUCLE_rub_multimedia(RUBRIQUES){lang}{id_rubrique IN 11,23,27}>
 <B_portfolio>
 <div class="liste portfolio">
-	<h2 class="h2"><:portfolio:></h2>
+	<h2 class="h2">#_rub_multimedia:TITRE</h2>
 	<ul class="liste-items">
-	<BOUCLE_portfolio(ARTICLES){lang}{id_rubrique=11}{0,3}{!par date}{exclus}>
-	<li>
-		[(#INCLURE{fond=inclure/portfolios-liste,id_article,tailleLogo=340})]
-	</li>
+	<BOUCLE_portfolio(ARTICLES){lang}{id_rubrique}{0,3}{!par date}{exclus}>
+	[<li class="item">
+	(#INCLURE{fond=inclure/portfolios-liste,id_article,tailleLogo=340})
+	</li>]
 	</BOUCLE_portfolio>
 	</ul>
 </div><!-- .liste portfolio -->
+</B_portfolio>
+</BOUCLE_rub_multimedia>

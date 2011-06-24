@@ -1,8 +1,8 @@
 <B_last_news>
 <div class="liste news">
-	<h2 class="h2"><:last_news:></h2>
+	<h2 class="h2"><:dernieres_actu:></h2>
 	<ul class="liste-items">
-		<BOUCLE_last_news(ARTICLES pb_selection){lang}{par ordre}{spip_pb_selection.id_rubrique=0}{id_rubrique!=11}{exclus}>
+		<BOUCLE_last_news(ARTICLES pb_selection){lang}{par ordre}{spip_pb_selection.id_rubrique=0}{exclus}>
 		[(#INCLURE{fond=inclure/lastNews-liste,id_article})]
 		</BOUCLE_last_news>
 	</ul>
@@ -12,23 +12,26 @@
 
 
 [(#REM) on est dans la rubrique Agenda ou Portfolio ]
-<BOUCLE_test1(CONDITION){si #ENV{id_rubrique}|match{(10|4)}|non}>
+<BOUCLE_test1(CONDITION){si #ENV{id_rubrique}|match{(10|22|26)}|non}>
+<BOUCLE_rub_agenda(RUBRIQUES){lang}{id_rubrique IN 10,22,26}>
 <B_agenda>
 <div class="liste agenda">
-	<h2 class="h2"><:agenda:></h2>
-	<BOUCLE_agenda(EVENEMENTS){id_rubrique=10}{statut=publie}{date_debut>=#ENV{date}}{exclus}{par date}>
+	<h2 class="h2">#_rub_agenda:TITRE</h2>
+	<BOUCLE_agenda(EVENEMENTS){id_rubrique}{statut=publie}{date_debut>=#ENV{date}}{exclus}{par date}>
 	[(#INCLURE{fond=inclure/evenements-liste,env,id_evenement})]
 	</BOUCLE_agenda>
 </div><!-- .liste agenda -->
 </B_agenda>
+</BOUCLE_rub_agenda>
 </BOUCLE_test1>
 
-<BOUCLE_test2(CONDITION){si #ENV{id_rubrique}|match{(11|4)}|non}>
+<BOUCLE_test2(CONDITION){si #ENV{id_rubrique}|match{(11|23|27)}|non}>
+<BOUCLE_rub_multimedia(RUBRIQUES){lang}{id_rubrique IN 11,23,27}>
 <B_portfolio>
 <div class="liste portfolio">
-	<h2 class="h2"><:portfolio:></h2>
+	<h2 class="h2">#_rub_multimedia:TITRE</h2>
 	<ul class="liste-items">
-	<BOUCLE_portfolio(ARTICLES){lang}{id_rubrique=11}{0,3}{!par date}{exclus}>
+	<BOUCLE_portfolio(ARTICLES){lang}{id_rubrique}{0,3}{!par date}{exclus}>
 	[<li class="item">
 	(#INCLURE{fond=inclure/portfolios-liste,id_article,tailleLogo=340})
 	</li>]
@@ -36,4 +39,5 @@
 	</ul>
 </div><!-- .liste portfolio -->
 </B_portfolio>
+</BOUCLE_rub_multimedia>
 </BOUCLE_test2>
