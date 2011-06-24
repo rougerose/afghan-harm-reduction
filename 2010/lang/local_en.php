@@ -3,23 +3,34 @@ if (!defined("_ECRIRE_INC_VERSION")) return;
 
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// A
+	'about_us' => 'About us',
 	'accueil' => 'Home',
 	'afficher_document' => 'Show the file',
 	'afficher_image' => 'Show the picture',
 	'agenda' => 'Agenda',
+	'antispam_champ_vide' => 'Please leave this field empty:',
 	'archives' => 'Archives',
 	'_article' => 'article',
 	'_articles' => 'articles',
 	'aucun_article_disponible' => 'No articles available',
 	'_a' => 'at',
 	'_au' => 'to',
-
+	'aucun_site_disponible' => 'No website available',
+	
+	// C
+	'contact_us' => 'Contact us',
+	'credits_site' => 'Site created with SPIP. Design & development by christophe le drean',
+	
 	// D
 	'dernieres_actu' => 'Latest news',
 	'_document' => 'file',
 	'document_sans_titre' => 'file',
 	'_documents' => 'files',
 	'_du' => 'from',
+
+	// F
+	'facebook' => 'Facebook',
+	'follow_us' => 'Follow us',
 
 	// I
 	'image' => 'picture',
@@ -37,6 +48,8 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'publie' => 'Published',
 
 	// R
+	recherche' => 'Search',
+	'rss' => 'RSS',
 	'resultats_recherche_pour' => 'Search results for',
 	'_rubrique' => 'section',
 	'_rubriques' => 'sections',
@@ -48,7 +61,6 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 
 	// T
 	'tous_articles_in_rubrique' => 'All articles of this section',
-	'trad_article_traduction' => 'All the versions of this article:',
 
 	// V
 	'votre_recherche' => 'Your search'
