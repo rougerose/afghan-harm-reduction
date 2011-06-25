@@ -1,0 +1,4 @@
+/* pour éviter les inversions gauche/droite quand on passe en dari/pashto,
+il faut "delocaliser" dans deux fichiers */
+.scrollBouton.gauche { left:-20px;  }
+.scrollBouton.droite { right:-20px; }
