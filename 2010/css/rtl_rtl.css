@@ -1,2 +1,2 @@
-.scrollBouton.gauche { left:-20px; background-position: 3px 13px; }
-.scrollBouton.droite { right:-20px; background-position: -27px 13px; }
+.scrollBouton.gauche { left:-20px !important;  }
+.scrollBouton.droite { right:-20px !important; }
