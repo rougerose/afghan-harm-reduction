@@ -6,12 +6,12 @@ if (!defined("_ECRIRE_INC_VERSION")) return;
 $GLOBALS[$GLOBALS['idx_lang']] = array(
 	// A
 	'about_us' => 'About us',
-	'accueil' => '',
-	'afficher_document' => '',
+	'accueil' => '&#1705;&#1608;&#1585;',
+	'afficher_document' => '&#1583; &#1601;&#1575;&#1610;&#1604; &#1690;&#1608;&#1608;&#1583;&#1604;',
 	'afficher_image' => '',
-	'agenda' => '',
+	'agenda' => '&#1604;&#1606;&#1673;&#1610;&#1586;',
 	'antispam_champ_vide' => 'Please leave this field empty:',
-	'archives' => '',
+	'archives' => '&#1575;&#1585;&#1588;&#1610;&#1601;',
 	'articles' => '',
 	'_article' => '',
 	'_articles' => '',
@@ -93,7 +93,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'forum_attention_dix_caracteres' => '<b>Warning!</b> Your message needs to be at least ten characters in length.',
 
 	// I
-	'image' => '',
+	'image' => '&#1593;&#1705;&#1587;',
 	'image_sans_titre'=> '',
 
 	'info_notes' => 'Footnotes',
