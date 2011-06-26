@@ -12,12 +12,12 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'agenda' => '&#1604;&#1606;&#1673;&#1610;&#1586;',
 	'antispam_champ_vide' => 'Please leave this field empty:',
 	'archives' => '&#1575;&#1585;&#1588;&#1610;&#1601;',
-	'articles' => '',
+	'articles' => '&#1605;&#1602;&#1575;&#1604;&#1607;',
 	'_article' => '',
 	'_articles' => '',
-	'aucun_article_disponible' => '',
+	'aucun_article_disponible' => '&#1583; &#1605;&#1602;&#1575;&#1604;&#1607; &#1610;&#1607; &#1604;&#1575;&#1587; &#1705;&#1690;&#1610; &#1606;&#1607; &#1583;&#1585;&#1604;&#1608;&#1608;&#1583;&#1604;',
 	'aucun_site_disponible' => 'No website available',
-	'_a' => '',
+	'_a' => '&#1662;&#1607;',
 	'_au' => '',
 
 	// C
@@ -70,11 +70,11 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'date_mois_8' => 'August',
 	'date_mois_9' => 'September',
 
-	'dernieres_actu' => '',
-	'_document' => '',
-	'document_sans_titre' => '',
-	'_documents' => '',
-	'_du' => '',
+	'dernieres_actu' => '&#1608;&#1585;&#1587;&#1578;&#1606;&#1610; &#1582;&#1576;&#1585;&#1608;&#1606;&#1607;',
+	'_document' => '&#1601;&#1575;&#1610;&#1604;',
+	'document_sans_titre' => '&#1601;&#1575;&#1610;&#1604;',
+	'_documents' => '&#1601;&#1575;&#1610;&#1604;&#1608;&#1606;&#1607;',
+	'_du' => '&#1604;&#1607;',
 
 	// E
 	'envoi_via_le_site' => 'Sent via the site',
@@ -103,7 +103,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_texte_message' => 'Text of your message',
 
 	// L
-	'lire_la_suite' => '',
+	'lire_la_suite' => '&#1673;&#1610;&#1585;&#1610;&#1610; &#1608; &#1604;&#1608;&#1608;&#1604;&#1610;',
 
 	'_le' => 'the',
 
@@ -126,34 +126,34 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'pass_recevoir_mail' => 'You will receive an e-mail explaining how you can retrieve your access to the site.',
 
 	'permalink' => '',
-	'portfolio' => '',
-	'precedent' => '',
+	'portfolio' => '&#1605;&#1602;&#1575;&#1605;',
+	'precedent' => '&#1608;&#1585;&#1608;&#1587;&#1578;&#1606;&#1610;',
 
 	'previsualisation' => 'preview',
 
-	'publie' => '',
+	'publie' => '&#1582;&#1662;&#1585;&#1610;&#1583;&#1604;',
 
 	// R
 	'recherche' => 'Search',
 	'rss' => 'RSS',
 
-	'resultats_recherche_pour' => '',
-	'_rubrique' => '',
-	'_rubriques' => '',
-	'rubriques' => '',
+	'resultats_recherche_pour' => '&#1608; &#1662;&#1604;&#1660;&#1610; &#1606;&#1578;&#1575;&#1610;&#1580; &#1583; &#1662;&#1575;&#1585;&#1607;',
+	'_rubrique' => '&#1669;&#1575;&#1606;&#1707;&#1607;',
+	'_rubriques' => '&#1669;&#1575;&#1606;&#1707;&#1610;',
+	'rubriques' => '&#1669;&#1575;&#1606;&#1707;&#1610;',
 
 	// S
-	'_site_web' => '',
+	'_site_web' => '&#1608;&#1610;&#1576;&#1587;&#1575;&#1610;&#1578;',
 	'_sites_web' => '',
 	'sites_web' => '',
-	'suivant' => '',
+	'suivant' => '&#1608;&#1585;&#1587;&#1578;&#1610;',
 
 	// T
-	'tous_articles_in_rubrique' => '',
+	'tous_articles_in_rubrique' => '&#1583;&#1583;&#1594;&#1607; &#1669;&#1575;&#1606;&#1705;&#1610; &#1660;&#1608;&#1604;&#1610; &#1605;&#1602;&#1575;&#1604;&#1610;',
 
 	'trad_article_traduction' => 'All the versions of this article:',
 
 	// V
-	'votre_recherche' => ''
+	'votre_recherche' => '&#1587;&#1578;&#1575;&#1587;&#1608; &#1662;&#1604;&#1578;&#1606;&#1607;'
 );
 ?>
