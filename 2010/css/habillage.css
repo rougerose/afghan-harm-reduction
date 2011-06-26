@@ -220,7 +220,7 @@ div.titre { margin-bottom: 3em; }
 	.liste .slider { margin-bottom: 1em; }
 #images .slider { width: 520px; }
 	.slider .raccourcis {
-		position:absolute; right: 0; top: 0em;
+		position:absolute; top: 0;
 		z-index: 4; }
 		.slider .raccourcis li { display: inline; }
 		.slider .raccourcis li a {
