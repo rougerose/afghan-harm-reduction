@@ -1,7 +1,21 @@
 /* pour éviter les inversions gauche/droite quand on passe en dari/pashto,
 il faut "delocaliser" dans deux fichiers */
 
+p { font-size: 14px; }
+
 /* slider */
 .scrollBouton.gauche { left:-20px;  }
 .scrollBouton.droite { right:-20px; }
 .slider .raccourcis { right: 0; }
+
+
+.meta-publi { background-position: 0 -40px; }
+	.meta-publi li { font-size: 12px; }
+
+a.suite, .articles-tous {
+	font-size: 13px;
+	background-position: 0 -16px; }
+
+
+#nav li { font-size: 14px; }
+	#nav li a { padding-bottom: 0.75em; }
