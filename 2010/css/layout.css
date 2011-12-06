@@ -39,7 +39,7 @@
 		position: absolute; right: 0; top: -1.7em; z-index: 90;
  		float: right; list-style : none outside none; }
 		#nav li {
-			font-size: 13px;
+			font-size: 14px; line-height: 1em;
 			text-transform: uppercase;
 			float:left;  }
 			#nav li a {
@@ -50,7 +50,7 @@
 			#nav ul li.n1:last-child > a { margin-right: 0; }
 				#nav li.n1.sf-breadcrumb > a {
 					color: #000;
-					background: url('../img/barreNavigation_on.png') no-repeat scroll bottom center; }
+					background: url('../img/barreNavigation_on2.png') no-repeat scroll bottom center; }
 			#nav ul ul {
 				width: 100%;
 				top: 2.3em; right: auto; left: 0; z-index: -10; }
@@ -64,7 +64,7 @@
 
 #conteneur {
 	background-color: #fff;
-	margin-top: 4.5em; }
+	margin-top: 6.5em; }
 
 
 /* ==================================== */
