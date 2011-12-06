@@ -54,6 +54,7 @@
 			#nav ul ul {
 				width: 100%;
 				top: 2.3em; right: auto; left: 0; z-index: -10; }
+				#nav ul ul li { font-size: 13px }
 				#nav ul ul li a { padding-bottom: 0; }
 				#nav ul ul li.current a { background:none; color: #000; }
 
