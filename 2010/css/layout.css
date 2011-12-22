@@ -37,24 +37,22 @@
 #nav .grid_16 { position: relative; }
 	#nav ul {
 		position: absolute; right: 0; top: -1.7em; z-index: 90;
- 		float: right; list-style : none outside none; }
+ 		float: right; list-style : none outside none; text-align: right;
+ 		width: 940px; }
 		#nav li {
 			font-size: 14px; line-height: 1em;
-			text-transform: uppercase;
-			float:left;  }
+			text-transform: uppercase; text-align: right;
+			display: inline;  }
 			#nav li a {
 				color: #999;
-				padding-bottom: 1em;
-				display:block;
+				padding-bottom: .8em;
 				margin: 0 15px 0 0; }
-			#nav ul li.n1:last-child > a { margin-right: 0; }
+			#nav ul li:last-child > a { margin-right: 0; }
 				#nav li.n1.sf-breadcrumb > a {
 					color: #000;
 					background: url('../img/barreNavigation_on2.png') no-repeat scroll bottom center; }
 			#nav ul ul {
-				width: 100%;
-				top: 2.3em; right: auto; left: 0; z-index: -10; }
-				#nav ul ul li { font-size: 13px }
+				top: 2.3em; right: 0; z-index: -10; }
 				#nav ul ul li a { padding-bottom: 0; }
 				#nav ul ul li.current a { background:none; color: #000; }
 

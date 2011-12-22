@@ -79,8 +79,7 @@ a.suite,
 .pagination,
 .traduction .on,
 .hentry .vevent,
-.liste h2.section-titre,
-.hyperlien {
+.liste h2.section-titre {
 	font-family: "TGR","Helvetica Neue", Helvetica, Arial, sans-serif; font-stretch: normal; font-weight:normal; }
 
 #baseline { font-family: "TGL"; }
