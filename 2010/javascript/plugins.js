@@ -16,7 +16,7 @@
 				pageCourante = 1,
 				p = 1,
 				pageLargeur = $items.outerWidth(),
-				pageHauteur = $items.eq((pageCourante - 1)).outerHeight(),
+				pageHauteur = $items.eq((pageCourante - 1)).outerHeight(true),
 				horizontal = true,
 				boutonHauteur = 60;
 
@@ -40,7 +40,7 @@
 				.css({ height: pageHauteur });
 
 			// ajustement du positionnement en hauteur des boutons de navigation
-			$("span.scrollBouton").css({ top: Math.round((pageHauteur - boutonHauteur)/2) });
+			$("span.scrollBouton").css({ top: Math.round((pageHauteur - (boutonHauteur/2))/2) });
 
 			$('span.scrollBouton.gauche', this).click(function () {
 				p--; if (p < 1) p = pages;
