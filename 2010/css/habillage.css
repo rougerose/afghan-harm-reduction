@@ -234,7 +234,7 @@ div.titre { margin-bottom: 3em; }
 		overflow-x: hidden;
 		width: 460px; }
 	#images .scroll { width: 520px; }
-		.scroll li { list-style: none; padding-top: 1em; }
+		.scroll li { list-style: none; padding-top: 10px; }
 			.scroll li a { display: block; }
 				.scroll li img {  }
 		.scrollConteneur {}
