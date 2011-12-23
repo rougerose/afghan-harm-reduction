@@ -30,15 +30,18 @@
 				<h2><a href="#URL_RUBRIQUE">[(#TITRE)]</a></h2>
 				[<p class="descriptif">(#INTRODUCTION|couper{200}) <a href="#URL_RUBRIQUE"><:lire_la_suite:></a></p>]
 
-				<BOUCLE_test1(CONDITION){si #ID_RUBRIQUE|=={10}|oui}>
+				[(#REM) sous-rubriques Agenda ? ]
+				<BOUCLE_test1(CONDITION){si #ID_RUBRIQUE|=={22|65|66}|oui}>
 				[(#INCLURE{fond=inclure/articles-rubrique-agenda,env,id_rubrique,format=grid})]
 				</BOUCLE_test1>
 
-				<BOUCLE_test2(CONDITION){si #ID_RUBRIQUE|=={11}|oui}>
+				[(#REM) sous-rubriques portfolio ? ]
+				<BOUCLE_test2(CONDITION){si #ID_RUBRIQUE|=={7|42|63}|oui}>
 				[(#INCLURE{fond=inclure/articles-rubrique-portfolio,env,id_rubrique,format=grid,tailleLogo=220})]
 				</BOUCLE_test2>
 
-				<BOUCLE_test3(CONDITION){si #ID_RUBRIQUE|=={12}|oui}>
+				[(#REM) sous-rubriques Newsfeed ?]
+				<BOUCLE_test3(CONDITION){si #ID_RUBRIQUE|=={6|41|62}|oui}>
 				[(#INCLURE{fond=inclure/articles-sous_rubrique,env,id_rubrique,format=grid,tailleLogo=220})]
 				</BOUCLE_test3>
 
