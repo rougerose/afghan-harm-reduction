@@ -209,7 +209,7 @@ div.titre { margin-bottom: 3em; }
 .resultats h2.spip {
 	font-size: 20px;
 	border-bottom: 1px solid #000; }
-.resultats h3.spip { margin-top: 0; }
+.resultats h3.spip { margin-top: 0; line-height: 1.2em; }
 	.resultats .liste li { margin-bottom: 1.5em; }
 
 

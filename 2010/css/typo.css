@@ -77,12 +77,13 @@ a.suite,
 .surtitre, .soustitre,
 .hyperlien .label,
 .pagination,
-.traduction .on,
 .hentry .vevent,
 .liste h2.section-titre {
 	font-family: "TGR","Helvetica Neue", Helvetica, Arial, sans-serif; font-stretch: normal; font-weight:normal; }
 
 #baseline { font-family: "TGL"; }
+
+.traductions span { font-family: Georgia, "Times New Roman", Times, serif; text-transform: lowercase; }
 
 /* ==================================== */
 /* =Links=								*/
