@@ -124,8 +124,8 @@ h1.titre { font-size: 26px; line-height: 26px; }
 
 #pied h2 { font-size: 20px; line-height: 1em; margin-bottom: .5em; }
 
-h3.titre, h3.entry-title, h3.summary, .sites h3.titre { font-size: 16px; line-height: 1em; margin-bottom: .5em; }
-h3.summary { line-height: 1.5em; }
+h3.titre, h3.entry-title, h3.summary, .sites h3.titre { font-size: 16px; line-height: 1.2em; margin-bottom: .5em; }
+h3.summary {  }
 
 
 .texte h2 { font-size: 20px; margin: 1.25em 0 .25em; }

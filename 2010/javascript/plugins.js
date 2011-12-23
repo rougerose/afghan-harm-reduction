@@ -40,7 +40,7 @@
 				.css({ height: pageHauteur });
 
 			// ajustement du positionnement en hauteur des boutons de navigation
-			$("span.scrollBouton").css({ top: Math.round((pageHauteur)/2) });
+			$("span.scrollBouton").css({ top: Math.round((pageHauteur)/2 - 10) + ((boutonHauteur)/2) });
 
 			$('span.scrollBouton.gauche', this).click(function () {
 				p--; if (p < 1) p = pages;

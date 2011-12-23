@@ -42,7 +42,7 @@ div.titre { margin-bottom: 3em; }
 		display: block;
 		float: left;
 		margin-right: 20px; margin-bottom: 1em; }
-	.liste .introduction .intro, .liste .descriptif { overflow: hidden; }
+	.liste .introduction .intro, .liste .descriptif { xoverflow: hidden; }
 
 /* sous-rubriques d'une rubrique */
 .liste h2.section-titre {
@@ -112,7 +112,7 @@ div.titre { margin-bottom: 3em; }
 
 
 	a.suite, .articles-tous {
-		font-size: 11px;
+		font-size: 14px;
 		text-transform: uppercase;
 		background: url('../img/fleches-sprite.png') no-repeat scroll top right;
 		padding-right: 16px; }
@@ -173,6 +173,8 @@ div.titre { margin-bottom: 3em; }
 		.liste h3 { margin-bottom: 0; font-size: 14px; line-height: 1.3em; }
 
 .portfolio .logo-article { margin-right: 0; margin-bottom: 1em; }
+
+.portfolio li.item { margin-bottom: 3em; }
 
 /* ===================================  */
 /*	=Rubrique Liens						*/

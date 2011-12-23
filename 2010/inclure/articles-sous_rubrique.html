@@ -1,7 +1,7 @@
 <B_articles>
 <ul class="liste articles[ (#ENV{format})] clearfix">
 	<BOUCLE_articles(ARTICLES){id_rubrique}{lang}>
-	[(#INCLURE{fond=inclure/article-resume,id_rubrique,id_article,tailleLogo=#ENV{tailleLogo},env})]
+	[(#INCLURE{fond=inclure/article-resume,id_rubrique,id_article,tailleLogo=#ENV{tailleLogo},compteur=[(#COMPTEUR_BOUCLE|modulo{2})],env})]
 	</BOUCLE_articles>
 	<BOUCLE_supplementaires(ARTICLES){id_rubrique}{6,1}>
 	<li class="articles-tous"><a href="#URL_RUBRIQUE"><:tous_articles_in_rubrique:> #_sous_rubriques:TITRE</a></li>
