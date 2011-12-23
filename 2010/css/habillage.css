@@ -221,7 +221,7 @@ div.titre { margin-bottom: 3em; }
 	.liste .slider { margin-bottom: 1em; }
 #images .slider { width: 520px; }
 	.slider .raccourcis {
-		position:absolute; top: 0;
+		position:;
 		z-index: 4; }
 		.slider .raccourcis li { display: inline; }
 		.slider .raccourcis li a {
@@ -234,7 +234,7 @@ div.titre { margin-bottom: 3em; }
 		overflow-x: hidden;
 		width: 460px; }
 	#images .scroll { width: 520px; }
-		.scroll li { list-style: none; padding-top: 2em; }
+		.scroll li { list-style: none; padding-top: 1em; }
 			.scroll li a { display: block; }
 				.scroll li img {  }
 		.scrollConteneur {}
