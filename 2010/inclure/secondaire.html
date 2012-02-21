@@ -2,14 +2,14 @@
 <div class="liste news">
 	<h2 class="h2"><:dernieres_actus:></h2>
 	<ul class="liste-items">
-		<BOUCLE_last_news(ARTICLES pb_selection){par ordre}{spip_pb_selection.id_rubrique=0}{id_rubrique!=11}{exclus}{lang}>
+		<BOUCLE_last_news(ARTICLES pb_selection){par ordre}{spip_pb_selection.id_rubrique=0}{id_rubrique !IN 7,42,63}{exclus}{lang}>
 		[(#INCLURE{fond=inclure/lastNews-liste,id_article,env,lang})]
 		</BOUCLE_last_news>
 	</ul>
 </div><!-- .news -->
 </B_last_news>
 
-<BOUCLE_rub_agenda(RUBRIQUES){lang}{id_rubrique IN 10,22,26}>
+<BOUCLE_rub_agenda(RUBRIQUES){lang}{id_rubrique IN 22,65,66}>
 <B_agenda>
 <div class="liste agenda">
 	<h2 class="h2">#_rub_agenda:TITRE</h2>
@@ -20,7 +20,7 @@
 </B_agenda>
 </BOUCLE_rub_agenda>
 
-<BOUCLE_rub_multimedia(RUBRIQUES){lang}{id_rubrique IN 11,23,27}>
+<BOUCLE_rub_multimedia(RUBRIQUES){lang}{id_rubrique IN 7,42,63}>
 <B_portfolio>
 <div class="liste portfolio">
 	<h2 class="h2">#_rub_multimedia:TITRE</h2>

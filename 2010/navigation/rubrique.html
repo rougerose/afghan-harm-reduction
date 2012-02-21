@@ -11,9 +11,9 @@
 
 
 
-[(#REM) on est dans les rubriques Agenda ? ]
-<BOUCLE_test1(CONDITION){si #ENV{id_rubrique}|match{(22|66|65)}|non}>
-<BOUCLE_rub_agenda(RUBRIQUES){lang}{id_rubrique IN 10,22,26}>
+[(#REM) on est dans la rubrique Agenda ou Portfolio ]
+<BOUCLE_test1(CONDITION){si #ENV{id_rubrique}|match{22|65|66}|non}>
+<BOUCLE_rub_agenda(RUBRIQUES){lang}{id_rubrique IN 22,65,66}>
 <B_agenda>
 <div class="liste agenda">
 	<h2 class="h2">#_rub_agenda:TITRE</h2>
@@ -24,9 +24,10 @@
 </B_agenda>
 </BOUCLE_rub_agenda>
 </BOUCLE_test1>
-[(#REM) on est dans les rubriques Portfolio ]
-<BOUCLE_test2(CONDITION){si #ENV{id_rubrique}|match{(7|42|63)}|non}>
-<BOUCLE_rub_multimedia(RUBRIQUES){lang}{id_rubrique IN 11,23,27}>
+
+<BOUCLE_test2(CONDITION){si #ENV{id_rubrique}|match{7|42|63}|non}>
+<BOUCLE_rub_multimedia(RUBRIQUES){lang}{id_rubrique IN 7,42,63}>
+
 <B_portfolio>
 <div class="liste portfolio">
 	<h2 class="h2">#_rub_multimedia:TITRE</h2>

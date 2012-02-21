@@ -1,6 +1,7 @@
 TODO ajouter les renvois en 404 pour les pages qui doivent pas s'afficher pour le moment
-TODO ajout de la fonte
 
 TODO gestion du menu via script superfish
 
 TODO gestion des intertitres différents niveau via plugin adhoc
+
+TODO css print
