@@ -1,11 +1,14 @@
 <BOUCLE_contenu_rubrique(RUBRIQUES){id_rubrique}>
 <div class="contenu-principal rubrique grid_9 suffix_1 alpha">
 	<div class="titre">
-		[(#LOGO_RUBRIQUE||image_reduire{200,200})]
 		<h1 class="h1 #EDIT{titre} titre">#TITRE</h1>
 	</div>
-	[<div class="#EDIT{texte} chapo">(#TEXTE|image_reduire{500,0})</div>]
-
+	[(#TEXTE|ou{#LOGO_RUBRIQUE}|oui)
+		<div class="#EDIT{texte} chapo clearfix">
+			[(#LOGO_RUBRIQUE||image_reduire{180,0}|inserer_attribut{class,spip_logos logo})]
+			[(#TEXTE|image_reduire{500,0})]
+		</div>
+	]
 
 	[(#REM) articles mis en sélection ]
 	<B_a_venir>

@@ -1,7 +1,6 @@
 <BOUCLE_article(ARTICLES){id_article}{lang}>
 <div class="contenu-principal article grid_9 suffix_1 alpha">
 	<div class="hentry">
-		[(#LOGO_ARTICLE|image_reduire{160,0}|inserer_attribut{class,spip_logos logo})]
 		<div class="titre">
 			[<p class="surtitre">(#SURTITRE)</p>]
 			[<h1 class="entry-title titre">(#TITRE)</h1>]
@@ -20,9 +19,11 @@
 		</div><!-- .evenement -->
 		</B_evenement>
 
-		[<div class="#EDIT{chapo} chapo surlignable entry-summary">
-			(#CHAPO|image_reduire{500,0})
-		</div><!-- .chapeau -->]
+		[(#TEXTE|ou{#LOGO_ARTICLE}|oui)
+			<div class="#EDIT{chapo} chapo surlignable entry-summary">
+				[(#LOGO_ARTICLE|image_reduire{180,0}|inserer_attribut{class,spip_logos logo})]
+				[(#CHAPO|image_reduire{500,0})]
+			</div><!-- .chapeau -->]
 
 		[<div class="#EDIT{texte} texte surlignable entry-content">
 			(#TEXTE|image_reduire{500,0})
