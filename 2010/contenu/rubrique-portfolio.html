@@ -1,10 +1,10 @@
 <BOUCLE_contenu_rubrique(RUBRIQUES){id_rubrique}>
 <div class="contenu-principal rubrique grid_9 suffix_1 alpha">
-	<div class="titre clearfix">
+	<div class="titre">
 		<h1 class="h1 #EDIT{titre} titre">#TITRE</h1>
 	</div>
 	[(#TEXTE|ou{#LOGO_RUBRIQUE}|oui)
-		<div class="#EDIT{texte} chapo">
+		<div class="#EDIT{texte} chapo clearfix">
 			[(#LOGO_RUBRIQUE||image_reduire{180,0}|inserer_attribut{class,spip_logos logo})]
 			[(#TEXTE|image_reduire{500,0})]
 		</div>
