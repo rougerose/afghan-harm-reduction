@@ -59,7 +59,9 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'suivant' => 'Next',
 
 	// T
+	'toutes_categories' => 'All categories',
 	'tous_articles_in_rubrique' => 'All articles of this section',
+	'trier_par_categorie' => 'Sort by categorie',
 
 	// V
 	'votre_recherche' => 'Your search'

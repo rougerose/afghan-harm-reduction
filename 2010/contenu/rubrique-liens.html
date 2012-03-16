@@ -14,12 +14,12 @@
 
 	<form id="tri" action="#" method="get" name="tri" class="formulaire_spip formulaire_tri">
 		<p>
-			<label for="choix_critere"><:afficher_categorie:></label>
+			<label for="choix_critere"><:trier_par_categorie:></label>
 			<select size="1" name="choix_critere"
 			onchange="if (options[selectedIndex].value) {
 				location = options[selectedIndex].value;
 			}">
-			<option value="[(#SELF|parametre_url{tri,tout}|parametre_url{id_mot,''})]"[(#ENV{tri}|=={tout}|oui) selected="selected"]><:toutes:></option>
+			<option value="[(#SELF|parametre_url{tri,all}|parametre_url{id_mot,''})]"[(#ENV{tri}|=={all}|oui) selected="selected"]><:toutes_categories:></option>
 			<BOUCLE_mots(mots_syndic)>
 			<BOUCLE_m(MOTS){id_mot}{par titre}{unique}>
 			[(#ENV{id_mot}=={#ID_MOT}|oui)#SET{titre-section,#TITRE}]
