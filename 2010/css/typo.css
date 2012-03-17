@@ -67,7 +67,8 @@ a.suite,
 #pied .hierarchie,
 .articles-tous,
 .article .hentry .hyperlien .label,
-.liste h2, #suivantPrecedent dt {
+.liste h2, #suivantPrecedent dt,
+.liste.site .mots p span {
 	font-family: "TGBC","HelveticaNeue-CondensedBlack","Helvetica Neue Condensed Black","Helvetica Neue", Helvetica, "Arial Black", Arial, sans-serif;;
 	/*font-stretch: condensed; /* pour Firefox */
 	/*font-weight: bold;*/
@@ -83,7 +84,7 @@ a.suite,
 
 #baseline { font-family: "TGL"; }
 
-.traductions span { font-family: Georgia, "Times New Roman", Times, serif; text-transform: lowercase; }
+.traductions span, .liste.site .mots p { font-family: Georgia, "Times New Roman", Times, serif; text-transform: lowercase; }
 
 /* ==================================== */
 /* =Links=								*/
@@ -141,5 +142,5 @@ h3.summary {  }
 /* ==================================== */
 /* =Paragraphs, etc...=					*/
 /* ==================================== */
-
+.liste.site .mots p { font-size: 13px; }
 p { font-size: 14px; margin-bottom: 1.5em; }

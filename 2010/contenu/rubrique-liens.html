@@ -39,10 +39,12 @@
 				<h3 class="titre"><a href="#URL_SITE" class="spip_out">[(#NOM_SITE)]</a></h3>
 				[<span class="logo-article">(#LOGO_SITE|image_reduire{100,0})</span>]
 				[<p class="descriptif">(#DESCRIPTIF|PtoBR)</p>]
+				<B_t><div class="mots">
+					<p><span><:mots_clefs:></span> <BOUCLE_t(MOTS){id_syndic}{par titre}{', '}><a href="#URL_MOT" rel="tag">#TITRE</a></BOUCLE_t></p>
+				</div></B_t>
 				<ul class="meta-publi clearfix">
 					<li class="url"><a href="#URL_SITE" class="spip_out">#URL_SITE</a></li>
 				</ul>
-
 			</li>
 			</BOUCLE_sites>
 		</ul>
