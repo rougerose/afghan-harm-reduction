@@ -66,22 +66,25 @@ div.titre { margin-bottom: 3em; }
 /* article */
 .article .hentry {  }
 	.article .hentry .logo { float: left; margin-right: 20px; margin-bottom: 1em; margin-top: .5em; }
-	.article .hentry div.titre { margin-bottom: 3em; xoverflow: hidden; }
+	.article .hentry div.titre { margin-bottom: 3em; }
 	.article .hentry .evenement, .article .hentry .chapo { clear: both; }
-		.article .hentry .chapo p { font-size: 16px; }
+	.article .hentry .chapo { margin-bottom: 3em; }
+		.article .hentry .chapo p { font-size: 17px; text-align: justify; }
 	.article .hentry p.surtitre, .article .hentry p.soustitre {
 		font-size: 12px; color: #666;
 		text-transform: uppercase;
 		margin: 0; }
 	.article .hentry p.surtitre { margin-bottom: .5em; }
 	.article .hentry .texte { margin-bottom: 3em; }
+		.article .hentry .texte p, .article .hentry ul li { text-align: justify; }
 	.article .ps p, .article .notes p { font-size: 12px; color: #666; }
 	.article .ps p { font-size: 13px; }
 
 	.ps { border: 1px solid #f5f5f5; padding: 2px 10px; margin-bottom: 3em; }
 
-	.traductions { text-align: right; }
-		.traductions span.on { font-weight: bold; }
+	.traductions { text-align: right; margin-bottom: 2em; }
+		.traductions span.on { font-style: italic; }
+		.traductions span a { font-weight: bold; }
 
 	/* notes */
 	.notes { margin-bottom: 3em; }
