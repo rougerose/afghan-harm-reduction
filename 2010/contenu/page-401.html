@@ -1,0 +1,12 @@
+<div class="contenu-principal grid_16">
+	<div class="titre">
+		<h1 class="titre"><:pass_erreur:>[ (#ENV{status})]</h1>
+	</div><!-- .titre -->
+
+	<div class="grid_8 alpha">
+		<div class="#EDIT{chapo} chapo surlignable entry-summary clearfix">
+			[(#ENV*{erreur}|propre)]
+         #FORMULAIRE_LOGIN{#ENV{cible},'',0}
+		</div><!-- .chapeau -->
+	</div><!-- .grid_8 -->
+</div>
