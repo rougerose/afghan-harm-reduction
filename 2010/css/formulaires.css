@@ -58,7 +58,7 @@
 /* ==================================== */
 .formulaire_recherche { margin-bottom: 3em; }
 	.formulaire_recherche p label { line-height: 18px; }
-	.formulaire_recherche input.text { width: 470px;}
+	.formulaire_recherche input.text { width: 470px !important;}
 	.formulaire_recherche .submit { width: 40px; }
 
 /* ==================================== */
