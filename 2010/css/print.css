@@ -1,0 +1,71 @@
+/*------------------------------------*\
+MAIN
+\*------------------------------------*/
+/*
+Give everything some decent contrast.
+*/
+*{
+   background-color:#fff;
+   color:#000;
+   text-shadow:none!important;
+}
+/*
+Set a nice measure and take the font down to print-acceptable sizes.
+*/
+body{
+   font-size:0.75em; /* 12px (if base font-size was 16px) */
+}
+#page{
+   width:75%;
+   margin:0 auto;
+}
+/*
+A list of things you don’t want printing. Add to/subtract from as necessary.
+*/
+#nav, #pied, #langues, #navigation {
+   display:none;
+}
+.logo img{
+   position:static;
+}
+
+/*
+Don’t let images break anything.
+*/
+img{
+   max-width:100%;
+   height:auto;
+}
+/*
+Messages look odd with just borders.
+*/
+.message{
+   border:none;
+   font-weight:bold;
+}
+/*
+Display the href of any links.
+*/
+a:link:after,a:visited:after{
+   content:" (" attr(href) ")";
+   font-size:smaller;
+}
+/*
+Any links that are root relative to your site need prepending with your URL.
+*/
+#contenu a[href^="/"]:after{
+   content:" (http://www.afghan-harm-reduction.org" attr(href) ")";
+   font-size:smaller;
+}
+/*
+Any Flash/video content can’t be printed so leave a message.
+*/
+object:after{
+   content:"Flash/video content. Head to http://www.afghan-harm-reduction.org to view this content.";
+   display:block;
+   font-weight:bold;
+   margin-bottom:1.5em;
+}
+
+#titre {font-size: 36pt; line-height: 0; margin-bottom: 0;}
+#baseline {font-size: 26pt; }

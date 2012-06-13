@@ -18,42 +18,49 @@ html { /* background: url('../img/line-height.png');*/ }
 /* ==================================== */
 /* =Fontes								*/
 /* ==================================== */
-
 @font-face {
-    font-family: 'TGBC';
-    src: url('fonts/tgbc.eot');
-    src: url('fonts/tgbc.eot?#iefix') format('embedded-opentype'),
-         url('fonts/tgbc.woff') format('woff'),
-         url('fonts/tgbc.ttf') format('truetype'),
-         url('fonts/tgbc.svg#TradeGothicLTStdBdCnNo.20') format('svg');
+    font-family: 'TradeGothicLTStdCnBold';
+    src: url('webfontkit/tradegothicltstd_bdcn20-webfont.eot');
+    src: url('webfontkit/tradegothicltstd_bdcn20-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfontkit/tradegothicltstd_bdcn20-webfont.woff') format('woff'),
+         url('webfontkit/tradegothicltstd_bdcn20-webfont.ttf') format('truetype'),
+         url('webfontkit/tradegothicltstd_bdcn20-webfont.svg#TradeGothicLTStdCnBold') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
+
+
+
 @font-face {
-    font-family: 'TGL';
-    src: url('fonts/tgl.eot');
-    src: url('fonts/tgl.eot?#iefix') format('embedded-opentype'),
-         url('fonts/tgl.woff') format('woff'),
-         url('fonts/tgl.ttf') format('truetype'),
-         url('fonts/tgl.svg#TradeGothicLTStdLight') format('svg');
+    font-family: 'TradeGothicLTStdLightRegular';
+    src: url('webfontkit/tradegothicltstd_light-webfont.eot');
+    src: url('webfontkit/tradegothicltstd_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfontkit/tradegothicltstd_light-webfont.woff') format('woff'),
+         url('webfontkit/tradegothicltstd_light-webfont.ttf') format('truetype'),
+         url('webfontkit/tradegothicltstd_light-webfont.svg#TradeGothicLTStdLightRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
 
+
+
+
 @font-face {
-    font-family: 'TGR';
-    src: url('fonts/tgr.eot');
-    src: url('fonts/tgr.eot?#iefix') format('embedded-opentype'),
-         url('fonts/tgr.woff') format('woff'),
-         url('fonts/tgr.ttf') format('truetype'),
-         url('fonts/tgr.svg#TradeGothicLTStdRegular') format('svg');
+    font-family: 'TradeGothicLTStdRegular';
+    src: url('webfontkit/tradegothicltstd-webfont.eot');
+    src: url('webfontkit/tradegothicltstd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webfontkit/tradegothicltstd-webfont.woff') format('woff'),
+         url('webfontkit/tradegothicltstd-webfont.ttf') format('truetype'),
+         url('webfontkit/tradegothicltstd-webfont.svg#TradeGothicLTStdRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 
 }
+
+h1,h2,h3,h4,h5,h6 {font-weight: normal;}
 
 h1,h2,h3,h4,h5,h6,
 #logo #titre,
@@ -69,8 +76,8 @@ a.suite,
 .article .hentry .hyperlien .label,
 .liste h2, #suivantPrecedent dt,
 .liste.site .mots p span {
-	font-family: "TGBC","HelveticaNeue-CondensedBlack","Helvetica Neue Condensed Black","Helvetica Neue", Helvetica, "Arial Black", Arial, sans-serif;;
-	/*font-stretch: condensed; /* pour Firefox */
+	font-family: "TradeGothicLTStdCnBold","HelveticaNeue-CondensedBlack","Helvetica Neue Condensed Black","Helvetica Neue", Helvetica, "Arial Black", Arial, sans-serif;
+	/*font-stretch: condensed;*/ /* pour Firefox */
 	/*font-weight: bold;*/
 	text-transform: uppercase; }
 
@@ -80,9 +87,9 @@ a.suite,
 .pagination,
 .hentry .vevent,
 .liste h2.section-titre {
-	font-family: "TGR","Helvetica Neue", Helvetica, Arial, sans-serif; font-stretch: normal; font-weight:normal; }
+	font-family: "TradeGothicLTStdRegular","Helvetica Neue", Helvetica, Arial, sans-serif; font-stretch: normal; font-weight:normal; }
 
-#baseline { font-family: "TGL"; }
+#baseline { font-family: "TradeGothicLTStdLightRegular"; }
 
 .traductions span, .liste.site .mots p { font-family: Georgia, "Times New Roman", Times, serif; text-transform: lowercase; }
 
